@@ -1,0 +1,25 @@
+{
+  "name": "casamarilla",
+  "version": "1.0.0",
+  "description": "casamarillab2c",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass": "sass --watch --no-source-map styles/scss:styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/propulsow/casa-amarilla/b2c.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/propulsow/casa-amarilla/b2c/issues"
+  },
+  "homepage": "https://gitlab.com/propulsow/casa-amarilla/b2c#readme",
+  "dependencies": {
+    "sass": "^1.49.8"
+  }
+}

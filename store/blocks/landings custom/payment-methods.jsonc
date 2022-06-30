@@ -1,0 +1,22 @@
+{
+  "store.custom#payment-methods": {
+    "blocks": ["flex-layout.row#payment-methods-container"]
+  },
+  "flex-layout.row#payment-methods-container": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "payment-methods-container"
+    },
+    "children": ["rich-text#payment-methods-title", "rich-text#payment-methods-content"]
+  },
+  "rich-text#payment-methods-title": {
+    "props": {
+      "text": "# MÉTODOS DE PAGO"
+    }
+  },
+  "rich-text#payment-methods-content": {
+    "props": {
+      "text": "Las compras realizadas por medio del “catálogo de ventas web” admiten los siguientes medios de pago:\nTarjetas de débito bancarias acogidas al sistema Redcompra®: Tarjetas emitidas en Chile por bancos nacionales, que se encuentren afiliadas a Transbank. Las compras por este medio no se consideran hechas en efectivo.\nTarjetas de crédito bancarias: Tarjetas emitidas en Chile que se encuentren afiliadas a Transbank. No se admiten compras con tarjetas de crédito internacionales a través del sitio web www.casamarilla.cl\nKhipu: Transferencia electrónica desde la cuenta del cliente, en el proceso de compra. El pago es recibido automáticamente por Casa Amarilla, tal como el sistema Redcompra.\nInformación sobre tarjetas bancarias y/u otras: Casa Amarilla está afiliada a Transbank que vela por la seguridad en las compras con tarjetas de crédito. Para conocer más sobre el servicio de Transbank, por favor acceder a https://www.transbank.cl\nContratos de tarjetas de crédito y medios de pago: Los aspectos relativos al funcionamiento de las tarjetas aceptadas en www.casamarilla.cl, están sujetos al contrato existente entre el cliente y la identidad emisora y de ésta con Transbank, sin que a Casa Amarilla le quepa responsabilidad alguna en relación con los aspectos señalados en dichos contratos. Casa Amarilla sólo puede validar cargos previamente autorizados por Transbank.\nLos productos adquiridos a través del “catálogo de ventas web” serán sujetos a las condiciones de despacho disponibles en el sitio. La información del lugar de envío es de exclusiva responsabilidad del usuario el que deberá proveer de un número telefónico de contacto obligatoriamente al llenar el formulario con sus datos de despacho."
+    }
+  }
+}

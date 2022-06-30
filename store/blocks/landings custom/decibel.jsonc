@@ -1,0 +1,171 @@
+{
+    "store.custom#decibel": {
+      "blocks": [
+        "responsive-layout.desktop#desktop-decibel", 
+        "responsive-layout.mobile#mobile-decibel"
+      ]
+    }, 
+    "responsive-layout.desktop#desktop-decibel": {
+    "children": [
+      "flex-layout.row#decibel"
+    ]
+    },
+    "flex-layout.row#decibel":{
+      "props": {
+        "blockClass": "decibel-container"
+      },
+      "children": ["flex-layout.col#decibel"]
+    },
+    "flex-layout.col#decibel":{
+      "props": {
+        "blockClass": "decibel-container"
+      },
+      "children": [ "flex-layout.col#contenedor-categorias-decibel", "flex-layout.row#decibel-main-container", "iframe#youtube", "flex-layout.row#decibel-preform-container", "flex-layout.row#form-decibel"]
+    },
+    "flex-layout.row#decibel-main-container": {
+        "props": {
+          "blockClass": "decibel-container"
+        },
+        "children": ["rich-text#decibel-title"]
+    },
+    "rich-text#decibel-title": {
+      "props": {
+        "text": "## Pequeña descripción sobre el programa",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "blockClass": "decibel-title"
+      }
+    },
+    "flex-layout.row#decibel-preform-container": {
+      "props": {
+        "blockClass": "decibel-container"
+      },
+      "children": ["rich-text#decibel-title-form"]
+  },
+  "rich-text#decibel-title-form": {
+    "props": {
+      "text": "## Texto invitando a enviar formulario",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "decibel-title"
+    }
+  },
+    "flex-layout.col#contenedor-categorias-decibel":{
+      "props": {
+        "blockClass": "decibel-category-container",
+        "preventVerticalStretch": true
+      },
+      "children": [
+        "flex-layout.row#banner-decibel"
+      ]
+    },
+    "flex-layout.row#banner-decibel":{
+      "props": {
+        "blockClass": ""
+      },
+      "children": ["stack-layout#decibel-banner-1"]
+    },
+    "stack-layout#decibel-banner-1": {
+      "props": {
+        "blockClass": "decibel-block-banner"
+      },
+      "children": ["image#banner-decibel"]
+    },
+    "image#banner-decibel": {
+      "props": {
+        "src": "/arquivos/vientos-prueba-min.jpg",
+        "blockClass": "decibel-banners",
+        "link": {
+          "url": "/decibel/vientos"
+        }
+      }
+    },
+    "iframe#youtube": {
+      "props": {
+        "src": "https://www.youtube.com/embed/videoseries?list=PLKTBEPJQc-P0jKmBpc8jY1duocjAoSGQP",
+        "width": "800",
+        "height": "450",
+        "blockClass": "decibel-youtube"
+      }
+    },
+    "flex-layout.row#form-decibel":{
+      "props": {
+        "blockClass": "form-decibel"
+      },
+      "children": ["form#bandas"]
+    },
+    "form#bandas": {
+      "props": {
+        "entity": "BA",
+        "schema": "Bandas"
+      },
+      "blocks": ["form-success#banda"],
+      "children": [
+        "form-input.text#nombre-banda",
+        "form-input.text#email-banda",
+        "form-input.text#telefono-banda",
+        "form-input.textarea#links-banda",
+        "form-input.textarea#mensaje-banda",
+        "form-submit#contact"
+      ]
+    },
+  
+    "form-success#banda": {
+      "children": ["rich-text#success-submit-banda"]
+    },
+    "rich-text#success-submit-banda": {
+      "props": {
+        "text": "## Gracias por enviar su solicitud!",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+    "form-input.text#nombre-banda": {
+      "props": {
+        "label": "Nombre",
+        "pointer": "#/properties/nombre"
+      }
+    },
+    "form-input.text#email-banda": {
+      "props": {
+        "label": "Email",
+        "pointer": "#/properties/email"
+      }
+    },
+    "form-input.text#telefono-banda": {
+      "props": {
+        "label": "Telefono",
+        "pointer": "#/properties/telefono"
+      }
+    },
+    "form-input.textarea#links-banda": {
+      "props": {
+        "label": "Link a tus Redes Sociales",
+        "pointer": "#/properties/link"
+      }
+    },
+    "form-input.textarea#mensaje-banda": {
+      "props": {
+        "label": "Mensaje de presentación",
+        "pointer": "#/properties/mensaje"
+      }
+    },
+    "form-submit#contact-banda": {
+      "props": {
+        "label": "Enviar"
+      }
+    },
+    "responsive-layout.mobile#mobile-decibel": {
+      "children": [
+        "flex-layout.row#decibel-mobile"
+      ]
+    },
+    "flex-layout.row#decibel-mobile":{
+      "props": {
+        "blockClass": "decibel-container"
+      },
+      "children": ["flex-layout.col#decibel"]
+    }
+
+}
+  

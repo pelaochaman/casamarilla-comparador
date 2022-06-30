@@ -1,0 +1,35 @@
+.container :global(.vtex-button) {
+  background-color: #000;
+  outline: none;
+  border: none;
+}
+
+.profileIcon {
+  color: #f6ba15;
+  margin-right: 2px;
+}
+
+.profileIcon:hover {
+  color: #f6ba15;
+}
+
+.label {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 0.875rem;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .container :global(.vtex-button) {
+    margin: 0 0.9rem 0 1.6rem;
+  }
+
+  .container :global(.vtex-button__label) {
+    padding: 0;
+  }
+
+  .profileIcon {
+    margin-right: 0;
+  }
+}

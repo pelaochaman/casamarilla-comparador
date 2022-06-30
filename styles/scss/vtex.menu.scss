@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap");
+
+/* HEADER */
+.menuItem--menu-item-wishlist {
+  display: flex;
+  align-items: center;
+}
+
+.styledLinkContent--menu-item-wishlist {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.styledLinkContent--menu-item-cyber {
+  margin: 0;
+  color: #fff;
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.styledLinkContainer--menu-item-cyber {
+  margin: 0;
+}
+
+.menuItem--menu-item-cyber {
+  display: flex;
+  align-items: flex-end;
+}
+
+.styledLinkIcon--menu-item-wishlist,
+.styledLinkIcon--menu-item-categorias {
+  color: #f6ba15;
+  margin-right: 10px;
+}
+
+.styledLinkContent--menu-item-categorias {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.submenuWrapper--menu-categorias {
+  background-color: #fffcf2;
+  padding: 0;
+}
+
+.submenuWrapper--subcat-menu {
+  background-color: #fffcf2;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.submenuWrapper--subcat-menu.submenuWrapper--mobile {
+  border: none;
+}
+
+.submenuContainer--subcat-menu {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.menuContainerNav--menu-categorias,
+.menuContainerNav--menu-search {
+  display: flex;
+  align-items: center;
+}
+
+.styledLinkIcon--menu-item-search {
+  color: #f6ba15;
+}
+
+.menuItem--menu-item-department {
+  display: flex;
+}
+
+.menuItem--menu-item-department.menuItem--mobile {
+  padding: 1.25rem 0 1.25rem 2rem;
+}
+
+.menuItem--menu-item-category {
+  width: fit-content;
+}
+
+.menuItem--menu-item-department:hover {
+  background-color: #fbe4a4;
+}
+
+.styledLinkContent--menu-item-department {
+  color: #000;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+}
+
+.styledLinkContainer--menu-item-department {
+  width: 100%;
+}
+
+.styledLinkContainer--menu-item-department.styledLinkContainer--mobile {
+  margin: 0;
+}
+
+.styledLinkContainer--menu-item-category {
+  display: block;
+}
+
+.styledLink--menu-item-category {
+  display: block;
+}
+
+.styledLinkContent--menu-item-category {
+  color: #000;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #545454;
+  width: fit-content;
+}
+
+.styledLinkContainer--menu-item-categorias,
+.styledLinkContainer--menu-item-search {
+  margin: 0 1rem;
+}
+
+.submenuContainer--search-bar-wrapper {
+  position: static;
+}
+
+.submenuWrapper--search-bar-wrapper {
+  padding: 0;
+  border: none;
+  width: 100vw;
+  max-width: 400px;
+}
+
+.menuItem--menu-item-right {
+  display: flex;
+  align-items: center;
+}
+
+.styledLinkContent--menu-item-right {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.styledLinkContainer--menu-item-subcat {
+  padding: 0 0 8px 0;
+}
+
+.styledLinkContent--menu-item-subcat {
+  color: #848484;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.styledLinkContainer--category-drawer-open-btn {
+  margin: 0;
+}
+
+@media screen and (max-width: 1025px) {
+  .styledLinkIcon--menu-item-categorias,
+  .styledLinkIcon--menu-item-search {
+    margin: 0;
+  }
+
+  .submenuContainer--subcat-menu {
+    position: static;
+  }
+
+  .menuItem--menu-item-department--isClosed .submenuWrapper--subcat-menu {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .menuContainer--menu-search{
+    position: inherit;
+    z-index: 999;
+  }
+  .menuContainerNav--search{
+    width: 95%;
+    padding-left: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 640px) {
+  .submenuWrapper--search-bar-wrapper {
+    max-width: unset;
+  }
+}
+
+/* NEWSLETTER */
+.styledLinkContainer--newsletter-icon {
+  margin: 0 5px;
+}
+
+.styledLinkIcon--newsletter-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FOOTER */
+.styledLinkContainer--menu-item-footer {
+  text-align: center;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.styledLinkContent--menu-item-footer {
+  color: #dedada;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 23px;
+  font-family: "Montserrat";
+}
+
+@media (max-width: 1025px) {
+  .styledLinkContainer--menu-item-search{
+    z-index: 999;
+    position: initial
+  }
+}

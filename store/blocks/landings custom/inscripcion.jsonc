@@ -1,0 +1,91 @@
+{
+  "store.custom#inscripcion": {
+    "children": [
+      "flex-layout.row#inscripcion"
+    ]
+  },
+  "flex-layout.row#inscripcion": {
+    "children": [
+      "form#inscripcion"
+    ],
+    "props": {
+      "blockClass": "inscripcion-wrapper"
+    }
+  },
+  "rich-text#titulo-inscripcion": {
+    "props": {
+      "text": "**INSCRIPCIÓN**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "inscripcion-title"
+    }
+  },
+  "flex-layout.row#cyber-countdown2": {
+    "props": {
+      "blockClass": "cyber-countdown2"
+    },
+    "children": ["countdown2"]
+  },
+  "form#inscripcion": {
+    "props": {
+      "entity": "IN",
+      "schema": "Inscripcion",
+      "blockClass": "formulario-inscripcion"
+    },
+    "children": [
+      "rich-text#titulo-inscripcion",
+      "flex-layout.row#cyber-countdown2",
+      "form-input.text#name-inscripcion",
+      "form-input.text#email-inscripcion",
+      "form-input.text#edad-inscripcion",
+      "form-input.textarea#comentario-inscripcion",
+      "form-submit#inscripcion"
+    ],
+    "blocks": [
+      "form-success"
+    ]
+  },
+  "form-success": {
+    "children": [
+      "rich-text#successSubmit"
+    ]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Se envio con exito su consulta!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "submit-form"
+    }
+  },
+  "form-input.text#name-inscripcion": {
+    "props": {
+      "pointer": "#/properties/nombre",
+      "blockClass": "input"
+    }
+  },
+  "form-input.text#email-inscripcion": {
+    "props": {
+      "pointer": "#/properties/email",
+      "blockClass": "input"
+    }
+  },
+  "form-input.text#edad-inscripcion": {
+    "props": {
+      "pointer": "#/properties/edad",
+      "blockClass": "input"
+    }
+  },
+  "form-input.textarea#comentario-inscripcion": {
+    "props": {
+      "pointer": "#/properties/mensaje",
+      "blockClass": "input"
+    }
+  },
+  "form-submit#inscripcion": {
+    "props": {
+      "label": "Enviar",
+      "blockClass": "boton-enviar"
+    }
+  }
+}

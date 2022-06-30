@@ -1,0 +1,143 @@
+/* START General containers */
+:global(.vtex-flex-layout-0-x-flexRow--top-bar) {
+	// display: none;
+	background: #225EEF;
+}
+
+.countdownheader {
+	display: none;
+}
+
+.countdownbody {
+	text-align: -webkit-center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	&::before{
+		content: "¡Ya comenzó!";
+		font-size: 1em;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	&::after{
+		content: "";
+		display: inline-block;
+        width: 90px;
+        height: 50px;
+        background-image: url(/arquivos/logo-cyberday.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+	}
+	.outlinecountdown {
+		display: flex;
+        justify-content: center;
+        align-items: center;
+		width: fit-content;
+        font-size: .7em;
+		margin: 0 .5rem;
+        padding: .2rem .5em;
+        text-transform: uppercase;
+        line-height: 1;
+		color: #fff;
+	}
+	.daysnum, .hoursnum, .minutesnum, .secondsnum {
+		margin: .1rem .5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: .9rem;
+		font-weight: 600;
+		height: 2rem;
+		width: 2rem;
+		margin-bottom: .2rem;
+		border-radius: 5px;
+		border: 1px solid #f0f0f0;
+	}
+	.separatorone, .separatortwo, .separatorthree {
+		display: none;
+		margin: .3rem;
+		margin-bottom: 1.3rem;
+	}
+}
+
+@media (max-width: 767px) {
+	// .countdownbody::after {
+	// 	display: none;
+	// }
+    .countdownbody::before{
+        font-size: .75em;
+    }
+}
+/* END General containers */
+
+/* START day elements */
+.days {
+	align-self: center;
+}
+
+.daysnum {
+	font-size: 23px;
+}
+
+.daystext {
+	font-family: "OpenSansRegular", sans-serif;
+}
+/* END day elements */
+
+/* START hours elements */
+.hours {
+	align-self: center;
+}
+
+.hoursnum {
+	font-size: 23px;
+}
+
+.hourstext {
+	font-family: "OpenSansRegular", sans-serif;;
+}
+/* END hours elements */
+
+/* START minutes elements */
+.minutes {
+	align-self: center;
+}
+
+.minutesnum {
+	font-size: 23px;
+}
+
+.minutestext {
+	font-family: "OpenSansRegular", sans-serif;
+}
+/* END minutes elements */
+
+/* START seconds elements */
+.seconds {
+	align-self: center;
+}
+
+.secondsnum {
+	font-size: 23px;
+}
+
+.secondstext {
+	font-family: "OpenSansRegular", sans-serif;
+}
+/* END seconds elements */
+
+/* START separators elements */
+.separatorone {
+	margin: .8rem;
+}
+
+.separatortwo {
+	margin: .8rem;
+}
+
+.separatorthree {
+	margin: .8rem;
+}
+/* END separator elements */

@@ -1,0 +1,569 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop#desktop-home",
+      "responsive-layout.mobile#mobile-home"
+    ]
+  },
+  "responsive-layout.desktop#desktop-home": {
+    "children": [
+      "slider-layout#home-desktop",
+      "flex-layout.row#benefits", 
+      "flex-layout.row#main-content"
+    ]
+  },
+  /* MAIN SLIDER DESKTOP */
+  "slider-layout#home-desktop": {
+    "children": [
+      "image#slide-desktop-1",
+      "image#slide-desktop-2",
+      "image#slide-desktop-3",
+      "image#slide-desktop-4"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": false
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "arrowSize": 45,
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1
+      },
+      "fullWidth": true,
+      "blockClass": "slider-home-desktop"
+    }
+  },
+  "image#slide-desktop-1": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex.file-manager-graphql/images/5da42275-9d55-4627-bda2-46474cfb09de___53108c66da65343278da886a9d06f60b.jpg",
+      "link": "/142?map=productClusterIds"
+    }
+  },
+  "image#slide-desktop-2": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex.file-manager-graphql/images/a75d3f25-c6bf-4d31-a6d1-c60a705766e1___283cf97432cf6fed927ef6b78823a638.jpg",
+      "link": "/141?map=productClusterIds"
+    }
+  },
+  "image#slide-desktop-3": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex.file-manager-graphql/images/e4eb36c9-20a6-4cd5-8383-21951b734350___a662f81822288d5afb8798fa08206ca7.jpg",
+      "link": "#"
+    }
+  },
+  "image#slide-desktop-4": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex.file-manager-graphql/images/69a95f4f-91a0-4966-9cbe-671ee0e9c3df___1469f642478a5e1e2cd8c593839b8424.jpg",
+      "link": "/ukeleles-y-otras-cuerdas"
+    }
+  },
+  "image#slide-desktop-5": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex.file-manager-graphql/images/5da42275-9d55-4627-bda2-46474cfb09de___53108c66da65343278da886a9d06f60b.jpg",
+      "link": "/142?map=productClusterIds"
+    }
+  },
+  "modal-trigger#popup": {
+    "children": [
+      "modal-layout#popup"
+    ],
+    "props": {
+      "trigger": "load"
+    }
+  },
+  "modal-layout#popup": {
+    "children": [
+      "modal-header",
+      "image#popup"
+    ],
+    "props": {
+      "blockClass": "popup-wrapper"
+    }
+  },
+  "modal-header":{
+
+  },
+  "image#popup": {
+    "props": {
+      "src": "/arquivos/Pop_Up_Inventario_800X800_1.jpg",
+      "width": "800px",
+      "height": "800px",
+      "blockClass": [
+        "popup-image"
+      ]
+    }
+  },
+  "flex-layout.row#benefits": {
+    "props": {
+      "marginBottom": 8,
+      "blockClass": "benefits-band"
+    },
+    "children": [
+      "flex-layout.row#benefit-1", 
+      "flex-layout.row#benefit-2", 
+      "flex-layout.row#benefit-3"
+    ]
+  },
+  "flex-layout.row#benefit-1": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "benefits-band-col"
+    },
+    "children": [
+      "image#isotipo-benefit-1", 
+      "rich-text#benefit-1"
+    ]
+  },
+  "image#isotipo-benefit-1": {
+    "props": {
+      "src": "/arquivos/isotipo-tarjetas.png",
+      "width": "140px",
+      "height": "79px",
+      "blockClass": [
+        "benefits-band-img", 
+        "isotipo-targetas"
+      ]
+    }
+  },
+  "rich-text#benefit-1": {
+    "props": {
+      "text": "**Paga Hasta con 2\nTarjetas de Crédito**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#benefit-2": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "benefits-band-col"
+    },
+    "children": ["image#isotipo-benefit-2", "rich-text#benefit-2"]
+  },
+  "image#isotipo-benefit-2": {
+    "props": {
+      "src": "/arquivos/isotipo-entrega.png",
+      "width": "50px",
+      "height": "51px",
+      "blockClass": ["benefits-band-img", "isotipo-entrega"]
+    }
+  },
+  "rich-text#benefit-2": {
+    "props": {
+      "text": "**Envío a todo Chile**\n¡Envío gratis!\npor compras superiores a $100.000",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#benefit-3": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "benefits-band-col"
+    },
+    "children": ["image#isotipo-benefit-3", "rich-text#benefit-3"]
+  },
+  "image#isotipo-benefit-3": {
+    "props": {
+      "src": "/arquivos/isotipo-rosette.png",
+      "width": "70px",
+      "height": "70px",
+      "blockClass": ["benefits-band-img", "isotipo-rosette"]
+    }
+  },
+  "rich-text#benefit-3": {
+    "props": {
+      "text": "**Garantía de Satisfacción**\n¡Devuelve tu compra sin trabas!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#main-content": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "main-content-desktop"
+    },
+    "children": [
+      "list-context.product-list#favorite",
+      "slider-layout#brand-desktop",
+      
+      "rich-text#guitar-title",
+      "flex-layout.row#collection-guitars-wrapper",
+      "flex-layout.col#know-more"
+    ]
+  },
+  /* FAVORITES */
+  "list-context.product-list#favorite": {
+    "props": {
+      "installmentCriteria": "MAX_WITHOUT_INTEREST"
+    },
+    "blocks": ["product-summary.shelf#main"],
+    "children": ["flex-layout.col#favorites"]
+  },
+  "flex-layout.col#favorites": {
+    "children": [
+      //"rich-text#favorites-title",
+      "retail-rocket-container#home"
+      //"slider-layout#favorites"
+    ]
+  },
+  "rich-text#favorites-title": {
+    "props": {
+      "text": "**MIS FAVORITOS**",
+      "blockClass": "favorites-slider-title"
+    }
+  },
+  "slider-layout#favorites": {
+    "props": {
+      "navigationStep": "page",
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "arrowSize": 30,
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "blockClass": "favorites-slider"
+    }
+  },
+
+
+
+  "flex-layout.row#collection-guitars-wrapper": {
+    "props": {
+      "marginTop": 6,
+      "blockClass": "guitars-wrapper-container"
+    },
+    "children": [
+      "flex-layout.row#collection-1",
+      "flex-layout.row#collection-2"
+    ]
+  },
+  "rich-text#guitar-title": {
+    "props": {
+      "text": "**COLECCION**",
+      "textAlignment": "left",
+      "textPosition": "left",
+      "blockClass": "guitars-slider-title",
+      "marginTop": 6
+    }
+  },
+  "flex-layout.row#collection-1": {
+    "children": [
+      "flex-layout.col#guitar", 
+      "list-context.product-list#guitar-shelf-1"
+    ],
+    "props":{
+      "blockClass":"collection-1", 
+      "width": "100%"   
+    }
+  },
+  "flex-layout.row#collection-2": {
+    "children": [
+      "flex-layout.col#guitar",  
+      "list-context.product-list#guitar-shelf-2"
+    ],
+    "props":{
+      "blockClass":"collection-2",
+      "width":"100%"   
+    }
+  },
+  
+  /* GUITARS HOME */
+  /* Desktop */
+  "list-context.product-list#guitar-shelf-1": {
+    "props": {
+      "blockClass":"first-shelf-banner",
+      "collection": "179"
+    },
+    "blocks": ["product-summary.shelf#main"],
+    "children": [
+      "retail-rocket-container#home2",
+      "slider-layout#guitar-desktop"
+    ]
+  },
+  "list-context.product-list#guitar-shelf-2": {
+    "props": {
+      "collection": "182"
+    },
+    "blocks": ["product-summary.shelf#main"],
+    "children": [
+      "retail-rocket-container#home3",
+      "slider-layout#guitar-desktop"
+    ]
+  },
+  "slider-layout#guitar-desktop": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "guitar-slider-top",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never"
+    }
+  },
+
+
+  /* Mobile */
+  "list-context.product-list#shelf-guitar": {
+    "props": {
+      "installmentCriteria": "MAX_WITHOUT_INTEREST"
+    },
+    "blocks": ["product-summary.shelf#main"],
+    "children": ["flex-layout.col#guitar-container"]
+  },
+  "flex-layout.col#guitar-container": {
+    "children": ["rich-text#guitar-title", "slider-layout#guitar-mobile"]
+  },
+  "slider-layout#guitar-mobile": {
+    "props": {
+      "infinite": true,
+      "navigationStep": 1,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "mobileOnly",
+      "arrowSize": 30,
+      "itemsPerPage": 1,
+      "blockClass": "guitar-slider-mobile"
+    }
+  },
+  "flex-layout.col#guitar": {
+    "props": {
+      "blockClass": "guitars-column",
+      "width":"25%",
+      "verticalAlign": "middle",
+      "paddingLeft": {
+        "desktop": 5,
+        "tablet": 5,
+        "phone": 0
+      }
+    },
+    "children": ["stack-layout#info-card-guitar"]
+  },
+  "flex-layout.col#guitar-2": {
+    "props": {
+      "blockClass": "guitars-column",
+      "verticalAlign": "middle",
+      "paddingLeft": {
+        "desktop": 5,
+        "tablet": 5,
+        "phone": 0
+      }
+    },
+    "children": ["stack-layout#info-card-guitar"]
+  },
+  "stack-layout#info-card-guitar": {
+    "props": {
+      "blockClass": "info-card-guitar"
+    },
+    "children": ["image#info-card-guitar", "link#info-card-guitar-btn"]
+  },
+  "image#info-card-guitar": {
+    "props": {
+      "src": "/arquivos/home-info-card.jpg",
+      "blockClass": "info-card-guitar"
+    }
+  },
+  "link#info-card-guitar-btn": {
+    "props": {
+      "href": "/143?map=productClusterIds",
+      "label": "VER TODO",
+      "displayMode": "button",
+      "blockClass": "info-card-guitar-btn"
+    }
+  },
+  "flex-layout.col#know-more": {
+    "props": {
+      "blockClass": "know-more"
+    },
+    "children": [
+      "flex-layout.row#know-more"
+    ]
+  },
+  "flex-layout.row#know-more": {
+    "props": {
+      "colGap": 4,
+      "colSizing": "auto",
+      "marginTop": {
+        "tablet": 8,
+        "phone": 4
+      }
+    },
+    "children": [
+      "flex-layout.col#video-reviews", 
+      "flex-layout.col#instagram", 
+      "flex-layout.col#news"
+    ]
+  },
+  "flex-layout.col#video-reviews": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "image#video-reviews"
+    ]
+  },
+  "image#video-reviews": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex.file-manager-graphql/images/4d5256ba-7b96-4280-b3d0-76714960fd6b___b56777c9880bf256eb382ae3b65c1d77.jpg",
+      "link": "https://www.youtube.com/watch?v=pBlyNENLHvg&list=PLKTBEPJQc-P0jKmBpc8jY1duocjAoSGQP"
+    }
+  },
+  "flex-layout.col#instagram": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": ["image#instagram"]
+  },
+  "image#instagram": {
+    "props": {
+      "src": "/arquivos/Instagram-480x480.jpg",
+      "link": "https://www.instagram.com/casamarillacl/"
+    }
+  },
+  "flex-layout.col#news": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "image#news"
+    ]
+  },
+  "image#news": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex.file-manager-graphql/images/782d74c0-4772-47eb-9c6e-a2a5e4e4af61___63a485543cfd80c807eee6a731d68197.jpg",
+      "link": "https://www.youtube.com/watch?v=KisHm6iI0xY&list=PLKTBEPJQc-P3H1qcz_gJ5r60VlI7UMCbE"
+    }
+  },
+  /* MOBILE */
+  "responsive-layout.mobile#mobile-home": {
+    "children": [
+      "slider-layout#home-mobile", 
+      "slider-layout#benefits", 
+      "flex-layout.row#main-content-mobile"
+    ]
+  },
+  /* MAIN SLIDER MOBILE */
+  "slider-layout#home-mobile": {
+    "children": [
+      "image#slide-mobile-1", 
+      "image#slide-mobile-2", 
+      "image#slide-mobile-3", 
+      "image#slide-mobile-4"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": false
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "itemsPerPage": {
+        "phone": 1
+      },
+      "fullWidth": true,
+      "blockClass": "slider-home-mobile"
+    }
+  },
+  "image#slide-mobile-1": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex.file-manager-graphql/images/cb620149-1876-4c60-b4b2-3e8145a43b07___498833885aaf85a3ce7670bd6cbccc0a.jpg",
+      "link": "/142?map=productClusterIds",
+      "blockClass": "slider-home-mobile-img"
+    }
+  },
+  "image#slide-mobile-2": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex.file-manager-graphql/images/a99c0205-2dc3-4598-beea-d243faba7797___f5e66a0f4452b099570ee1898d31cf7b.jpg",
+      "link": "/141?map=productClusterIds",
+      "blockClass": "slider-home-mobile-img"
+    }
+  },
+  "image#slide-mobile-3": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex.file-manager-graphql/images/ce320d86-a006-405c-bbdf-411aedb095f7___2be64a28d307dc6e785a7cc2a7f35007.jpg",
+      "link": "/tiendas",
+      "blockClass": "slider-home-mobile-img"
+    }
+  },
+  "image#slide-mobile-4": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex.file-manager-graphql/images/25f041a1-ec7a-4fac-b41a-f9595084a7e4___a2c89f15e9178be1111b94f3e0ffdc60.jpg",
+      "link": "/ukeleles-y-otras-cuerdas",
+      "blockClass": "slider-home-mobile-img"
+    }
+  },
+  "modal-trigger#popup-mobile": {
+    "children": [
+      "modal-layout#popup-mobile"
+    ],
+    "props": {
+      "trigger": "load"
+    }
+  },
+  "modal-layout#popup-mobile": {
+    "children": [
+      "modal-header",
+      "image#popup-mobile"
+    ],
+    "props": {
+      "blockClass": "popup-wrapper"
+    }
+  },
+  "image#popup-mobile": {
+    "props": {
+      "src": "/arquivos/Pop_Up_Inventario_480X480_1.jpg",
+      "blockClass": [
+        "popup-image"
+      ]
+    }
+  },
+  "flex-layout.row#main-content-mobile": {
+    "props": {
+      "blockClass": "main-content-mobile"
+    },
+    "children": [
+      "list-context.product-list#favorite",
+      "slider-layout#brand-mobile",
+      "flex-layout.row#collection-guitars-wrapper",
+      "flex-layout.col#know-more"
+    ]
+  },
+  "flex-layout.row#collection-guitars-wrapper-mobile": {
+    "props": {
+      "marginTop": {
+        "tablet": 8,
+        "phone": 6
+      }
+    },
+    "children": ["flex-layout.col#collection-guitars-container-mobile"]
+  },
+  "flex-layout.col#collection-guitars-container-mobile": {
+    "props": {
+      "paddingLeft": 7,
+      "paddingRight": 7
+    },
+    "children": ["flex-layout.row#collection-guitars-mobile"]
+  },
+  "flex-layout.row#collection-guitars-mobile": {
+    "children": ["flex-layout.col#collection-mobile", "flex-layout.col#guitar-mobile"],
+    "props": {
+      "blockClass": "collection-guitars-mobile-container"
+    }
+  },
+  "flex-layout.col#collection-mobile": {
+    "children": ["list-context.product-list#shelf-guitar"]
+  },
+  "flex-layout.col#guitar-mobile": {
+    "children": ["stack-layout#info-card-guitar"]
+  }
+}

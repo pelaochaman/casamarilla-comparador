@@ -1,0 +1,20 @@
+.paper--popup-wrapper {
+  position: relative;
+  display: none;
+}
+
+.paper--popup-wrapper :global(.vtex-modal-layout-0-x-headerContainer) {
+  background: transparent;
+  position: absolute;
+  right: 0;
+  border: none;
+  display: none;
+}
+
+.container--popup-wrapper{
+  display: none;
+}
+
+/* :global(.vtex-modal-layout-0-x-modal--popup-wrapper){
+  display: none;
+} */

@@ -1,0 +1,77 @@
+
+//productos recomendados  
+.containerSugeridosMinicarro {
+  margin: 0 1rem 2rem 1rem;
+  .sugeridosBody {
+    .sugeridosTitulo {
+      .sugeridosTexto {
+        .sugeridosTextop {
+          text-align: center;
+          font-family: "Futura", sans-serif;
+          font-weight: 600;
+          font-size: 1.125rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .containerSlider {
+      .contenedorProd {
+        padding: 0.25rem;
+        .contenedorProducto {
+          flex-direction: column;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+          .imagen {
+            .imagen_img {
+              margin: 0 auto;            
+              max-width: 5.5rem;
+              max-height: 45px;
+              padding: 0.5rem 0.5rem 0 0.5rem;
+            }
+          }
+          .contenido {
+            height: 6.5rem;
+            padding: 0.5rem 0.25rem;
+            .nombre {
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              width: 100%;
+              overflow: hidden;
+              text-decoration: none;
+              color: #1d1d1b;
+              margin: 0;
+              font-size: 0.7rem;
+              margin: 0 0 0.25rem 0;
+            }
+            .contenedorVariants{
+              :global(.vtex-styleguide-9-x-dropdown){
+                :global(.vtex-dropdown__container){
+                  height: 2rem;
+                  border: 1px solid #afafaf;
+                  border-radius: 10px;
+                  :global(.vtex-dropdown__button ){
+                    margin: 0;
+                    padding: 0.25rem;
+                    :global(.vtex-dropdown__caption){
+                      font-size: 0.75rem;
+                    }
+                  }
+                }
+              }
+              .addToCart {
+                position: relative;
+                bottom: 1.5rem !important;
+                margin-left: 5rem !important;
+                border-radius: 20px;
+                border: none;
+                background: #03adea;
+                color: #fff;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

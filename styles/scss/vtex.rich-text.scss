@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap");
+
+/* NEWSLETTER */
+.wrapper--newsletter-subscribe {
+  margin-right: 2rem;
+}
+
+.paragraph--newsletter-subscribe {
+  font-size: 1.375rem;
+  color: #000;
+}
+
+/* FOOTER */
+.heading--footer-heading {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: normal;
+  margin: 0 0 0.75rem 0;
+}
+
+.paragraph--footer-text {
+  margin: 0.15rem 0;
+}
+
+.link--footer-text {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+/************************/
+/*******   HOME   *******/
+/************************/
+.container--favorites-slider-title,
+.container--guitars-slider-title {
+  margin: 50px 0 0 50px;
+}
+
+/************************/
+/***   PRODUCT PAGE   ***/
+/************************/
+
+/* Product Extra Info & Ratings */
+.wrapper--specifications-title .heading {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 16px 0;
+}
+
+/************************/
+/***   CONTACT PAGE   ***/
+/************************/
+.heading--contact {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.paragraph--cyber-title {
+  margin-top: 0;
+}
+
+.strong--favoritos-title {
+  font-size: 25px;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.link--cyber-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  margin-left: 10px;
+}
+
+.strong--inscripcion-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.container--cyber-title-big {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.paragraph--cyber-title-big {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+/* BLACK FRIDAY */
+.wrapper--black-friday-title {
+  color: #545454;
+}
+.headingLevel2--black-friday-title {
+  font-size: 1.3rem;
+}
+.wrapper--black-friday-category {
+  background-color: #545454;
+  width: 25rem;
+}
+.container--black-friday-category {
+  margin: 0.5rem auto;
+}
+.wrapper--decibel-title {
+  color: #545454;
+}
+.headingLevel2--decibel-title {
+  font-size: 1.3rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.wrapper--decibel-category {
+  background-color: #545454;
+  width: 25rem;
+}
+.container--decibel-category {
+  margin: 0.5rem auto;
+}
+.wrapper--btn-ofertas {
+  /* background-color: #545454; */
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+}
+.link--btn-ofertas {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.paragraph--btn-ofertas {
+  text-align: center;
+  margin: 5px 0;
+  width: 175px;
+  line-height: 1.1;
+}
+/* .paragraph--btn-ofertas{
+  text-align: center;
+  margin: revert;
+} */
+
+/* @media screen and (max-width: 1025px) {
+  :global(.vtex-slider-layout-0-x-paginationDotsContainer){
+    bottom: 5px !important;
+  }
+} */
+
+@media screen and (max-width: 1024px) {
+  .wrapper--newsletter-subscribe {
+    margin-right: 0;
+  }
+  .paragraph--cyber-title-big {
+    font-size: 20px;
+  }
+  .container--cyber-title {
+    display: none;
+  }
+  .paragraph--cyber-title-big {
+    margin-bottom: -45px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper--black-friday-category {
+    width: 23rem;
+  }
+  .paragraph--black-friday-category {
+    font-size: 1.4rem;
+  }
+  .headingLevel2--black-friday-title {
+    font-size: 1.2rem;
+  }
+  .wrapper--decibel-category {
+    width: 23rem;
+  }
+  .paragraph--decibel-category {
+    font-size: 1.4rem;
+  }
+  .headingLevel2--decibel-title {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .wrapper--btn-ofertas {
+    min-height: 85px;
+  }
+  .wrapper--btn-ofertas {
+    width: 160px;
+  }
+  .paragraph--btn-ofertas {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper--btn-ofertas {
+    min-height: 65px;
+  }
+  .paragraph--btn-ofertas {
+    padding: 0;
+  }
+}
+
+/************************/
+/***   INSCRIPCION MASTER   ***/
+/************************/
+
+.container--title-inscripcion-master{
+  margin: 10vh 0;
+}
+
+.wrapper--inscripcion-title {
+  width: 60%;
+
+  @media screen and (max-width:768px) {
+    width: 80%;
+  }
+}
+
+/************************/
+/*** FIN INSCRIPCION MASTER   ***/
+/************************/
+
+// Inicio landing cyber
+.heading--title-mid-cyber {
+  margin: 0 auto;
+}
+
+.wrapper--title-mid-cyber {
+  margin: 0 auto;
+}
+
+.heading--text-mid-cyber, .paragraph--text-mid-cyber {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .heading--title-newsletter, .heading--title-mid-cyber {
+    text-align: center;
+  }
+
+  .paragraph--text-newsletter {
+    text-align: justify;
+  }
+}
+// Fin landing cyber
+
+// Inicio contenido seo footer
+.wrapper--footer-text-seo-first {
+  padding-right: 2.5rem;
+}
+
+.paragraph--footer-title-seo-first, .paragraph--footer-text-seo-first, .paragraph--footer-text-seo-second {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.paragraph--footer-title-seo-first {
+  font-weight: 600;
+}
+
+.paragraph--footer-text-seo-first, .paragraph--footer-text-seo-second {
+  font-weight: 500;
+}
+
+.paragraph--footer-title-seo-second {
+  color: transparent;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 767px) {
+  .wrapper--footer-text-seo-first {
+    padding-right: 0;
+  }
+
+  .paragraph--footer-text-seo-first, .paragraph--footer-text-seo-second {
+    margin: 0;
+  }
+
+  .paragraph--footer-title-seo-second {
+    margin: 0;
+  }
+}
+// Fin contenido seo footer
+
+// Inicio home cyber
+.paragraph--title-vitrina-destacados-1, 
+.paragraph--title-vitrina-destacados-2 {
+  margin-top: 3rem;
+  text-align: center;
+}
+// Fin home cyber

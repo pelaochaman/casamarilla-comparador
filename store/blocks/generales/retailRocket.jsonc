@@ -1,0 +1,65 @@
+{
+    /* Retail Rocket: Bloque global */
+    "retail-rocket-container#exit-intent-bar": {
+      "props": {
+        "markupBlock": "5d4489f297a52537749536ea",
+        "type":"GLOBAL"
+      }
+    },
+    /* Retail Rocket: Bloque Home */
+    "retail-rocket-container#home": {
+      "props": {
+        "markupBlock": "5d448a1997a52537749536eb",
+        "type": "HOME"
+      }
+    },
+    /* Retail Rocket: Bloque Home 2*/
+    "retail-rocket-container#home2": {
+      "props": {
+        "markupBlock": "6217de8f97a5280e149a6f6e",
+        "type": "HOME"
+      }
+    },
+    /* Retail Rocket: Bloque Home 3*/
+    "retail-rocket-container#home3": {
+      "props": {
+        "markupBlock": "6217df1a97a5280e149a6f6f",
+        "type": "HOME"
+      }
+    },
+    /* Retail Rocket: Bloque Popular Category page 3*/
+    "retail-rocket-container#populares": {
+      "props": {
+          "type": "PLP",
+          "markupBlock": "5d448a3a97a52537749536ec"
+      }
+    },
+    /* Retail Rocket: Bloque Similar products - Product Page */
+    "retail-rocket-container#similar_products": {
+      "props": {
+        "markupBlock": "5d448a6b97a52537749536ed",
+        "type": "SIMILAR_PRODUCT"
+      }
+    },
+    /* Retail Rocket: Bloque Related products - Product Page */
+    "retail-rocket-container#related_products": {
+      "props": {
+        "markupBlock": "5d448a8997a52537749536ee",
+        "type": "RELATED_PRODUCT"
+      }
+    },
+    "retail-rocket-container#recommendations": {
+      "props": {
+        "markupBlock": "5d448afb97a52537749536f2",
+        "type": "PLP"
+      }
+    },
+    /* Retail Rocket: Bloque not found - search Page */
+    "retail-rocket-container#busqueda-vacia": {
+      "props": {
+        "markupBlock": "5d448ae197a52537749536f1",
+        "type": "PLP"
+      }
+    }
+    
+  }

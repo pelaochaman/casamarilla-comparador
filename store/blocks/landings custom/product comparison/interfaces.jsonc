@@ -1,0 +1,44 @@
+{
+    //search.jsonc | blocks-generales.jsonc | search-subCategory.jsonc 
+    "store.search.product-comparison": {
+        "around": [
+            "comparison-context-wrapper"
+        ]
+    },
+    "search-result-layout.desktop.product-comparison#search": {
+        "allowed": [
+            "product-comparison-drawer"
+        ]
+    },
+    //search-brand.jsonc
+    "store.search.product-comparison#brand": {
+        "around": [
+            "comparison-context-wrapper"
+        ]
+    },
+    "search-result-layout.desktop.product-comparison#brand": {
+        "allowed": [
+            "product-comparison-drawer"
+        ]
+    },
+    //search-category.jsonc y search-department.jsonc
+    "store.search.product-comparison#category": {
+        "around": [
+            "comparison-context-wrapper"
+        ]
+    },
+    "search-result-layout.desktop.product-comparison#category": {
+        "allowed": [
+            "product-comparison-drawer"
+        ]
+    },
+    //final
+    "store.product.product-comparison": {
+        "around": [
+            "comparison-context-wrapper"
+        ],
+        "allowed": [
+            "product-comparison-drawer"
+        ]
+    }
+}

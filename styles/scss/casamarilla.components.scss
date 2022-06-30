@@ -1,0 +1,63 @@
+.formMasterClass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .contForm {
+        width: 60%;
+
+        @media screen and (max-width: 768px) {
+            width: 80%;
+        }
+
+        .labelMasterForm, 
+        .selectMasterForm,
+        .inputMasterForm {
+            display: block;
+            width: 100%;
+        }
+
+        .selectMasterForm, 
+        .inputMasterForm {
+            height: 2.5rem;
+            box-sizing: border-box;
+            border: 2px solid #e3e4e6;
+            border-radius: 5px;
+        }
+
+        .labelMasterForm {
+            margin: 20px 0;
+            color: #3f3f40;
+        }
+
+        .enviarForm {
+            background-color: #000;
+            border: #000;
+            color: #fff;
+            border-radius: 0;
+            width: 150px;
+            height: 40px;
+            display: block;
+            margin: 5vh auto;
+        }
+
+        .error {
+            display: block;
+            background: red;
+            padding: 2%;
+            text-align: center;
+            color: white;
+            margin-top: 3%;
+        }
+
+        .success {
+            display: block;
+            background: forestgreen;
+            text-align: center;
+            color: white;
+            padding: 2%;
+            margin-top: 3%;
+        }
+    }
+
+}

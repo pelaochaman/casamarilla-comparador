@@ -1,0 +1,157 @@
+{
+    "store.custom#custom-landing-teclas": {
+        "blocks": [
+            "search-result-layout.customQuery#custom-landing-teclas"
+        ]
+    },
+    "search-result-layout.customQuery#custom-landing-teclas":{
+        "props": {
+            "querySchema": {
+                "maxItemsPerPage": 8,
+                "queryField": "159",
+                "mapField": "productClusterIds"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#black-friday-teclas",
+            "search-result-layout.mobile#black-friday-teclas",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#black-friday-teclas":{
+        "children": [
+            "responsive-layout.desktop#black-friday-teclas"
+        ]
+    },
+    "responsive-layout.desktop#black-friday-teclas": {
+        "props": {
+          "pagination": "show-more",
+          "showFacetQuantity": true
+        },
+        "children": [
+          "breadcrumb.search",
+          "order-by.v2",
+          "flex-layout.row#botones-promocion-teclas",
+          "flex-layout.row#result",
+          "search-fetch-more",
+          "search-products-count-per-page",
+          "search-products-progress-bar"
+        ]
+    },
+    "flex-layout.row#botones-promocion-teclas":{
+        "props": {
+          "blockClass": "black-friday-botones-container"
+        },
+        "children": [
+            "flex-layout.row#oferta-1-teclas",
+            "flex-layout.row#oferta-2-teclas"/* ,
+            "flex-layout.row#oferta-3-teclas" */
+        ]
+    },
+    "flex-layout.row#oferta-1-teclas":{
+        "children": [
+            "image#oferta-1-teclas",
+            "rich-text#oferta-1-teclas"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true,
+            "blockClass": "benefits-band-col"
+        }
+    },
+    "rich-text#oferta-1-teclas":{
+        "props": {
+            "text": "[Elige tu teclado y te llevas una funda o atril con 40% de descuentoa](/168?map=productClusterIds)",
+            "blockClass": "btn-ofertas"
+        }
+    },
+    "image#oferta-1-teclas":{
+        "props": {
+            "src": "/arquivos/ICONOS-(pack).png",
+            "blockClass": "contenerdor-btn-ofertas-1",
+            "link": {
+                "url": "/168?map=productClusterIds"
+            }
+        }
+    },
+    "flex-layout.row#oferta-2-teclas":{
+        "children": [
+            "image#oferta-2-teclas",
+            "rich-text#oferta-2-teclas"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true,
+            "blockClass": "benefits-band-col"
+        }        
+    },
+    "image#oferta-2-teclas":{
+        "props": {
+            "src": "/arquivos/ICONOS-(dcto-regular).png",
+            "blockClass": "contenerdor-btn-ofertas-1",
+            "link": {
+                "url": "/176?map=productClusterIds"
+            }
+        }
+    },
+    "rich-text#oferta-2-teclas":{
+        "props": {
+            "text": "[Encuentra nuestros descuentos especiales para cada producto](/176?map=productClusterIds)",
+            "blockClass": "btn-ofertas"
+        }
+    },
+    "flex-layout.row#oferta-3-teclas":{
+        "children": [
+            "image#oferta-3-teclas",
+            "rich-text#oferta-3-teclas"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true,
+            "blockClass": "benefits-band-col"
+        }
+
+    },
+    "image#oferta-3-teclas":{
+        "props": {
+            "src": "/arquivos/discount (1).png",
+            "blockClass": "contenerdor-btn-ofertas-1",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "rich-text#oferta-3-teclas":{
+        "props": {
+            "text": "[texto aquí](/",
+            "blockClass": "btn-ofertas"
+        }
+    },
+    "search-result-layout.mobile#black-friday-teclas":{
+        "props": {
+            "showFacetQuantity": true
+        },
+        "children": [
+            "breadcrumb.search",
+            "flex-layout.row#botones-promocion-teclas-mobile",
+            "flex-layout.row#filter-order",
+            "search-fetch-previous",
+            "search-content",
+            "search-fetch-more"
+        ]
+    },
+    "flex-layout.row#botones-promocion-teclas-mobile":{
+        "props": {
+          "blockClass": "black-friday-botones-container-mobile"
+        },
+        "children": [
+            "slider-layout#promociones-mobile-teclas"
+        ]
+    }
+}

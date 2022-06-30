@@ -1,0 +1,168 @@
+{
+  "store.custom#contact": {
+    "children": ["breadcrumb", "flex-layout.row#contact-us"]
+  },
+
+  "flex-layout.row#contact-us": {
+    "props": {
+      "blockClass": "contact"
+    },
+    "children": ["flex-layout.col#contact-us"]
+  },
+
+  "flex-layout.col#contact-us": {
+    "children": ["rich-text#contact-us", "tab-layout#contact-us"]
+  },
+  "rich-text#contact-us": {
+    "props": {
+      "text": "## Contacto",
+      "blockClass": "contact"
+    }
+  },
+  "tab-layout#contact-us": {
+    "children": ["tab-list#contact-us", "tab-content#contact-us"],
+    "props": {
+      "blockClass": "contact",
+      "defaultActiveTabId": "cotizacion"
+    }
+  },
+  "tab-list#contact-us": {
+    "children": ["tab-list.item#cotizacion", "tab-list.item#pedido", "tab-list.item#otros"]
+  },
+  "tab-list.item#cotizacion": {
+    "props": {
+      "tabId": "cotizacion",
+      "label": "Cotización",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#pedido": {
+    "props": {
+      "tabId": "pedido",
+      "label": "Sobre mi pedido"
+    }
+  },
+  "tab-list.item#otros": {
+    "props": {
+      "tabId": "otros",
+      "label": "Otras preguntas"
+    }
+  },
+  "tab-content#contact-us": {
+    "children": ["tab-content.item#cotizacion", "tab-content.item#pedido", "tab-content.item#otros"]
+  },
+  "tab-content.item#cotizacion": {
+    "children": ["form#cotizacion"],
+    "props": {
+      "tabId": "cotizacion"
+    }
+  },
+  "tab-content.item#pedido": {
+    "children": ["form#pedido"],
+    "props": {
+      "tabId": "pedido"
+    }
+  },
+  "tab-content.item#otros": {
+    "children": ["form#otros"],
+    "props": {
+      "tabId": "otros"
+    }
+  },
+
+  "form#cotizacion": {
+    "props": {
+      "entity": "CT",
+      "schema": "Cotizacion"
+    },
+    "blocks": ["form-success#contact-us"],
+    "children": [
+      "form-input.text#rut",
+      "form-input.text#email",
+      "form-input.text#razon-social",
+      "form-input.textarea#mensaje",
+      "form-submit#contact"
+    ]
+  },
+
+  "form#pedido": {
+    "props": {
+      "entity": "SP",
+      "schema": "Sobre mi Pedido"
+    },
+    "blocks": ["form-success#contact-us"],
+    "children": [
+      "form-input.text#nombre",
+      "form-input.text#email",
+      "form-input.text#numero-pedido",
+      "form-input.textarea#mensaje",
+      "form-submit#contact"
+    ]
+  },
+
+  "form#otros": {
+    "props": {
+      "entity": "OT",
+      "schema": "Otras Preguntas"
+    },
+    "blocks": ["form-success#contact-us"],
+    "children": [
+      "form-input.text#nombre",
+      "form-input.text#email",
+      "form-input.textarea#mensaje",
+      "form-submit#contact"
+    ]
+  },
+
+  "form-success#contact-us": {
+    "children": ["rich-text#success-submit"]
+  },
+  "rich-text#success-submit": {
+    "props": {
+      "text": "## Gracias por contactarnos! Le responderemos a la brevedad.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-input.text#rut": {
+    "props": {
+      "label": "RUT",
+      "pointer": "#/properties/rut"
+    }
+  },
+  "form-input.text#razon-social": {
+    "props": {
+      "label": "Razón Social",
+      "pointer": "#/properties/razonSocial"
+    }
+  },
+  "form-input.text#nombre": {
+    "props": {
+      "label": "Nombre Completo",
+      "pointer": "#/properties/nombre"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "label": "Email",
+      "pointer": "#/properties/email"
+    }
+  },
+  "form-input.text#numero-pedido": {
+    "props": {
+      "label": "Número de pedido",
+      "pointer": "#/properties/pedido"
+    }
+  },
+  "form-input.textarea#mensaje": {
+    "props": {
+      "label": "Mensaje",
+      "pointer": "#/properties/mensaje"
+    }
+  },
+  "form-submit#contact": {
+    "props": {
+      "label": "Enviar"
+    }
+  }
+}

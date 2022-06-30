@@ -1,0 +1,305 @@
+{
+  /* DESKTOP */
+  "vtex.menu@2.x:menu#categorias-desktop": {
+    "children": ["menu-item#categorias-desktop"],
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": "menu-categorias"
+    }
+  },
+  "menu-item#categorias-desktop": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+        "text": "Categorias",
+        "href": "#"
+      },
+      "iconProps": {
+        "id": "hpa-hamburguer-menu",
+        "size": 16,
+        "viewBox": "0 0 16 16"
+      },
+      "blockClass": "menu-item-categorias"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#categorias"]
+  },
+  "vtex.menu@2.x:submenu#categorias": {
+    "children": [
+      "menu-item#audio",
+      "menu-item#bajos",
+      "menu-item#baterias-y-percusion",
+      "menu-item#guitarras",
+      /*"menu-item#merchandising",*/
+      "menu-item#teclas",
+      "menu-item#ukeleles-y-otras-cuerdas",
+      "menu-item#vientos"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-categorias"
+    }
+  },
+  /* MOBILE */
+  /* AUDIO */
+  "flex-layout.row#audio-mobile": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "category-menu-row-mobile"
+    },
+    "children": ["menu-item#audio-mobile", "drawer#audio-mobile"]
+  },
+  "drawer#audio-mobile": {
+    "props": {
+      "maxWidth": "400px",
+      "isFullWidth": true,
+      "blockClass": "category-submenu-drawer-mobile"
+    },
+    "children": [
+      "menu-item#subcat-audio-accesorios",
+      /*"menu-item#subcat-audio-amplificadorSonido",*/
+      "menu-item#subcat-audio-atriles",
+      "menu-item#subcat-audio-audifonos",
+      "menu-item#subcat-audio-audioPro",
+      "menu-item#subcat-audio-cables",
+      /*"menu-item#subcat-audio-cajasAcusticas",*/
+      "menu-item#subcat-audio-microfonos",
+      "menu-item#subcat-audio-mixerInterfaz",
+      "menu-item#subcat-audio-monitores"
+    ],
+    "blocks": ["drawer-trigger#category-menu-mobile"]
+  },
+  "drawer-trigger#category-menu-mobile": {
+    "children": ["menu-item#category-drawer-open-btn"]
+  },
+
+  /* BAJOS */
+  "flex-layout.row#bajos-mobile": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "category-menu-row-mobile"
+    },
+    "children": ["menu-item#bajos-mobile", "drawer#bajos-mobile"]
+  },
+  "drawer#bajos-mobile": {
+    "props": {
+      "maxWidth": "400px",
+      "isFullWidth": true,
+      "blockClass": "category-submenu-drawer-mobile"
+    },
+    "children": [
+      "menu-item#subcat-bajos-electricos",
+      "menu-item#subcat-bajos-electroacusticos",
+      "menu-item#subcat-bajos-fundasCases",
+      "menu-item#subcat-bajos-amplificadoresPedales",
+      "menu-item#subcat-bajos-amplificadoresPedales-amplificadores",
+      /*"menu-item#subcat-bajos-amplificadoresPedales-efectosPedales",*/
+      /*"menu-item#subcat-bajos-amplificadoresPedales-repuestos",*/
+      "menu-item#subcat-bajos-accesorios",
+      "menu-item#subcat-bajos-accesorios-afinadores",
+      "menu-item#subcat-bajos-accesorios-atriles",
+      "menu-item#subcat-bajos-accesorios-cables",
+      "menu-item#subcat-bajos-accesorios-capsulasRepuestos",
+      "menu-item#subcat-bajos-accesorios-cuerdas",
+      "menu-item#subcat-bajos-accesorios-strap"
+    ],
+    "blocks": ["drawer-trigger#category-menu-mobile"]
+  },
+
+  /* BATERIAS Y PERCUSION */
+  "flex-layout.row#baterias-y-percusion-mobile": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "category-menu-row-mobile"
+    },
+    "children": ["menu-item#baterias-y-percusion-mobile", "drawer#baterias-y-percusion-mobile"]
+  },
+  "drawer#baterias-y-percusion-mobile": {
+    "props": {
+      "maxWidth": "400px",
+      "isFullWidth": true,
+      "blockClass": "category-submenu-drawer-mobile"
+    },
+    "children": [
+      "menu-item#subcat-bateriasPercusion-bateriaAcustica",
+      "menu-item#subcat-bateriasPercusion-bateriaElectrica",
+      "menu-item#subcat-bateriasPercusion-bongoes",
+      /*"menu-item#subcat-bateriasPercusion-cajones",*/
+      "menu-item#subcat-bateriasPercusion-congas",
+      /*"menu-item#subcat-bateriasPercusion-metalofonos",*/
+      "menu-item#subcat-bateriasPercusion-percusion",
+      "menu-item#subcat-bateriasPercusion-platillos",
+      /*"menu-item#subcat-bateriasPercusion-timbaletas",*/
+      "menu-item#subcat-bateriasPercusion-accesorios",
+      "menu-item#subcat-bateriasPercusion-accesorios-afinador",
+      "menu-item#subcat-bateriasPercusion-accesorios-atriles",
+      "menu-item#subcat-bateriasPercusion-accesorios-baquetas",
+      "menu-item#subcat-bateriasPercusion-accesorios-hardware",
+      "menu-item#subcat-bateriasPercusion-accesorios-parches"
+      /*"menu-item#subcat-bateriasPercusion-accesorios-repuestos"*/
+    ],
+    "blocks": ["drawer-trigger#category-menu-mobile"]
+  },
+
+  /* GUITARRAS */
+  "flex-layout.row#guitarras-mobile": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "category-menu-row-mobile"
+    },
+    "children": ["menu-item#guitarras-mobile", "drawer#guitarras-mobile"]
+  },
+  "drawer#guitarras-mobile": {
+    "props": {
+      "maxWidth": "400px",
+      "isFullWidth": true,
+      "blockClass": "category-submenu-drawer-mobile"
+    },
+    "children": [
+      "menu-item#subcat-guitarras-electricas",
+      "menu-item#subcat-guitarras-electroacusticas",
+      "menu-item#subcat-guitarras-fundasCases",
+      "menu-item#subcat-guitarras-acustica",
+      "menu-item#subcat-guitarras-amplificadoresPedales",
+      "menu-item#subcat-guitarras-amplificadoresPedales-amplificadores",
+      "menu-item#subcat-guitarras-amplificadoresPedales-efectosPedales",
+      /*"menu-item#subcat-guitarras-amplificadoresPedales-repuestos",*/
+      "menu-item#subcat-guitarras-accesorios",
+      "menu-item#subcat-guitarras-accesorios-afinadores",
+      "menu-item#subcat-guitarras-accesorios-atriles",
+      "menu-item#subcat-guitarras-accesorios-cables",
+      "menu-item#subcat-guitarras-accesorios-capo",
+      "menu-item#subcat-guitarras-accesorios-capsulasRepuestos",
+      "menu-item#subcat-guitarras-accesorios-cuerdas",
+      "menu-item#subcat-guitarras-accesorios-strap",
+      "menu-item#subcat-guitarras-accesorios-unetas"
+    ],
+    "blocks": ["drawer-trigger#category-menu-mobile"]
+  },
+
+  /* TECLAS */
+  "flex-layout.row#teclas-mobile": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "category-menu-row-mobile"
+    },
+    "children": ["menu-item#teclas-mobile", "drawer#teclas-mobile"]
+  },
+  "drawer#teclas-mobile": {
+    "props": {
+      "maxWidth": "400px",
+      "isFullWidth": true,
+      "blockClass": "category-submenu-drawer-mobile"
+    },
+    "children": [
+      "menu-item#subcat-teclas-sintetizadoresControladores",
+      "menu-item#subcat-teclas-acordeones",
+      "menu-item#subcat-teclas-melodicas",
+      "menu-item#subcat-teclas-pianos-digitales",
+      /*"menu-item#subcat-teclas-pianos-acusticos",*/
+      "menu-item#subcat-teclas-teclados",
+      "menu-item#subcat-teclas-accesorios",
+      "menu-item#subcat-teclas-accesorios-afinador",
+      /*"menu-item#subcat-teclas-accesorios-banquetas",*/
+      "menu-item#subcat-teclas-accesorios-cablesPedales",
+      "menu-item#subcat-teclas-accesorios-fundasAtriles",
+      "menu-item#subcat-teclas-accesorios-strap"
+    ],
+    "blocks": ["drawer-trigger#category-menu-mobile"]
+  },
+
+  /* UKELELES Y OTRAS CUERDAS */
+  "flex-layout.row#ukeleles-y-otras-cuerdas-mobile": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "category-menu-row-mobile"
+    },
+    "children": [
+      "menu-item#ukeleles-y-otras-cuerdas-mobile",
+      "drawer#ukeleles-y-otras-cuerdas-mobile"
+    ]
+  },
+  "drawer#ukeleles-y-otras-cuerdas-mobile": {
+    "props": {
+      "maxWidth": "400px",
+      "isFullWidth": true,
+      "blockClass": "category-submenu-drawer-mobile"
+    },
+    "children": [
+      /*"menu-item#subcat-ukelelesCuerdas-cuerdasFolclor",*/
+      "menu-item#subcat-ukelelesCuerdas-cuerdasFrotadas",
+      "menu-item#subcat-ukelelesCuerdas-fundas",
+      "menu-item#subcat-ukelelesCuerdas-ukeleles",
+      "menu-item#subcat-ukelelesCuerdas-accesorios",
+      "menu-item#subcat-ukelelesCuerdas-accesorios-afinador",
+      "menu-item#subcat-ukelelesCuerdas-accesorios-atril",
+      "menu-item#subcat-ukelelesCuerdas-accesorios-cables",
+      /*"menu-item#subcat-ukelelesCuerdas-accesorios-capo",*/
+      "menu-item#subcat-ukelelesCuerdas-accesorios-cuerdas"
+      /*"menu-item#subcat-ukelelesCuerdas-accesorios-strap"*/
+    ],
+    "blocks": ["drawer-trigger#category-menu-mobile"]
+  },
+
+  /* VIENTOS */
+  "flex-layout.row#vientos-mobile": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "category-menu-row-mobile"
+    },
+    "children": ["menu-item#vientos-mobile", "drawer#vientos-mobile"]
+  },
+  "drawer#vientos-mobile": {
+    "props": {
+      "maxWidth": "400px",
+      "isFullWidth": true,
+      "blockClass": "category-submenu-drawer-mobile"
+    },
+    "children": [
+      "menu-item#subcat-vientos-accesorios",
+      "menu-item#subcat-vientos-armonicas",
+      "menu-item#subcat-vientos-atriles",
+      "menu-item#subcat-vientos-bronces",
+      "menu-item#subcat-vientos-canasBoquillas",
+      "menu-item#subcat-vientos-flautaDulce"
+      /*"menu-item#subcat-vientos-maderas",*/
+      /*"menu-item#subcat-vientos-mantencionLimpieza"*/
+    ],
+    "blocks": ["drawer-trigger#category-menu-mobile"]
+  },
+
+  /* SEARCH BAR */
+  "vtex.menu@2.x:menu#search-bar-mobile": {
+    "children": ["menu-item#search-bar-mobile"],
+    "props": {
+      "blockClass": "menu-search"
+    }
+  },
+  "menu-item#search-bar-mobile": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+        "href": "#"
+      },
+      "iconProps": {
+        "id": "hpa-search",
+        "size": 16,
+        "viewBox": "0 0 16 16"
+      },
+      "blockClass": "menu-item-search"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#search-mobile"]
+  },
+  "vtex.menu@2.x:submenu#search-mobile": {
+    "children": ["search-bar#mobile"],
+    "props": {
+      "blockClass": "search-bar-wrapper"
+    }
+  }
+}

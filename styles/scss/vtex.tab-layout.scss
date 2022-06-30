@@ -1,0 +1,23 @@
+.contentContainer {
+  margin-top: 30px;
+}
+
+.contentItem :global(.vtex-input__label),
+.contentItem :global(.vtex-textarea__label) {
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+}
+
+.contentItem :global(.vtex-input-prefix__group),
+.contentItem :global(.vtex-textarea__input) {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 0;
+}
+
+.contentItem :global(.vtex-styleguide-9-x-input),
+.contentItem :global(.vtex-textarea__input) {
+  border: 1px solid #848484;
+  border-radius: 0;
+}

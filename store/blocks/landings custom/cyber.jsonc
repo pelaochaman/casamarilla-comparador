@@ -1,0 +1,503 @@
+{
+  "store.custom#cyber": {
+    "blocks": [
+      "responsive-layout.desktop#desktop-cyber", "responsive-layout.mobile#mobile-cyber"
+      ]
+  },
+  "responsive-layout.desktop#desktop-cyber": {
+    "children": ["flex-layout.row#cyber-container-desktop"]
+  },
+  "flex-layout.row#cyber-container-desktop": {
+    "props": {
+      "blockClass": "cyber-container"
+    },
+    "children": ["flex-layout.col#cyber-wrapper-desktop"]
+  },
+  "flex-layout.col#cyber-wrapper-desktop": {
+    "props": {
+      "blockClass": "cyber-wrapper",
+      "preventHorizontalStretch": true
+    },
+    "children": ["flex-layout.row#cyber-countdown", "flex-layout.row#cyber-top", "flex-layout.row#benefits",  "flex-layout.col#cyber-middle", "rich-text#title-cyber-title-2", "flex-layout.col#cyber-bottom"]
+  },
+  "flex-layout.row#cyber-top": {
+    "props": {
+      "blockClass": "cyber-top",
+      "preventHorizontalStretch": true
+    },
+    "children": ["flex-layout.col#cyber-top-1", "flex-layout.col#cyber-top-2", "flex-layout.col#cyber-top-3"]
+  },
+  "flex-layout.col#cyber-top-1": {
+    "props": {
+      "blockClass": "cyber-top-item-horizontal",
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#cyber-top-1"]
+  },
+  "image#cyber-top-1": {
+    "props": {
+      "width": 305,
+      "height": 600,
+      "src": "arquivos/VIENTOS-305X600.jpg",
+      "link": "/154",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "flex-layout.col#cyber-top-2": {
+    "props": {
+      "blockClass": "cyber-top-item",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": ["image#cyber-top-2-1", "image#cyber-top-2-2"]
+  },
+  "image#cyber-top-2-1": {
+    "props": {
+      "src": "arquivos/AUDIO2-610X300.jpg",
+      "link": "/150",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "image#cyber-top-2-2": {
+    "props": {
+      "src": "arquivos/TECLAS-610X300.jpg",
+      "link": "/153",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "flex-layout.col#cyber-top-3": {
+    "props": {
+      "blockClass": "cyber-top-item",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+
+    },
+    "children": ["image#cyber-top-3-1", "image#cyber-top-3-2"]
+  },
+  "image#cyber-top-3-1": {
+    "props": {
+      "src": "arquivos/PERCUSION-610X300.jpg",
+      "link": "/152",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "image#cyber-top-3-2": {
+    "props": {
+      "src": "arquivos/CUERDAS-610X300.jpg",
+      "link": "/151",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "flex-layout.row#cyber-countdown": {
+    "props": {
+      "blockClass": "cyber-countdown"
+    },
+    "children": ["countdown"]
+  },
+  "flex-layout.col#cyber-middle": {
+    "props": {
+      "blockClass": "cyber-middle",
+      "preventHorizontalStretch": true
+    },
+    "children": ["flex-layout.row#cyber-middle-1", "flex-layout.row#cyber-middle-2", "flex-layout.row#cyber-middle-3", "flex-layout.row#cyber-middle-4", "flex-layout.row#cyber-middle-5"]
+  },
+  "flex-layout.row#cyber-middle-1": {
+    "props": {
+      "blockClass": "cyber-middle-row",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#cyber-middle-1-rowchild-1", "flex-layout.row#cyber-middle-1-rowchild-2"]
+  },
+  "flex-layout.col#cyber-middle-1-rowchild-1": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "25%"
+    },
+    "children": ["rich-text#title-cyber-middle-1", "image#cyber-middle-1"]
+  },
+  "flex-layout.row#cyber-middle-1-rowchild-2": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "75%"
+    },
+    "children": [ "shelf#Cyber-1"]
+  },
+  "rich-text#title-cyber-middle-1": {
+    "props": {
+      "text": " [AUDIO](#) ",
+      "blockClass": "cyber-title"
+    }
+  },
+  "image#cyber-middle-1": {
+    "props": {
+      "width": 350,
+      "src": "arquivos/AUDIO2-350.jpg",
+      "link": "/150",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "flex-layout.row#cyber-middle-2": {
+    "props": {
+      "blockClass": "cyber-middle-row",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#cyber-middle-2-rowchild-1", "flex-layout.row#cyber-middle-2-rowchild-2"]
+  },
+  "flex-layout.col#cyber-middle-2-rowchild-1": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "25%"
+    },
+    "children": ["rich-text#title-cyber-middle-2", "image#cyber-middle-2"]
+  },
+  "flex-layout.row#cyber-middle-2-rowchild-2": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "75%"
+    },
+    "children": [ "shelf#Cyber-2"]
+  },
+  "rich-text#title-cyber-middle-2": {
+    "props": {
+      "text": " [TECLAS](#) ",
+      "blockClass": "cyber-title"
+    }
+  },
+  "image#cyber-middle-2": {
+    "props": {
+      "width": 350,
+      "src": "arquivos/TECLAS-350.jpg",
+      "link": "/153",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "flex-layout.row#cyber-middle-3": {
+    "props": {
+      "blockClass": "cyber-middle-row",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#cyber-middle-3-rowchild-1", "flex-layout.row#cyber-middle-3-rowchild-2"]
+  },
+  "flex-layout.col#cyber-middle-3-rowchild-1": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "25%"
+    },
+    "children": ["rich-text#title-cyber-middle-3", "image#cyber-middle-3"]
+  },
+  "flex-layout.row#cyber-middle-3-rowchild-2": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "75%"
+    },
+    "children": [ "shelf#Cyber-3"]
+  },
+  "rich-text#title-cyber-middle-3": {
+    "props": {
+      "text": " [PERCUSION](#) ",
+      "blockClass": "cyber-title"
+    }
+  },
+  "image#cyber-middle-3": {
+    "props": {
+      "width": 350,
+      "src": "arquivos/PERCUSION-350.jpg",
+      "link": "/152",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "flex-layout.row#cyber-middle-4": {
+    "props": {
+      "blockClass": "cyber-middle-row",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#cyber-middle-4-rowchild-1", "flex-layout.row#cyber-middle-4-rowchild-2"]
+  },
+  "flex-layout.col#cyber-middle-4-rowchild-1": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "25%"
+    },
+    "children": ["rich-text#title-cyber-middle-4", "image#cyber-middle-4"]
+  },
+  "flex-layout.row#cyber-middle-4-rowchild-2": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "75%"
+    },
+    "children": [ "shelf#Cyber-4"]
+  },
+  "rich-text#title-cyber-middle-4": {
+    "props": {
+      "text": " [VIENTOS](#) ",
+      "blockClass": "cyber-title"
+    }
+  },
+  "image#cyber-middle-4": {
+    "props": {
+      "width": 350,
+      "src": "arquivos/VIENTOS-350.jpg",
+      "link": "/154",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "flex-layout.row#cyber-middle-5": {
+    "props": {
+      "blockClass": "cyber-middle-row",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#cyber-middle-5-rowchild-1", "flex-layout.row#cyber-middle-5-rowchild-2"]
+  },
+  "flex-layout.col#cyber-middle-5-rowchild-1": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "25%"
+    },
+    "children": ["rich-text#title-cyber-middle-5", "image#cyber-middle-5"]
+  },
+  "flex-layout.row#cyber-middle-5-rowchild-2": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "75%"
+    },
+    "children": [ "shelf#Cyber-5"]
+  },
+  "rich-text#title-cyber-middle-5": {
+    "props": {
+      "text": " [CUERDAS](#) ",
+      "blockClass": "cyber-title"
+    }
+  },
+  "image#cyber-middle-5": {
+    "props": {
+      "width": 350,
+      "src": "arquivos/CUERDAS-350.jpg",
+      "link": "/151",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "flex-layout.col#cyber-bottom": {
+    "props": {
+      "blockClass": "cyber-bottom"
+    },
+    "children": ["slider-layout#brand-desktop"]
+  },
+  "rich-text#title-cyber-title-2": {
+    "props": {
+      "text": " MARCAS PARTICIPANTES ",
+      "blockClass": "cyber-title-big"
+    }
+  },
+  ///////// MOBILE ////////
+  "responsive-layout.mobile#mobile-cyber": {
+    "children": ["flex-layout.row#cyber-container-mobile"]
+  },
+  "flex-layout.row#cyber-container-mobile": {
+    "props": {
+      "blockClass": "cyber-container"
+    },
+    "children": ["flex-layout.col#cyber-wrapper-mobile"]
+  },
+  "flex-layout.col#cyber-wrapper-mobile": {
+    "props": {
+      "blockClass": "cyber-wrapper",
+      "preventHorizontalStretch": true
+    },
+    "children": ["flex-layout.row#cyber-countdown", "flex-layout.row#cyber-top-mobile", "slider-layout#benefits", "flex-layout.col#cyber-middle-mobile", "rich-text#title-cyber-title-2", "flex-layout.col#cyber-bottom-mobile"]
+  },
+  "flex-layout.row#cyber-top-mobile": {
+    "props": {
+      "blockClass": "cyber-top",
+      "preventHorizontalStretch": true
+    },
+    "children": ["slider-layout#cyber-mobile"]
+  },
+  "flex-layout.col#cyber-middle-mobile": {
+    "props": {
+      "blockClass": "cyber-middle",
+      "preventHorizontalStretch": true
+    },
+    "children": ["flex-layout.row#cyber-middle-1-mobile", "flex-layout.row#cyber-middle-2-mobile", "flex-layout.row#cyber-middle-3-mobile", "flex-layout.row#cyber-middle-4-mobile", "flex-layout.row#cyber-middle-5-mobile"]
+  },
+  "flex-layout.row#cyber-middle-1-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-row",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#cyber-middle-1-rowchild-1-mobile", "flex-layout.row#cyber-middle-1-rowchild-2-mobile"]
+  },
+  "flex-layout.col#cyber-middle-1-rowchild-1-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "25%"
+    },
+    "children": ["rich-text#title-cyber-middle-1-mobile", "image#cyber-middle-1-mobile"]
+  },
+  "flex-layout.row#cyber-middle-1-rowchild-2-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "75%"
+    },
+    "children": [ "shelf#Cyber-1"]
+  },
+  "rich-text#title-cyber-middle-1-mobile": {
+    "props": {
+      "text": " [AUDIO](#) ",
+      "blockClass": "cyber-title"
+    }
+  },
+  "image#cyber-middle-1-mobile": {
+    "props": {
+      "width": 320,
+      "src": "arquivos/audio_320.jpg",
+      "link": "/150",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "flex-layout.row#cyber-middle-2-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-row",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#cyber-middle-2-rowchild-1-mobile", "flex-layout.row#cyber-middle-2-rowchild-2-mobile"]
+  },
+  "flex-layout.col#cyber-middle-2-rowchild-1-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "25%"
+    },
+    "children": ["rich-text#title-cyber-middle-2-mobile", "image#cyber-middle-2-mobile"]
+  },
+  "flex-layout.row#cyber-middle-2-rowchild-2-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "75%"
+    },
+    "children": [ "shelf#Cyber-2"]
+  },
+  "rich-text#title-cyber-middle-2-mobile": {
+    "props": {
+      "text": " [TECLAS](#) ",
+      "blockClass": "cyber-title"
+    }
+  },
+  "image#cyber-middle-2-mobile": {
+    "props": {
+      "width": 320,
+      "src": "arquivos/telas_320.jpg",
+      "link": "/153",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "flex-layout.row#cyber-middle-3-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-row",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#cyber-middle-3-rowchild-1-mobile", "flex-layout.row#cyber-middle-3-rowchild-2-mobile"]
+  },
+  "flex-layout.col#cyber-middle-3-rowchild-1-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "25%"
+    },
+    "children": ["rich-text#title-cyber-middle-3-mobile", "image#cyber-middle-3-mobile"]
+  },
+  "flex-layout.row#cyber-middle-3-rowchild-2-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "75%"
+    },
+    "children": [ "shelf#Cyber-3"]
+  },
+  "rich-text#title-cyber-middle-3-mobile": {
+    "props": {
+      "text": " [PERCUSION](#) ",
+      "blockClass": "cyber-title"
+    }
+  },
+  "image#cyber-middle-3-mobile": {
+    "props": {
+      "width": 320,
+      "src": "arquivos/percusión_320.jpg",
+      "link": "/152",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "flex-layout.row#cyber-middle-4-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-row",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#cyber-middle-4-rowchild-1-mobile", "flex-layout.row#cyber-middle-4-rowchild-2-mobile"]
+  },
+  "flex-layout.col#cyber-middle-4-rowchild-1-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "25%"
+    },
+    "children": ["rich-text#title-cyber-middle-4-mobile", "image#cyber-middle-4-mobile"]
+  },
+  "flex-layout.row#cyber-middle-4-rowchild-2-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "75%"
+    },
+    "children": [ "shelf#Cyber-4"]
+  },
+  "rich-text#title-cyber-middle-4-mobile": {
+    "props": {
+      "text": " [VIENTOS](#) ",
+      "blockClass": "cyber-title"
+    }
+  },
+  "image#cyber-middle-4-mobile": {
+    "props": {
+      "width": 320,
+      "src": "arquivos/vientos_320.jpg",
+      "link": "/154",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "flex-layout.row#cyber-middle-5-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-row",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#cyber-middle-5-rowchild-1-mobile", "flex-layout.row#cyber-middle-5-rowchild-2-mobile"]
+  },
+  "flex-layout.col#cyber-middle-5-rowchild-1-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "25%"
+    },
+    "children": ["rich-text#title-cyber-middle-5-mobile", "image#cyber-middle-5-mobile"]
+  },
+  "flex-layout.row#cyber-middle-5-rowchild-2-mobile": {
+    "props": {
+      "blockClass": "cyber-middle-rowchild",
+      "width": "75%"
+    },
+    "children": [ "shelf#Cyber-5"]
+  },
+  "rich-text#title-cyber-middle-5-mobile": {
+    "props": {
+      "text": " [CUERDAS](#) ",
+      "blockClass": "cyber-title"
+    }
+  },
+  "image#cyber-middle-5-mobile": {
+    "props": {
+      "width": 320,
+      "src": "arquivos/cuerdas_320.jpg",
+      "link": "/151",
+      "blockClass": ["cyber-shelf-image"]
+    }
+  },
+  "flex-layout.col#cyber-bottom-mobile": {
+    "props": {
+      "blockClass": "cyber-bottom"
+    },
+    "children": ["slider-layout#brand-mobile"]
+  }
+}

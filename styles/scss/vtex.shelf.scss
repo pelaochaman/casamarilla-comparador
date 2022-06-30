@@ -1,0 +1,37 @@
+.dot--isActive {
+  background-color: #000;
+}
+
+.container--shelf-cyber {
+  width: calc(100% - 300px);
+  padding-top: 0;
+}
+
+.slide--shelf-cyber {
+  margin: 0 5px;
+}
+
+.title--shelf-cyber {
+  display: none;
+}
+
+.slide--recomendados {
+  padding-bottom: 25px;
+}
+
+.container--shelf-cyber {
+  padding: 0;
+}
+
+.shelfContentContainer--recomendados {
+  padding-bottom: 50px;
+}
+
+/************************/
+/***   PRODUCT PAGE   ***/
+/************************/
+@media screen and (max-width: 640px) {
+  .relatedProducts :global(.vtex-shelf-1-x-title) {
+    font-size: 24px;
+  }
+}

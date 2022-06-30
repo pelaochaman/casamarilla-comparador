@@ -1,0 +1,234 @@
+{
+  "store.custom#terms-and-conditions": {
+    "blocks": ["flex-layout.row#terms-and-conditions"]
+  },
+  "flex-layout.row#terms-and-conditions": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "terms-and-conditions-container"
+    },
+    "children": [
+      "rich-text#page-title",
+      "rich-text#introduction",
+      "rich-text#title-1",
+      "rich-text#text-1",
+      "rich-text#title-2",
+      "rich-text#text-2",
+      "rich-text#title-3",
+      "rich-text#text-3",
+      "rich-text#title-4",
+      "rich-text#text-4",
+      "rich-text#title-5",
+      "rich-text#text-5",
+      "rich-text#title-6",
+      "rich-text#text-6",
+      "rich-text#title-7",
+      "rich-text#text-7",
+      "rich-text#title-8",
+      "rich-text#text-8",
+      "rich-text#title-9",
+      "rich-text#text-9",
+      "rich-text#title-10",
+      "rich-text#text-10",
+      "rich-text#title-11",
+      "rich-text#text-11",
+      "rich-text#title-12",
+      "rich-text#text-12",
+      "rich-text#title-13",
+      "rich-text#text-13",
+      "rich-text#title-14",
+      "rich-text#text-14",
+      "rich-text#title-15",
+      "rich-text#text-15",
+      "rich-text#title-16",
+      "rich-text#text-16",
+      "rich-text#title-17",
+      "rich-text#text-17"
+    ]
+  },
+  "rich-text#page-title": {
+    "props": {
+      "text": "# TÉRMINOS Y CONDICIONES"
+    }
+  },
+  "rich-text#introduction": {
+    "props": {
+      "text": "Las ventas por internet de Casa Amarilla, en adelante “catálogo de ventas web”, operan en el sitio web www.casamarilla.cl, de propiedad de Francisco Regúlez y CIA LTDA, RUT 81.569.800-2, en adelante “CASA AMARILLA”. Este sitio web es una plataforma para la exhibición y venta de productos tales como instrumentos musicales, equipos de amplificación, repuestos y accesorios para instrumentos musicales y otros de similar índole. Todos los usos, los contratos y transacciones que se efectúen en el catálogo de ventas web, como asimismo sus efectos jurídicos, se sujetan a los presentes términos y condiciones, así como a la legislación chilena vigente, en particular a la Ley sobre Protección de los Derechos de los Consumidores."
+    }
+  },
+  "rich-text#title-1": {
+    "props": {
+      "text": "#### 1.- Condiciones de Uso:"
+    }
+  },
+  "rich-text#text-1": {
+    "props": {
+      "text": "Las siguientes son las condiciones generales de uso del catálogo de ventas web de Casa Amarilla:\n1.1.- El acto de registro del usuario o bien la compra usando el “catálogo de ventas web” implican el conocimiento y aceptación de los presentes Términos y Condiciones.\n1.2.- La identificación del cliente con su nombre completo, Rut, dirección particular, correo electrónico y número de teléfono es condición necesaria para realizar compras usando el “catálogo de ventas web”.\n1.3.- En el evento que accedas a nuestro sitio web, te informamos que podremos almacenar en tu computadora o dispositivo móvil un archivo o cookie que puede resultar de utilidad tanto para nosotros como para ti. Una cookie es un tipo especial de archivo que se almacena en tu equipo o dispositivo permitiendo exclusivamente consultar la actividad previa de navegación en internet y de esa manera nos permite brindarte un servicio más amigable y sencillo sobre la base de tus gustos y preferencias. El uso de cookies aporta valiosa información que nos permite verificar la utilidad de la información que contienen nuestras páginas web e identificar las oportunidades de mejora del servicio que te brindamos. En el evento que no desees que utilicemos estos archivos, te informamos que en tu explorador de internet, podrás encontrar el procedimiento para bloquear las cookies, opción que siempre tendrás disponible."
+    }
+  },
+  "rich-text#title-2": {
+    "props": {
+      "text": "#### 2.- Derecho a Modificación de Términos y Condiciones:"
+    }
+  },
+  "rich-text#text-2": {
+    "props": {
+      "text": "Casa Amarilla se reserva el derecho a variar estos Términos y Condiciones en cualquier momento con la única obligación de publicar periódicamente los cambios realizados en el mismo sitio web www.casamarilla.cl en la página llamada Términos y Condiciones, accesible en el enlace con el mismo nombre."
+    }
+  },
+  "rich-text#title-3": {
+    "props": {
+      "text": "#### 3.- Contraseña:"
+    }
+  },
+  "rich-text#text-3": {
+    "props": {
+      "text": "La administración de la clave secreta es de absoluta responsabilidad de cada cliente. Su entrega a o utilización por terceras personas, no implicará responsabilidad alguna de parte de Casa Amarilla. En caso de extravío, hurto, robo, mal uso de la clave o cualquier otra eventualidad de esta naturaleza, cada cliente tendrá la obligación de cambiarla inmediatamente en www.casamarilla.cl/registro. Con todo, el usuario podrá solicitar al correo electrónico ventasweb@casamarilla.cl la cancelación de su cuenta."
+    }
+  },
+  "rich-text#title-4": {
+    "props": {
+      "text": "#### 4.- Veracidad y actualización de información:"
+    }
+  },
+  "rich-text#text-4": {
+    "props": {
+      "text": "Los datos proporcionados por el cliente al momento del registro serán considerados como fidedignos y será responsabilidad de cada cliente mantenerlos actualizados. Es decir, Casa Amarilla queda liberada de cualquier responsabilidad derivada de datos no actualizados o falsos. Éstos serán tratados de manera confidencial y serán utilizados exclusivamente para procesar la compra y el despacho a domicilio."
+    }
+  },
+  "rich-text#title-5": {
+    "props": {
+      "text": "#### 5.- Precios:"
+    }
+  },
+  "rich-text#text-5": {
+    "props": {
+      "text": "Los precios exhibidos a través del catálogo de ventas web sólo tienen aplicación para las compras efectuadas en el “catálogo de ventas web” de Casa Amarilla y no son aplicables a transacciones efectuadas en las tiendas de Casa Amarilla. Asimismo, los precios exhibidos en las tiendas de Casa Amarilla, no necesariamente tienen aplicación a las transacciones efectuadas en el “catálogo de ventas web”.\n\nEn caso que el precio de un producto, por un error involuntario de Casa Amarilla, se encontráse publicado a un valor excesivamente inferior a su valor de costo, y evidenciando claramente un error involuntario en la manipulación de los sistemas o resultado de operaciones propias de los mismos,  (Por ejemplo publicando un precio de venta $1 ó $0), Casa Amarilla se reserva el derecho de dejar sin efecto dicha compra/venta o bien corregir y normalizar el precio, de manera que el cliente tenga conocimiento de su valor real y tenga luego la posibilidad de confirmar o no su compra en base a dicha información. Cualquier pago realizado en dichas transacciones erróneas será reintegrado en su totalidad al comprador. "
+    }
+  },
+  "rich-text#title-6": {
+    "props": {
+      "text": "#### 6.- Derecho a modificar “catálogo de ventas web”:"
+    }
+  },
+  "rich-text#text-6": {
+    "props": {
+      "text": "Casa Amarilla se reserva el derecho a modificar, sin previo aviso, cualquier información contenida en el catálogo de ventas web, especialmente y a modo de ejemplo: precios, stock, características y fichas técnicas de productos, descuentos y ofertas en general."
+    }
+  },
+  "rich-text#title-7": {
+    "props": {
+      "text": "#### 7.- Publicaciones de precios con errores evidentes:"
+    }
+  },
+  "rich-text#text-7": {
+    "props": {
+      "text": "En caso que el precio de un producto, por un error involuntario de Casa Amarilla, se encuentre publicado a un valor excesivamente inferior a su valor de costo (por ejemplo precio de venta $1 ó $0), Casa Amarilla se reserva el derecho de dejar sin efecto la compra/venta o corregir el precio de manera que el cliente conozca el valor verdadero y confirme o no su compra en base a dicha información."
+    }
+  },
+  "rich-text#title-8": {
+    "props": {
+      "text": "#### 8.- Respaldo:"
+    }
+  },
+  "rich-text#text-8": {
+    "props": {
+      "text": "Toda compra realizada en el “catálogo de ventas web” de Casa Amarilla estará debidamente documentada y formalizada con la entrega del documento de compra sea éste boleta o factura."
+    }
+  },
+  "rich-text#title-9": {
+    "props": {
+      "text": "#### 9.- Stock:"
+    }
+  },
+  "rich-text#text-9": {
+    "props": {
+      "text": "Si el producto está publicado en nuestro sitio www.casamarilla.cl significa que tiene unidades en stock. En caso de dudas, puede ser consultado a nuestro número de Ayuda Técnica: 56 2 26949203, que está publicado en el sitio www.casamarilla.cl"
+    }
+  },
+  "rich-text#title-10": {
+    "props": {
+      "text": "#### 10.- Consentimiento y Validación de la Compra:"
+    }
+  },
+  "rich-text#text-10": {
+    "props": {
+      "text": "En sus tiendas y sitio web, Casa Amarilla ofrece bienes y servicios, que podrán ser comprados por vía electrónica o telefónica, según corresponda. Toda aceptación de oferta quedará sujeta a la validación que efectuará Casa Amarilla. Esta validación se realizará en la plataforma tecnológica o bien en las oficinas de Casa Amarilla y, de ser necesario, a través de una comunicación telefónica con el cliente o a través del medio que Casa Amarilla disponga en el futuro. En consecuencia, dicha validación es un requisito para la formación del consentimiento de toda compra. 10.1.- La validación de la compra comprenderá una revisión de los siguientes elementos:\nEl stock disponible al momento de la aceptación de la oferta.\nVerificación de fondos debidamente depositados en la cuenta corriente de Casa Amarilla y/o validación de Transbank según sea el medio de pago utilizado por el cliente.\nVerificación de los datos personales suministrados por el cliente a Casa Amarilla.\n10.2.- Validación en Carro de Compras: Una vez que se cumplan estos presupuestos de compra, el sitio web desplegará en el carro de compras del usuario la orden de compra final, en que se hará un resumen de los productos y costos que el usuario haya agregado a la Bolsa de Compras. La orden de compra no representa obligación para Casa Amarilla hasta que no haya sido aceptada por ésta.\n10.3.- Validación por escrito: La validación será informada al cliente mediante una confirmación escrita que Casa Amarilla enviará a la dirección de correo electrónico que haya registrado el cliente, o por cualquier medio de comunicación que garantice el debido y oportuno conocimiento del cliente, el que se le indicará previamente."
+    }
+  },
+  "rich-text#title-11": {
+    "props": {
+      "text": "#### 11.- Medios de Pago:"
+    }
+  },
+  "rich-text#text-11": {
+    "props": {
+      "text": "Las compras realizadas por medio del “catálogo de ventas web” admiten los siguientes medios de pago:\nTarjetas de débito bancarias acogidas al sistema Redcompra®: Tarjetas emitidas en Chile por bancos nacionales, que se encuentren afiliadas a Transbank. Las compras por este medio no se consideran hechas en efectivo.\nTarjetas de crédito bancarias: Tarjetas emitidas en Chile que se encuentren afiliadas a Transbank. No se admiten compras con tarjetas de crédito internacionales a través del sitio web www.casamarilla.cl\nKhipu: Transferencia electrónica desde la cuenta del cliente, en el proceso de compra. El pago es recibido automáticamente por Casa Amarilla, tal como el sistema Redcompra.\n11.1.- Información sobre tarjetas bancarias y/u otras: Casa Amarilla está afiliada a Transbank que vela por la seguridad en las compras con tarjetas de crédito. Para conocer más sobre el servicio de Transbank, por favor acceder a https://www.transbank.cl\n11.2.- Contratos de tarjetas de crédito y medios de pago: Los aspectos relativos al funcionamiento de las tarjetas aceptadas en www.casamarilla.cl, están sujetos al contrato existente entre el cliente y la identidad emisora y de ésta con Transbank, sin que a Casa Amarilla le quepa responsabilidad alguna en relación con los aspectos señalados en dichos contratos. Casa Amarilla sólo puede validar cargos previamente autorizados por Transbank."
+    }
+  },
+  "rich-text#title-12": {
+    "props": {
+      "text": "#### 12.- En relación al Derecho de Retracto:"
+    }
+  },
+  "rich-text#text-12": {
+    "props": {
+      "text": "El usuario tendrá un plazo de 10 días para poner término al contrato celebrado por medios electrónicos desde que reciba el producto o desde que contrate el servicio, antes que éste sea prestado. Para ejercer este derecho deberá utilizar los mismos medios que empleó para celebrar el contrato y siempre que Casa Amarilla le haya enviado comunicación de haberse perfeccionado el contrato, copia íntegra, acceso claro, comprensible e inequívoco de las condiciones generales del mismo y la posibilidad de almacenarlos o imprimirlos.\nSi Casa Amarilla no ha dado cumplimiento al envío de la comunicación escrita anteriormente mencionada, el plazo se extenderá a 90 días.\nNo podrá ejercerse este derecho cuando el bien, materia del contrato, se haya deteriorado por hecho imputable al consumidor.\nSi el bien o servicio se obtuvo por medio de un crédito, éste queda sin efecto pero los intereses son de cargo del consumidor cuando se haya otorgado por un tercero.\nCasa Amarilla tendrá la obligación de devolverle las sumas abonadas, sin retención de gastos, y a la mayor brevedad posible y, en cualquier caso, antes de 45 días a la comunicación del retracto. Tratándose de servicios, la devolución sólo comprenderá aquellas sumas abonadas que no correspondan a servicios ya prestados a la fecha del retracto. Usted deberá restituir en buen estado los elementos de embalaje, los manuales de uso, las cajas, elementos de protección y todo otro elemento que viniera con el bien."
+    }
+  },
+  "rich-text#title-13": {
+    "props": {
+      "text": "#### 13.- Acceso a la Información:"
+    }
+  },
+  "rich-text#text-13": {
+    "props": {
+      "text": "En los contratos ofrecidos por medio de este sitio web, Casa Amarilla informará, de manera inequívoca y fácilmente accesible, los pasos que deben seguirse para celebrarlos, e informará, cuando corresponda, si el documento electrónico en que se formalice el contrato será archivado y si éste será accesible al usuario."
+    }
+  },
+  "rich-text#title-14": {
+    "props": {
+      "text": "#### 14.- Proceso de Compra:"
+    }
+  },
+  "rich-text#text-14": {
+    "props": {
+      "text": "El solo hecho de seguir los pasos que para tales efectos se indican en este sitio para efectuar una compra, equivale a aceptar efectivamente que Casa Amarilla ha dado cumplimiento a las condiciones contenidas en estos Términos y Condiciones. Indicará, además, su dirección de correo postal o electrónico y los medios técnicos a disposición del usuario para identificar y corregir errores en el envío o en sus datos.\n14.1.- Validación y Comunicación: Al momento de ser validada la transacción se contactará al cliente vía correo electrónico, a la dirección de e-mail ingresada por el cliente al momento de registrar sus datos personales en el sitio web. En caso que se estime necesario por parte de Casa Amarilla el cliente podrá ser contactado por otro medio de comunicación, con el objeto que el cliente sea informado de dicha validación.\nLos productos adquiridos a través del “catálogo de ventas web” serán sujetos a las condiciones de despacho disponibles en el sitio. La información del lugar de envío es de exclusiva responsabilidad del usuario el que deberá proveer de un número telefónico de contacto obligatoriamente al llenar el formulario con sus datos de despacho.\n15.1.- Los plazos para el despacho y entrega: Se cuentan desde que Casa Amarilla haya enviado el correo de confirmación del despacho con lo dispuesto en la cláusula 14.1 del documento “Términos y Condiciones”. Los referidos plazos serán de 72 horas hábiles, esto es, de lunes a viernes, excluyendo días festivos. Estas 72 horas hábiles corresponden a los plazos para que Casa Amarilla entregue los productos a la empresa de transporte (Correos de Chile y Chilexpress según corresponda el caso). Los plazos de entrega de las empresas de transporte varían según cada destino y pueden llegar a un máximo de tres días hábiles (excepto Región de Magallanes: 7 días hábiles).\n14.2.- Documento tributario: La boleta o factura correspondiente a la compra será entregada conjuntamente con el producto.\n15.3.- Revisión por parte del cliente: El cliente es responsable por los daños ocasionados al producto una vez entregado. En el caso de despacho a domicilio, al momento de firmar la recepción del producto, el cliente o quien reciba el producto debe revisarlo y la recepción conforme implica que el producto no presentaba daños en ese momento. Casa Amarilla no se hará responsable por daños en productos que cuenten con firma conforme en la guía de despacho, sea esta firma del cliente o de quien reciba el producto en la dirección señalada al momento de la compra."
+    }
+  },
+  "rich-text#title-15": {
+    "props": {
+      "text": "#### 15.- Acerca del Retiro en Tienda:"
+    }
+  },
+  "rich-text#text-15": {
+    "props": {
+      "text": "Los productos adquiridos a través del “catálogo de ventas web” serán sujetos a las condiciones de despacho disponibles en el sitio. La información de la tienda elgida para el retiro será de exclusiva responsabilidad del usuario al momento de completar el formulario de compra.\n15.1.- Los plazos del retiro: Se cuentan desde que Casa Amarilla haya enviado el correo de confirmación del despacho con lo dispuesto en la cláusula 14.1 del documento “Términos y Condiciones”. Los referidos plazos serán desde 48 horas hábiles una vez efectuada la compra, esto es, de lunes a viernes, excluyendo días festivos. El usuario se debe presentar en la tienda escogida, con el mail de confirmación y su cédula de identidad. En caso de enviar a otra persona, esta se debe presentar con el mail,de confirmación y la copia de la cédula de identidad del comprador. El producto estará disponible en la tienda elegida después de 2 días hábiles una vez efectuada la compra. El usuario tendrá solo 2 días para hacer el retiro según el horario de la Tienda escogida. Si el producto no es retirado en este período, la compra será anulada."
+    }
+  },
+  "rich-text#title-16": {
+    "props": {
+      "text": "#### 16.- Cambios de productos y devoluciones:"
+    }
+  },
+  "rich-text#text-16": {
+    "props": {
+      "text": "En el caso que el producto NO cumpla con las características técnicas o estéticas presentadas en el “catálogo de ventas web”, los usuarios podrán solicitar el cambio de producto en cualquier tienda Casa Amarilla presentando la boleta y el producto en perfectas condiciones con su embalaje original. Para el caso de solicitar la devolución de dinero, el cliente deberá entregar el producto en perfectas condiciones, con su embalaje original y adjuntando la boleta de compra en nuestras oficinas ubicadas en Manquehue Norte 1954, Vitacura dentro de 10 días después de realizada la compra. Si el cliente es de región deberá hacerse cargo del costo del despacho que esta operación involucre y la devolución de dinero se reflejará dependiendo de la forma de pago utilizada para la compra, es decir si la compra se realizó con Tarjeta de Crédito Casa Amarilla gestiona la anulación del cobro a través de Transbank. Para el caso de compras con Tarjeta de Débito o Transferencia bancaria Casa Amarilla emite un cheque a nombre del cliente que luego es depositado directamente en su cuenta. Ambos procesos de devolución tienen un tiempo estimado de 10 días hábiles."
+    }
+  },
+  "rich-text#title-17": {
+    "props": {
+      "text": "#### 17.- Garantía:"
+    }
+  },
+  "rich-text#text-17": {
+    "props": {
+      "text": "En caso que el producto haya sido usado o probado, sólo se podrá efectuar el cambio si dentro de los 3 meses posteriores a la compra, presentase una falla o desperfecto que pueda ser certificado por un servicio técnico de Casa Amarilla. Sólo se procederá al cambio o devolución una vez establecido que la falla tiene origen de fábrica y no es atribuible al cliente."
+    }
+  },
+  "rich-text#end-note": {
+    "props": {
+      "text": "*Este documento ha sido emitido por la Gerencia General de Casa Amarilla en agosto de 2017 y tiene validez para todos los efectos que describe hasta que sea reemplazado por otro del mismo tipo.*"
+    }
+  }
+}

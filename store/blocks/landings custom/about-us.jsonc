@@ -1,0 +1,85 @@
+{
+  "store.custom#about-us": {
+    "blocks": ["flex-layout.row#about-us"]
+  },
+  "flex-layout.row#about-us": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "about-us-container"
+    },
+    "children": [
+      "flex-layout.col#text-content-1",
+      "flex-layout.row#images-row1",
+      "flex-layout.col#text-content-2",
+      "image#img3",
+      "flex-layout.col#text-content-3"
+    ]
+  },
+  "flex-layout.col#text-content-1": {
+    "children": ["rich-text#section-title-1", "rich-text#section-content-1"],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#section-title-1": {
+    "props": {
+      "text": "# QUIENES SOMOS"
+    }
+  },
+  "rich-text#section-content-1": {
+    "props": {
+      "text": "Casa Amarilla, fundada en 1920 en la calle San Diego 128, debe su particular nombre al color de la fachada de su local original. En 1968, por remodelación de la calle Alonso Ovalle se trasladó a San Diego 140, donde funcionó su casa matriz hasta el año 2013.\n\nFuera de su conocida especialización en instrumentos musicales, Casa Amarilla participó activamente en la publicación de textos musicales y partituras. Desde sus inicios Casa Amarilla se ha destacado por su orientación a la calidad de los productos, representando en Chile importantes marcas europeas.\n\nLa primera sucursal se abrió en 1972 en la calle Estado, luego le seguirían otras ubicadas en Huérfanos, Providencia y Alto Las Condes. Hoy contamos con 9 tiendas ubicadas en importantes calles y en los mejores Malls de Santiago. Cabe destacar nuestra tienda Casa Amarilla Custom Shop ubicada en avenida Manquehue Norte 1954, Vitacura, que aloja la más completa colección de instrumentos top de línea para aquellos que buscan el lujo en sus instrumentos musicales."
+    }
+  },
+  "flex-layout.row#images-row1": {
+    "children": ["image#img1", "image#img2"]
+  },
+  "image#img1": {
+    "props": {
+      "src": "/arquivos/img1.jpg"
+    }
+  },
+  "image#img2": {
+    "props": {
+      "src": "/arquivos/img2.jpg"
+    }
+  },
+  "flex-layout.col#text-content-2": {
+    "children": ["rich-text#section-title-2", "rich-text#section-content-2"],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#section-title-2": {
+    "props": {
+      "text": "### NUESTRO COMPROMISO"
+    }
+  },
+  "rich-text#section-content-2": {
+    "props": {
+      "text": "Casa Amarilla tiene un reconocido compromiso con la música en Chile. Casi un siglo con la música en la educación y en el entretenimiento. 99 años con los todos los músicos desde los más pequeños hasta los más reconocidos profesionales de la música chilena. Toda una vida con las mejores marcas para entregar la más variada gama de instrumentos musicales y accesorios. Un largo compromiso con nuestros proveedores en Chile y en todo el mundo para garantizar el mejor servicio. Y lo más importante, con USTEDES!! Somos Casa Amarilla . . . 99 años de Música."
+    }
+  },
+  "image#img3": {
+    "props": {
+      "width": "100%",
+      "src": "/arquivos/img3.png"
+    }
+  },
+  "flex-layout.col#text-content-3": {
+    "children": ["rich-text#section-title-3", "rich-text#section-content-3"],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#section-title-3": {
+    "props": {
+      "text": "### NUESTROS INSTRUMENTOS"
+    }
+  },
+  "rich-text#section-content-3": {
+    "props": {
+      "text": "Casa Amarilla ofrece en todas sus tiendas el más variado mix de instrumentos musicales y accesorios en todas las categorías: vientos, cuerdas, percusión, amplificación y audio, orquestas y bandas, guitarras y bajos, instrumentos folclóricos, pianos y teclados, acordeones, armónicas entre otras. Casa Amarilla ofrece soluciones para profesionales y también productos orientados al principiante o al amateur. Representamos en Chile a importantes marcas tales como: Hohner, Alhambra, Admira, Martin & Co, Markbass, Schecter, Hal Leonard, Meinl y Sonor entre muchas otras. Junto con nuestras marcas exclusivas, comercializamos en Chile marcas de prestigio global como Fender, D'Addario, Pearl, Shure, Evans y más."
+    }
+  }
+}

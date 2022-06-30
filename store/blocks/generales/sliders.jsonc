@@ -1,0 +1,573 @@
+{
+  //////// CYBER  ////////////
+  "slider-layout#home-cyber": {
+    "children": ["image#slide-desktop-1-cyber", "image#slide-desktop-2-cyber", "image#slide-desktop-3-cyber", "image#slide-desktop-4-cyber"],
+    "props": {
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": false
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "arrowSize": 45,
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1
+      },
+      "fullWidth": true,
+      "blockClass": "slider-home-desktop"
+    }
+  },
+  "image#slide-desktop-1-cyber": {
+    "props": {
+      "src": "/arquivos/1920X800-HOMESTUDIO.jpg",
+      "link": "#"
+    }
+  },
+  "image#slide-desktop-2-cyber": {
+    "props": {
+      "src": "/arquivos/1920X800-bajos.jpg",
+      "link": "/bajos"
+    }
+  },
+  "image#slide-desktop-3-cyber": {
+    "props": {
+      "src": "/arquivos/1920X800-DDLM.jpg",
+      "link": "#"
+    }
+  },
+  "image#slide-desktop-4-cyber": {
+    "props": {
+      "src": "/arquivos/1920X800-Ukeleles.jpg",
+      "link": "/ukeleles-y-otras-cuerdas"
+    }
+  },
+  /* CYBER SLIDER MOBILE */
+  "slider-layout#cyber-mobile": {
+    "children": ["image#slide-mobile-1-cyber", "image#slide-mobile-2-cyber", "image#slide-mobile-3-cyber", "image#slide-mobile-4-cyber", "image#slide-mobile-5-cyber"],
+    "props": {
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": false
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "itemsPerPage": {
+        "phone": 1
+      },
+      "fullWidth": true,
+      "blockClass": "slider-home-mobile"
+    }
+  },
+  "image#slide-mobile-1-cyber": {
+    "props": {
+      "src": "arquivos/AUDIO-480X480.jpg",
+      "link": "/150",
+      "blockClass": "slider-home-mobile-img"
+    }
+  },
+  "image#slide-mobile-2-cyber": {
+    "props": {
+      "src": "arquivos/TECLAS2-480X480.jpg",
+      "link": "/153",
+      "blockClass": "slider-home-mobile-img"
+    }
+  },
+  "image#slide-mobile-3-cyber": {
+    "props": {
+      "src": "arquivos/PERCUSION2-480X480.jpg",
+      "link": "/152",
+      "blockClass": "slider-home-mobile-img"
+    }
+  },
+  "image#slide-mobile-4-cyber": {
+    "props": {
+      "src": "arquivos/VIENTOS-480X480.jpg",
+      "link": "/154",
+      "blockClass": "slider-home-mobile-img"
+    }
+  },
+  "image#slide-mobile-5-cyber": {
+    "props": {
+      "src": "arquivos/CUERDAS-480X480.jpg",
+      "link": "/151",
+      "blockClass": "slider-home-mobile-img"
+    }
+  },
+
+  /* BRAND SLIDER DESKTOP */
+  "slider-layout#brand-desktop": {
+    "children": [
+      "image#brand-desktop-1",
+      "image#brand-desktop-2",
+      "image#brand-desktop-3",
+      "image#brand-desktop-4",
+      "image#brand-desktop-5",
+      "image#brand-desktop-6",
+      "image#brand-desktop-7",
+      "image#brand-desktop-8",
+      "image#brand-desktop-9",
+      "image#brand-desktop-10",
+      "image#brand-desktop-11",
+      "image#brand-desktop-12",
+      "image#brand-desktop-13",
+      "image#brand-desktop-14",
+      "image#brand-desktop-15",
+      "image#brand-desktop-16",
+      "image#brand-desktop-17",
+      "image#brand-desktop-18",
+      "image#brand-desktop-19"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": false
+      },
+      "infinite": true,
+      "navigationStep": "page",
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "arrowSize": 50,
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "blockClass": "brand-slider"
+    }
+  },
+  "image#brand-desktop-1": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Admira%20300x300___b1dd9e3e1ff9710cdc3837cb4685b367.jpg",
+      "link": {
+        "url": "/admira"
+      }
+    }
+  },
+  "image#brand-desktop-2": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/ADW%20300x300___b1c89e63a88ab01913b55e8f7eb0a08c.jpg",
+      "link": {
+        "url": "/adw"
+      }
+    }
+  },
+  "image#brand-desktop-3": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Alhambra%20300x300___a058b077da3ff9efa4ee84bdc4323ec5.jpg",
+      "link": {
+        "url": "/alhambra"
+      }
+    }
+  },
+  "image#brand-desktop-4": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Daddario%20300x300___46005e3b1e4b4b66a81f6afaedf178cf.jpg",
+      "link": {
+        "url": "/daddario"
+      }
+    }
+  },
+  "image#brand-desktop-5": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Esi%20300x300___c046c345a7b829baf7998a318c620054.jpg",
+      "link": {
+        "url": "/esi"
+      }
+    }
+  },
+  "image#brand-desktop-6": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Evans%20300x300___64ad878f08f898c454387aed2b2cdc16.jpg",
+      "link": {
+        "url": "/evans"
+      }
+    }
+  },
+  "image#brand-desktop-7": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Fender%20300x300___96a164e0e50911ad34fc9b4cde2a4130.jpg",
+      "link": {
+        "url": "/fender"
+      }
+    }
+  },
+  "image#brand-desktop-8": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Flight%20300x300___946cd2b3979ed003c59caefc806aa714.jpg",
+      "link": {
+        "url": "/flight"
+      }
+    }
+  },
+  "image#brand-desktop-9": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Gewa%20300x300___357bd7eb768e622a8cff02b3a0618491.jpg",
+      "link": {
+        "url": "/gewa"
+      }
+    }
+  },
+  "image#brand-desktop-10": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Gibraltar%20300x300___583b04541219c1b3a75121b158d044fa.jpg",
+      "link": {
+        "url": "/gibraltar"
+      }
+    }
+  },
+  "image#brand-desktop-11": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Greg%20Bennett%20300x300___1741f720de32598cdd9bad569751ed02.jpg",
+      "link": {
+        "url": "/greg%20bennett"
+      }
+    }
+  },
+  "image#brand-desktop-12": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Hohner%20300x300___3087464914c6458e9b2c9da7dbbe9bdf.jpg",
+      "link": {
+        "url": "/hohner"
+      }
+    }
+  },
+  "image#brand-desktop-13": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Medeli%20300x300___f62ec39e7d4c3dce35f22649555e8d5f.jpg",
+      "link": {
+        "url": "/medeli"
+      }
+    }
+  },
+  "image#brand-desktop-14": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Meinl%20300x300___9cb7d168e1634c87a4cd81b111e25bb0.jpg",
+      "link": {
+        "url": "/meinl"
+      }
+    }
+  },
+  "image#brand-desktop-15": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Meinl%20Cymbals%20300x300___ab94cfbcb688b306d6e659122367d3cd.jpg",
+      "link": {
+        "url": "/meinl/baterias-y-percusion/platillos?initialMap=b&initialQuery=meinl&map=b"
+      }
+    }
+  },
+  "image#brand-desktop-16": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Nord%20300x300___bbcf03ae7dc6c165f5d2fde07a809725.jpg",
+      "link": {
+        "url": "/nord"
+      }
+    }
+  },
+  "image#brand-desktop-17": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Palmer%20300x300___ab4ebbbd18ce7ef6c6b350e4968e76f5.jpg",
+      "link": {
+        "url": "/palmer"
+      }
+    }
+  },
+  "image#brand-desktop-18": {
+    "props": {
+      "src": "/arquivos/Pearl 300x300.jpg",
+      "link": {
+        "url": "/pearl"
+      }
+    }
+  },
+  "image#brand-desktop-19": {
+    "props": {
+      "src": "/arquivos/Promark 300x300.jpg",
+      "link": {
+        "url": "/promark"
+      }
+    }
+  },
+  /* BRAND SLIDER MOBILE */
+  "slider-layout#brand-mobile": {
+    "children": [
+      "image#brand-mobile-1",
+      "image#brand-mobile-2",
+      "image#brand-mobile-3",
+      "image#brand-mobile-4",
+      "image#brand-mobile-5",
+      "image#brand-mobile-6",
+      "image#brand-mobile-7",
+      "image#brand-mobile-8",
+      "image#brand-mobile-9",
+      "image#brand-mobile-10",
+      "image#brand-mobile-11",
+      "image#brand-mobile-12",
+      "image#brand-mobile-13",
+      "image#brand-mobile-14",
+      "image#brand-mobile-15",
+      "image#brand-mobile-16",
+      "image#brand-mobile-17",
+      "image#brand-mobile-18",
+      "image#brand-mobile-19"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": false
+      },
+      "infinite": true,
+      "navigationStep": 1,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "arrowSize": 50,
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "blockClass": "brand-slider"
+    }
+  },
+  "image#brand-mobile-1": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Admira%20480x480___b92c633ca9011652413475f38480ffb8.jpg",
+      "link": "/admira"
+    }
+  },
+  "image#brand-mobile-2": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/ADW%20480x480___ad6a03fd38d180dae0b94c07ea7039bc.jpg",
+      "link": "/adw"
+    }
+  },
+  "image#brand-mobile-3": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Alhambra%20480x480___8aa05b4e1231c7538a5c6a7412640ee9.jpg",
+      "link": "/alhambra"
+    }
+  },
+  "image#brand-mobile-4": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Daddario%20480x480___5e05733770692dcdcf31938b4195a951.jpg",
+      "link": "/daddario"
+    }
+  },
+  "image#brand-mobile-5": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Esi%20480x480___f24a7ab3701d791c6173bd8cbc7d90fe.jpg",
+      "link": "/esi"
+    }
+  },
+  "image#brand-mobile-6": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Evans%20480x480___b9573a31640dcf0601a00d1f4a010729.jpg",
+      "link": "/evans"
+    }
+  },
+  "image#brand-mobile-7": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Fender%20480x480___0bdb893fbee51907faf7eea8c53b7d9d.jpg",
+      "link": "/fender"
+    }
+  },
+  "image#brand-mobile-8": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Flight%20480x480___1b2ce87903486d3389fe75654582e6a7.jpg",
+      "link": "/flight"
+    }
+  },
+  "image#brand-mobile-9": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Gewa%20480x480___947fdd8787de5427ff1919152a6d62c8.jpg",
+      "link": "/gewa"
+    }
+  },
+  "image#brand-mobile-10": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Gibraltar%20480x480___46f1d86ffc280f2a0c41c6ca04640e9a.jpg",
+      "link": "/gibraltar"
+    }
+  },
+  "image#brand-mobile-11": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Greg%20Bennett%20480x480___eb149e25cee5c7fb95257ce0afcd0de5.jpg",
+      "link": "/greg%20bennett"
+    }
+  },
+  "image#brand-mobile-12": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Hohner%20480x480___d01e4e2dde87570e63763ba7f4a7c007.jpg",
+      "link": "/hohner"
+    }
+  },
+  "image#brand-mobile-13": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Medeli%20480x480___020e282d4d4f63bf32802e07790dbe90.jpg",
+      "link": "/medeli"
+    }
+  },
+  "image#brand-mobile-14": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Meinl%20480x480___9c23de402aa54aef48fa0d79c4b2198f.jpg",
+      "link": "/meinl"
+    }
+  },
+  "image#brand-mobile-15": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Meinl%20Cymbals%20480x480___3d4e39214f717f3ccc374d8245194036.jpg",
+      "link": "/meinl/baterias-y-percusion/platillos?initialMap=b&initialQuery=meinl&map=b"
+    }
+  },
+  "image#brand-mobile-16": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Nord%20480x480___4b4ddce9f8ec155539d68b6891e10bf3.jpg",
+      "link": "/nord"
+    }
+  },
+  "image#brand-mobile-17": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Palmer%20480x480___cf1aee9468e7277fa7414999bab6eaf7.jpg",
+      "link": "/palmer"
+    }
+  },
+  "image#brand-mobile-18": {
+    "props": {
+      "src": "/arquivos/Pearl 480x480.jpg",
+      "link": "/pearl"
+    }
+  },
+  "image#brand-mobile-19": {
+    "props": {
+      "src": "https://casamarilla.vtexassets.com/assets/vtex/assets-builder/casamarilla.store/1.4.0/home/brands/Promark%20480x480___8c78b1870680dd1096746952b02facff.jpg",
+      "link": "/promark"
+    }
+  },
+  /* BENEFITS MOBILE SLIDER */
+  "slider-layout#benefits": {
+    "children": ["flex-layout.row#benefit-1", "flex-layout.row#benefit-2", "flex-layout.row#benefit-3"],
+    "props": {
+      "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "navigationStep": 1,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "mobileOnly",
+      "itemsPerPage": {
+        "phone": 1
+      },
+      "blockClass": "benefits-slider"
+    }
+  },
+  /* BLACK FRIDAY */
+  "slider-layout#promociones-mobile": {
+    "children": [
+      "flex-layout.row#oferta-1",
+      "flex-layout.row#oferta-2",
+      "flex-layout.row#oferta-3",
+      "flex-layout.row#oferta-4"
+    ],
+    "props": {
+      /* "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      }, */
+      "infinite": true,
+      "navigationStep": 1,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "mobileOnly",
+      "itemsPerPage": {
+        "phone": 1
+      },
+      "blockClass": "promotions-slider"
+    }
+  },
+  "slider-layout#promociones-mobile-vientos": {
+    "children": [
+      "flex-layout.row#oferta-1-vientos",
+      "flex-layout.row#oferta-2-vientos",
+      "flex-layout.row#oferta-3-vientos"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "navigationStep": 1,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "mobileOnly",
+      "itemsPerPage": {
+        "phone": 1
+      },
+      "blockClass": "promotions-slider"
+    }
+  },
+  "slider-layout#promociones-mobile-teclas": {
+    "children": [
+      "flex-layout.row#oferta-1-teclas",
+      "flex-layout.row#oferta-2-teclas"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "navigationStep": 1,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "mobileOnly",
+      "itemsPerPage": {
+        "phone": 1
+      },
+      "blockClass": "promotions-slider"
+    }
+  },
+  "slider-layout#promociones-mobile-audio": {
+    "children": [
+      "flex-layout.row#oferta-1-audio",
+      "flex-layout.row#oferta-2-audio",
+      "flex-layout.row#oferta-3-audio"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "navigationStep": 1,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "mobileOnly",
+      "itemsPerPage": {
+        "phone": 1
+      },
+      "blockClass": "promotions-slider"
+    }
+  },
+  "slider-layout#promociones-mobile-percusion": {
+    "children": [
+      "flex-layout.row#oferta-1-percusion",
+      "flex-layout.row#oferta-2-percusion",
+      "flex-layout.row#oferta-3-percusion",
+      "flex-layout.row#oferta-4-percusion"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "navigationStep": 1,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "mobileOnly",
+      "itemsPerPage": {
+        "phone": 1
+      },
+      "blockClass": "promotions-slider"
+    }
+  }
+}

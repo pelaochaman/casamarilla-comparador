@@ -1,0 +1,458 @@
+{
+  "store.product.product-comparison": {
+    "blocks": ["responsive-layout.desktop#producto", "responsive-layout.mobile#producto"],
+    "children":["product-comparison-drawer","product-comparison-block.selector"],
+    "props": {
+      "blockClass": "product-page"
+    }
+  },
+  "responsive-layout.desktop#producto": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#main",
+      "flex-layout.row#extra", //Descripcion y comentarios PDP
+      "complementa-tu-compra",
+      "product-specification-group#table", //Especificaciones PDP
+      /* bloques retail rocket */
+      "retail-rocket-container#similar_products",
+      "retail-rocket-container#related_products",
+      //"shelf.relatedProducts"
+      "set-data"
+    ],
+    "props": {
+      "blockClass": "responsive-desktop"
+    }
+  },
+  "responsive-layout.mobile#producto": {
+    "children": ["flex-layout.row#mobile-container"],
+    "props": {
+      "blockClass": "responsive-mobile"
+    }
+  },
+  /************************/
+  /******   DESKTOP   *****/
+  /************************/
+  /* D1 BREADCRUMB */
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4,
+      "blockClass": "breadcrumb"
+    },
+    "children": ["breadcrumb"]
+  },
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": false,
+      "blockClass": "breadcrumb-desktop"
+    }
+  },
+  /* END BREADCRUMB */
+
+  /* D2 MAIN CONTENT */
+  "flex-layout.row#main": {
+    "props": {
+      "marginTop": 6,
+      "marginBottom": 9,
+      "blockClass": "product"
+    },
+    "children": ["flex-layout.col#product-images", "flex-layout.col#product-info"]
+  },
+  /* Product Images*/
+  "flex-layout.col#product-images": {
+    "children": ["stack-layout#product"],
+    "props": {
+      "width": "60%"
+    }
+  },
+  "stack-layout#product": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": ["flex-layout.row#product-image", "add-to-list-btn" ]
+  },
+  "flex-layout.row#product-image": {
+    "children": ["product-images"]
+  },
+  "product-images": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      },
+      "displayThumbnailsArrows": true
+    }
+  },
+  /* Product Info */
+  "flex-layout.col#product-info": {
+    "children": [
+      "vtex.store-components:product-brand",
+      "add-to-list-btn",
+      "vtex.store-components:product-name#product",
+      "product-identifier.product",
+      "flex-layout.row#sku-attributes",
+      "sku-selector#product",
+      /* "vtex.product-highlights@2.x:product-highlights#flag-cuerdas-segunda-cuerda",
+      "vtex.product-highlights@2.x:product-highlights#flag-guitarra-bajo-funda",
+      "vtex.product-highlights@2.x:product-highlights#flag-cuerdas-ukelele", */
+      "vtex.product-highlights@2.x:product-highlights#flag-cuerdas-accesorios-tres-por-dos",
+      "vtex.product-highlights@2.x:product-highlights#flag-percusión-segunda-baqueta",
+      "vtex.product-highlights@2.x:product-highlights#flag-percusión-segunda-platillos",
+      "vtex.product-highlights@2.x:product-highlights#flag-percusión-parches",
+      "vtex.product-highlights@2.x:product-highlights#flag-audio-segunda-monitores",
+      "vtex.product-highlights@2.x:product-highlights#flag-audio-microfono-cables",
+      "vtex.product-highlights@2.x:product-highlights#flag-teclas-atril-funda",
+      "vtex.product-highlights@2.x:product-highlights#flag-vientos-seguna-armonica",
+      "vtex.product-highlights@2.x:product-highlights#flag-vientos-canas-boquillas",
+      "vtex.product-highlights@2.x:product-highlights#flag-cyber-monday-total",
+      "vtex.product-highlights@2.x:product-highlights#flag-oferta-relampago",
+      "flex-layout.row#price",
+      "product-quantity",
+      "product-availability",
+      "product-assembly-options",
+      "add-to-cart-button#product",
+      "flex-layout.row#payments-and-share"
+    ],
+    "props": {
+      "width": "35%",
+      "blockClass": "product-left-col"
+    }
+  },
+  "vtex.store-components:product-brand": {
+    "props": {
+      "displayMode": "logo",
+      "height": "30px",
+      "blockClass": "product-brand"
+    }
+  },
+  "vtex.store-components:product-name#product": {
+    "props": {
+      "showSKU": true,
+      "showProductReference": false,
+      "showBrandName": false,
+      "blockClass": "product-name"
+    }
+  },
+  "flex-layout.row#sku-attributes": {
+    "props": {
+      "marginTop": {
+        "desktop": 6,
+        "phone": 4
+      },
+      "marginBottom": {
+        "desktop": 6,
+        "phone": 4
+      }
+    },
+    "children": ["product-sku-attributes"]
+  },
+  "sku-selector#product": {
+    "props": {
+      "blockClass": "product",
+      "visibility": "more-than-one",
+      "hideImpossibleCombinations": true,
+      "showValueForVariation": "image",
+      "initialSelection": "image",
+      "showVariationsErrorMessage": "Por favor selecciona uno de los modelos!",
+      "displayMode": "slider",
+      "sliderDisplayThreshold": 4,
+      "sliderItemsPerPage": {
+        "desktop": 4,
+        "mobile": 3
+      }
+    }
+  },
+  "flex-layout.row#price": {
+    "props": {
+      "blockClass": "row-price",
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["product-selling-price", "product-list-price", "product-installments#product"]
+  },
+  "product-installments#product": {
+    "props": {
+      "markers": ["installments"],
+      "message": "{installmentsNumber} cuotas sin interés de {installmentValue}",
+      "blockClass": "product-installments"
+    }
+  },
+  "product-quantity": {
+    "props": {
+      "blockClass": "product-qty",
+      "size": "small",
+      "showLabel": false
+    }
+  },
+  "product-assembly-options": {
+    "children": ["assembly-option-input-values"]
+  },
+  "add-to-cart-button#product": {
+    "props": {
+      "text": "Comprar",
+      "unavailableText": "Agotado",
+      "showTooltipOnSkuNotSelected": true,
+      "blockClass": "product-buy-button"
+    }
+  },
+  "flex-layout.row#payments-and-share": {
+    "props": {
+      "colSizing": "auto",
+      "paddingTop": 4
+    },
+    "children": ["flex-layout.col#payment-methods", "share"]
+  },
+  "flex-layout.col#payment-methods": {
+    "props": {
+      "paddingRight": 6,
+      "blockClass": "product-payment-methods"
+    },
+    "children": ["image#webpay", "image#6-cuotas", "image#khipu"]
+  },
+  "image#webpay": {
+    "props": {
+      "src": "/arquivos/webpay.png",
+      "blockClass": ["webpay", "product-payment-method"]
+    }
+  },
+  "image#6-cuotas": {
+    "props": {
+      "src": "/arquivos/6-cuotas.png",
+      "blockClass": ["6-cuotas", "product-payment-method"]
+    }
+  },
+  "image#khipu": {
+    "props": {
+      "src": "/arquivos/khipu.png",
+      "blockClass": ["khipu", "product-payment-method"]
+    }
+  },
+  "share": {
+    "props": {
+      "social": {
+        "Facebook": true,
+        "Twitter": false,
+        "WhatsApp": true
+      }
+    }
+  },
+  /* END MAIN CONTENT*/
+
+  /* D3 EXTRA INFO & RATINGS*/
+  "flex-layout.row#extra": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "product-extra-info-row"
+    },
+    "children": [
+      "flex-layout.col#description-specifications", //Descripcion PDP
+      "flex-layout.col#ratings" //Comentarios PDP
+    ]
+  },
+  "flex-layout.col#description-specifications": {
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "description-sepecifications"
+    },
+    "children": [
+      "product-description"
+      // "product-specification-group#table",
+      // "product-specification-group#table-video"
+    ]
+  },
+  "product-description": {
+    "props": {
+      "title": "Descripción",
+      "collapseContent": false
+    }
+  },
+  "flex-layout.col#ratings": {
+    "props": {
+      "blockClass": "ratings"
+    },
+    "children": ["product-reviews"]
+  },
+  /* END EXTRA INFO & RATINGS*/
+
+  /* D4 RELATED PRODUCTS */
+  "shelf.relatedProducts": {
+    "blocks": ["product-summary.shelf#main"],
+    "props": {
+      "recommendation": "view",
+      "blockClass": "recomendados",
+      "productList": {
+        "gap": "ph3",
+        "maxItems": 10,
+        "showTitle": true,
+        "titleText": "Otros clientes también vieron",
+        "minItemsPerPage": 1,
+        "itemsPerPage": 4,
+        "__unstableProductOriginVtex": true,
+        "hideUnavailableItems": true,
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    }
+  },
+  /* END RELATED PRODUCTS */
+
+  /************************/
+  /******   MOBILE   ******/
+  /************************/
+  "flex-layout.row#mobile-container": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "product-container-mobile"
+    },
+    "children": [
+      "flex-layout.row#product-breadcrumb-mobile",
+      "flex-layout.row#main-mobile",
+      "flex-layout.row#descripcion-producto-mobile",
+      "complementa-tu-compra",
+      /* bloques retail rocket */
+      "retail-rocket-container#similar_products",
+      "retail-rocket-container#related_products"
+      /*"shelf.relatedProducts"*/
+    ]
+  },
+  "flex-layout.row#product-breadcrumb-mobile": {
+    "props": {
+      "marginTop": 4,
+      "blockClass": "breadcrumb-mobile"
+    },
+    "children": ["breadcrumb#mobile"]
+  },
+  "breadcrumb#mobile": {
+    "props": {
+      "showOnMobile": true,
+      "blockClass": "breadcrumb-mobile"
+    }
+  },
+  "flex-layout.row#main-mobile": {
+    "props": {
+      "marginTop": 6,
+      "colSizing": "auto",
+      "blockClass": "product-mobile"
+    },
+    "children": ["flex-layout.col#images-mobile", "flex-layout.col#info-mobile"]
+  },
+  "flex-layout.col#images-mobile": {
+    "children": ["product-images"]
+  },
+  "flex-layout.col#info-mobile": {
+    "children": [
+      "vtex.store-components:product-name#product-mobile",
+      "product-identifier.product",
+      "flex-layout.row#sku-attributes",
+     /*  "vtex.product-highlights@2.x:product-highlights#flag-cuerdas-segunda-cuerda",
+      "vtex.product-highlights@2.x:product-highlights#flag-guitarra-bajo-funda",
+      "vtex.product-highlights@2.x:product-highlights#flag-cuerdas-ukelele", */
+      "vtex.product-highlights@2.x:product-highlights#flag-cuerdas-accesorios-tres-por-dos",
+      "vtex.product-highlights@2.x:product-highlights#flag-percusión-segunda-baqueta",
+      "vtex.product-highlights@2.x:product-highlights#flag-percusión-segunda-platillos",
+      "vtex.product-highlights@2.x:product-highlights#flag-percusión-parches",
+      "vtex.product-highlights@2.x:product-highlights#flag-audio-segunda-monitores",
+      "vtex.product-highlights@2.x:product-highlights#flag-audio-microfono-cables",
+      "vtex.product-highlights@2.x:product-highlights#flag-teclas-atril-funda",
+      "vtex.product-highlights@2.x:product-highlights#flag-vientos-seguna-armonica",
+      "vtex.product-highlights@2.x:product-highlights#flag-vientos-canas-boquillas",
+      "vtex.product-highlights@2.x:product-highlights#flag-cyber-monday-total",
+      "vtex.product-highlights@2.x:product-highlights#flag-oferta-relampago",
+      "flex-layout.row#price",
+      "sku-selector#product",
+      "product-quantity#mobile",
+      "product-availability",
+      "add-to-cart-button#product",
+      "share",
+      "product-description#mobile",
+      "product-rating-inline"
+    ],
+    "props": {
+      "verticalAlign": "top",
+      "preventVerticalStretch": false,
+      "blockClass": "product-left-col-mobile"
+    }
+  },
+  "vtex.store-components:product-name#product-mobile": {
+    "props": {
+      "showSKU": true,
+      "showProductReference": false,
+      "showBrandName": false,
+      "blockClass": "product-name"
+    }
+  },
+  "product-price#product-mobile": {
+    "props": {
+      "showSavings": true,
+      "showListPrice": true,
+      "showInstallments": true,
+      "blockClass": "product-price"
+    }
+  },
+  "product-quantity#mobile": {
+    "props": {
+      "blockClass": "product-qty",
+      "size": "small"
+    }
+  },
+  "add-to-cart-button#product-mobile": {
+    "props": {
+      "text": "Add to the Cart",
+      "unavailableText": "Sold out",
+      "showTooltipOnSkuNotSelected": true,
+      "showToast": true,
+      "blockClass": "product-buy-button"
+    }
+  },
+  "product-rating-inline": {
+    "props": {
+      "blockClass": "rating"
+    }
+  },
+  "vtex.store-components:product-brand#mobile": {
+    "props": {
+      "displayMode": "logo",
+      "height": "30px",
+      "blockClass": "vtex.store-components:product-brand"
+    }
+  },
+  "product-installments#product-mobile": {
+    "props": {
+      "markers": ["installments"],
+      "installmentsNumber": "6",
+      "message": "{installmentsNumber} cuotas sin interés de {installmentValue}",
+      "blockClass": "product-installments"
+    }
+  },
+  "flex-layout.row#descripcion-producto-mobile": {
+    "children": ["product-specifications#mobile"],
+    "props": {
+      "blockClass": "especificaciones",
+      "preventHorizontalStretch": false,
+      "fullWidth": true
+    }
+  },
+  "product-specifications#mobile": {
+    "props": {
+      "showSpecificationsTab": false,
+      "collapsible": "never",
+      "blockClass": "specifications-product-mobile"
+    }
+  },
+  "product-description#mobile": {
+    "props": {
+      "shoudCollapseOnTabChange": false,
+      "collapseContent": false
+    }
+  },
+  "availability-subscriber": {
+    "props": {
+      "blockClass": "disponibilidad",
+      "component": "AvailabilitySubscriber"
+    }
+  },
+  "product-availability": {
+    "props": {
+      "threshold": "1000",
+      "lowStockMessage": "Stock disponible: {quantity}"
+    }
+  }
+}

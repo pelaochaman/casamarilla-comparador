@@ -1,0 +1,116 @@
+{
+    "store.custom#landing-cyber": {
+      "blocks": [
+        "list-context.image-list#slider-landing-cyber", // Banner principal
+        "flex-layout.row#newsletter-cyber", // Newsletter
+        "flex-layout.row#mid-landing-cyber", // Informacion cyber
+        "flex-layout.row#slider-cyber" // Inicio slider cyber
+      ]
+    },
+  
+    // Inicio banner principal 
+    "list-context.image-list#slider-landing-cyber": {
+      "children": ["slider-layout#static"],
+      "props": {
+        "height": 880,
+        "images": [
+          {
+            "image": "/arquivos/banner-desk-prelanding-cyberday2022.jpg",
+            "mobileImage": "/arquivos/banner-mob-prelanding-cyberday2022.jpg",
+            "link": {
+              "url": "/"
+            }
+          }
+        ]
+      }
+    },
+    "slider-layout#static": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "fullWidth": true,
+        "infinite": false,
+        "blockClass": "slider-principal"
+      }
+    },
+    // Fin banner principal 
+  
+    // Inicio newsletter
+    "flex-layout.row#newsletter-cyber": {
+      "children": [
+        "flex-layout.col#text-newsletter-cyber",
+        "flex-layout.col#newsletter-cyber"
+      ],
+      "props": {
+        "blockClass": "cyber",
+        "paddingBottom": 8,
+        "paddingTop": 8
+      }
+    },
+    "flex-layout.col#text-newsletter-cyber": {
+      "children": ["rich-text#title-newsletter", "rich-text#text-newsletter"],
+      "props": {
+        "blockClass": "newsletter-cyber",
+        "preventVerticalStretch": true
+      }
+    },
+    "rich-text#title-newsletter": {
+      "props": {
+        "text": "### INSCRÍBETE Y OBTÉN DESCUENTOS Y PROMOCIONES PARA EL CYBER",
+        "blockClass": "title-newsletter"
+      }
+    },
+    "rich-text#text-newsletter": {
+      "props": {
+        "text": "Para este Cyber no te pierdas nuestras promociones y descuentos. Si quieres tener información privilegiada y saber cuando se realizaran, inscríbete en nuestro Newsletter y recibirás a tu correo electrónico todo lo que necesitas saber.",
+        "blockClass": "text-newsletter"
+      }
+    },
+    "flex-layout.col#newsletter-cyber": {
+      "children": ["newsletter#newsletter-cyber"]
+    },
+    "newsletter#newsletter-cyber": {
+      "props": {
+        "blockClass": "newsletter-cyber"
+      }
+    },
+    // Fin newsletter
+  
+    // Inicio informacion cyber
+    "flex-layout.row#mid-landing-cyber": {
+      "children": ["flex-layout.col#text-mid-cyber"],
+      "props": {
+        "blockClass": ["cyber", "mid-cyber"],
+        "paddingBottom": 8,
+        "paddingTop": 8
+      }
+    },
+    "flex-layout.col#text-mid-cyber": {
+      "children": ["rich-text#title-mid-cyber", "rich-text#text-mid-cyber"]
+    },
+    "rich-text#title-mid-cyber": {
+      "props": {
+        "text": "### ¡LA FIEBRE DE LOS CYBER!",
+        "blockClass": "title-mid-cyber"
+      }
+    },
+    "rich-text#text-mid-cyber": {
+      "props": {
+        "text": "##### CYBERDAY, CYBERMONDAY, BLACKFRIDAY\nEsos tres días donde el comercio electrónico revoluciona por las magníficas ofertas que solo se pueden obtener por un tiempo limitado y nosotros somos parte de eso.\n##### ¿CUÁNDO ES EL CYBER DAY 2022?\nEl próximo Cyber Day se realizará desde las 00:00 horas del lunes 30 de Mayo hasta las 23:59 horas del miércoles 01 de Junio del 2022. Durante estos días, podrás encontrar increíbles ofertas y descuentos en diversas categorías para toda la familia, disponibles en newmanchile.cl\n##### ¿CUÁL ES LA DIFERENCIA ENTRE CYBERDAY Y CYBERMONDAY?\nLa diferencia entre estos dos eventos de descuentos por Internet, es la fecha en la cual se realizan. Cyber Day generalmente se produce en mayo, mientras que el Cyber Monday ocurre en octubre.",
+        "blockClass": "text-mid-cyber"
+      }
+    },
+    // Fin informacion cyber
+  
+    // Inicio slider cyber
+    "flex-layout.row#slider-cyber": {
+      "props": {
+        "blockClass": "cyber-bottom"
+      },
+      "children": ["slider-layout#brand-desktop"]
+    }
+    // Fin slider cyber
+  }  

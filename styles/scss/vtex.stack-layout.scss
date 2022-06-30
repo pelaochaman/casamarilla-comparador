@@ -1,0 +1,58 @@
+.stackContainer--guitar-layout {
+  width: fit-content;
+}
+
+.stackItem--guitar-layout {
+  top: initial;
+  bottom: 0;
+  width: 100%;
+}
+
+.stackItem--info-card-guitar-btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #000 3.15%, rgba(0, 0, 0, 0.17) 113.39%);
+  padding: 2rem 0;
+  position: absolute;
+  bottom: 0;
+  top: unset;
+}
+
+.stackItem--info-card-guitar--first {
+  width: 100%;
+}
+
+/************************/
+/***   PRODUCT PAGE   ***/
+/************************/
+
+/* Wishlist */
+.stackItem--product {
+  top: 10px;
+  right: 10px;
+  left: unset;
+}
+
+/*********************************/
+/***   LANDING BLACK FRIDAY   ***/
+/*******************************/
+
+.stackContainer--black-friday-block-banner {
+  margin: 0 2px;
+}
+:global(.vtex-stack-layout-0-x-stackItem--black-friday-block-banner--black-friday-category) {
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+}
+
+.stackContainer--decibel-block-banner {
+  margin: 0 2px;
+}
+:global(.vtex-stack-layout-0-x-stackItem--decibel-block-banner--decibel-category) {
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+}

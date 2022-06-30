@@ -1,0 +1,14 @@
+{
+    "store.search.product-comparison#department": {
+        "blocks": [
+            "search-result-layout#category"
+        ],
+        "props": {
+          "context": {
+            "maxItemsPerPage": 12,
+            "skusFilter": "ALL",
+            "simulationBehavior": "default"
+          }
+        }
+    }
+}

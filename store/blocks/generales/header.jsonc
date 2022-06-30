@@ -1,0 +1,447 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  //===========//
+  //  DESKTOP  //
+  //===========//
+  "header-layout.desktop": {
+    "children": [
+      // "flex-layout.row#contador-cyber", // Contador
+      // "flex-layout.row#preheader-cyber-desk", // Preheader
+      "sticky-layout#desktop"
+    ]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header-desktop"
+    },
+    "children": ["flex-layout.row#top-header", "flex-layout.row#bottom-header"]
+  },
+  // TOP HEADER
+  "flex-layout.row#top-header": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "paddingTop": 4
+    },
+    "children": [
+      "flex-layout.col#top-logo",
+      "flex-layout.col#search-bar",
+      "login",
+      "drawer#wishlist",
+      "minicart.v2",
+      "link#whatsapp-button"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#search-bar": {
+    "props": {
+      "width": "grow",
+      "blockClass": "search-bar-container"
+    },
+    "children": ["search-bar#desktop"]
+  },
+  "flex-layout.col#top-logo": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#header"]
+  },
+  "logo#header": {
+    "props": {
+      "title": "Casa Amarilla",
+      "href": "/",
+      "url": "/arquivos/logo.png"
+    }
+  },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "E-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile": true,
+      "iconLabel": "Ingresar"
+    }
+  },
+  "drawer#wishlist": {
+    "children": [
+      "menu#drawer-wishlist"
+    ],
+    "props": {
+      "slideDirection": "rightToLeft",
+      "blockClass": "drawer-wishlist"
+    },
+    "blocks": ["drawer-trigger#wishlist"]
+  },
+  
+  "drawer-trigger#wishlist": {
+    "children": ["menu-item#wishlist"]
+  },
+  "menu#drawer-wishlist": {
+    "children": [
+      "challenge-block#wishlist"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "challenge-block#wishlist": {
+    "blocks": [
+      "challenge-content#wishlist",
+      "challenge-fallback#wishlist"
+    ]
+  },
+"challenge-content#wishlist": {
+"children": [
+  "rich-text#title-wishlist",
+  "list-context.wishlist#header"
+  ]
+  },
+  "challenge-fallback#wishlist": {
+    "children": [
+      "rich-text#title-wishlist",
+      "rich-text#challenge-wishlist"
+    ]
+  },
+  "rich-text#title-wishlist": {
+    "props": {
+      "text": " **Wishlist** ",
+      "blockClass": "favoritos-title"
+    }
+  },
+  "rich-text#challenge-wishlist": {
+    "props": {
+      "text": "Para ver los productos de su Wishlist debe loguearse",
+      "blockClass": "challengeDescription"
+    }
+  },
+  "menu-item#wishlist": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+        "text": "Wishlist"
+      },
+      "iconProps": {
+        "id": "mpa-heart",
+        "size": 18,
+        "viewBox": "0 0 18 18"
+      },
+      "blockClass": "menu-item-wishlist"
+    }
+  },
+  "search-bar#desktop": {
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
+    "props": {
+      "displayMode": "search-and-clear-buttons",
+      "placeholder": "¿Qué estás buscando?",
+      "blockClass": "search-bar-desktop"
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "props": {
+      "historyFirst": true,
+      "maxSuggestedProducts": 1,
+      "maxSuggestedTerms": 10
+    }
+  },
+  // BOTTOM HEADER
+  "flex-layout.row#bottom-header": {
+    "props": {
+      "blockClass": "top-header",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categorias-desktop",
+      "menu-item#arrivals",
+      "menu-item#ofertas",
+      "menu-item#tiendas",
+      "flex-layout.row#header-cyber"
+      // "menu-item#newsletter",
+      // "menu-item#B2B"
+    ]
+  },
+  "flex-layout.row#header-cyber": {
+    "props": {
+      "blockClass": "header-container-cyber",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [ "image#cyber-wing-1", "menu-item#cyber", "image#cyber-wing-2"]
+  },
+  "image#cyber-wing-1": {
+    "props": {
+      "height": 40,
+      "src": "/arquivos/alaizquierda.png",
+      "blockClass": ["cyber-wing"]
+    }
+  },
+  "image#cyber-wing-2": {
+    "props": {
+      "height": 40,
+      "src": "/arquivos/aladerecha.png",
+      "blockClass": ["cyber-wing"]
+    }
+  },
+  //==========//
+  //  MOBILE  //
+  //==========//
+  "header-layout.mobile": {
+    "children": [
+      // "flex-layout.row#contador-cyber", // Contador
+      // "flex-layout.row#preheader-cyber-mob", // Preheader
+      "sticky-layout#mobile"
+    ]
+  },
+  "sticky-layout#mobile": {
+    "props": {
+      "blockClass": "sticky-header-mobile"
+    },
+    "children": ["flex-layout.row#header-mobile"]
+  },
+  "flex-layout.row#header-mobile": {
+    "props": {
+      "colSizing": "auto",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "blockClass": "header-container-mobile"
+    },
+    "children": [
+      "flex-layout.col#left", //Hamburguesa y lupita buscador
+      "flex-layout.col#center", //Logo
+      "flex-layout.col#right", //Mini carrito y usuario
+      "link#whatsapp-button"
+    ]
+  },
+  "flex-layout.col#left": {
+    "props": {
+      "blockClass": "col-left-mobile"
+    },
+    "children": [
+      "drawer#menu-categorias",
+      "disclosure-layout#search-mobile" //Icono lupita nuevo
+      // "drawer#search" // Icono lupita antiguo
+      /* , "vtex.menu@2.x:menu#search-bar-mobile" */ 
+    ]
+  },
+
+  // Inicio nuevo buscador
+  "disclosure-layout#search-mobile": {
+    "children": [
+      "disclosure-trigger#search-mobile", //Icono lupita
+      "disclosure-content#search-mobile" //Despliegue de lupita
+    ], 
+    "props": {
+      "blockClass": "drawer-mobile-search"
+    }
+  },
+
+  "disclosure-trigger#search-mobile": {
+    "children": [
+      "menu-item#search"
+    ],
+    "props": {
+      "blockClass": "mobile-search"
+    }
+  },
+
+  "disclosure-content#search-mobile": {
+    "children": [
+      "search-bar" //buscador
+    ]
+  },
+
+  "menu-item#search": {
+    "props": {
+      "id": "menu-item-search-icon",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "iconProps": {
+        "id": "hpa-search",
+        "size": 16
+      }
+    }
+  },
+  // Fin nuevo buscador
+
+  "flex-layout.col#left-test-search": {
+    "props": {
+      "blockClass": "col-left-mobile-test"
+    },
+    "children": ["vtex.menu@2.x:menu#search-bar-mobile"]
+  },
+
+  /************TESSST*****************/
+  
+  // Inicio antiguo buscador
+  /*
+  "drawer#search": {
+    "children": [
+      "menu#drawer-search",
+      "drawer-close-button"
+    ],
+    "props": {
+      "iconProps": {
+        "id": "hpa-search",
+        "size": 16,
+        "viewBox": "0 0 16 16"
+      },
+      "blockClass": "drawer-mobile-search"
+    },
+    "blocks": [
+      "drawer-header#header-search",
+      "drawer-trigger#search"
+    ]
+  },
+  
+  "drawer-header#header-search": {
+    "children": [
+
+    ],
+    "props": {
+      "blockClass": "header"
+    }
+  },
+  
+  "drawer-trigger#search": {
+    "children": [
+      "icon#search-mobile"
+    ],
+    "props": {
+      "blockClass": "trigger-search"
+    }
+  },
+  "icon#search-mobile": {
+    "props": {
+      "id": "hpa-search-yellow"
+    }
+  },
+ 
+  "menu#drawer-search": {
+    "children": [
+      "search-bar#mobile"
+    ],
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": "search"
+    }
+  },
+  */
+  // Fin antiguo buscador
+
+  /************END OF TESSST*****************/
+  
+  "drawer#menu-categorias": {
+    "props": {
+      "isFullWidth": false
+    },
+    "children": ["flex-layout.col#menu-categorias-mobile-col"]
+  },
+  "flex-layout.col#menu-categorias-mobile-col": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#audio-mobile",
+      "flex-layout.row#bajos-mobile",
+      "flex-layout.row#baterias-y-percusion-mobile",
+      "flex-layout.row#guitarras-mobile",
+      /*"menu-item#merchandising-mobile",*/
+      "flex-layout.row#teclas-mobile",
+      "flex-layout.row#ukeleles-y-otras-cuerdas-mobile",
+      "flex-layout.row#vientos-mobile"
+    ]
+  },
+  "search-bar#mobile": {
+    "props": {
+      "blockClass": "search-bar-mobile"
+    }
+  },
+  "flex-layout.col#center": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#header"]
+  },
+  "flex-layout.col#right": {
+    "props": {
+      "blockClass": "col-right-mobile"
+    },
+    "children": ["minicart.v2", "login#mobile"]
+  },
+  "login#mobile": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "E-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile": true
+    }
+  },
+  // Inicio contador
+  "flex-layout.row#contador-cyber": {
+    "children": [
+        "generic-countdown"
+    ],
+    "props": {
+      "blockClass": "top-bar"
+    }
+  },
+  "generic-countdown": {
+    "props": {
+        "startdate": "may 10, 2022 14:00:00",
+        "enddate": "jun 1, 2022 23:59:59"
+    }
+  },
+  // Fin contador
+
+  // Inicio preheader
+  "flex-layout.row#preheader-cyber-desk": {
+    "props": {
+      "blockClass": "preheader-cyber-desk"
+    },
+    "children": [
+      "image#preheader-cyber-desk"
+    ]
+  },
+  "image#preheader-cyber-desk": {
+    "props": {
+      "src": "/arquivos/preheader-alargueCyber-01-06-2022.jpg",
+      "blockClass": "img-preheader-cyber-desk"
+    }
+  },
+  "flex-layout.row#preheader-cyber-mob": {
+    "props": {
+      "blockClass": "preheader-cyber-mob"
+    },
+    "children": [
+      "image#preheader-cyber-mob"
+    ]
+  },
+  "image#preheader-cyber-mob": {
+    "props": {
+      "src": "/arquivos/preheader-alargueCyber-01-06-2022.jpg",
+      "blockClass": "img-preheader-cyber-mob"
+    }
+  }
+  // Fin preheader
+}

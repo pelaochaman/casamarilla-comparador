@@ -1,0 +1,98 @@
+/************************/
+/*******   HOME   *******/
+/************************/
+.slideChildrenContainer--slider-home-desktop
+  :global(.vtex-store-components-3-x-imageElementLink) {
+  display: flex;
+  align-items: center;
+}
+
+.caretIcon--slider-home-desktop {
+  color: #f6ba15;
+}
+
+.sliderTrackContainer--benefits-slider {
+  background-color: #f6f1eb;
+}
+
+.paginationDotsContainer--slider-home-mobile {
+  bottom: 25px;
+}
+
+.paginationDotsContainer--benefits-slider {
+  bottom: 5px;
+}
+
+.paginationDotsContainer--favorites-slider,
+.paginationDotsContainer--brand-slider {
+  bottom: -20px;
+}
+
+.sliderLayoutContainer--brand-slider {
+  margin: 70px 0 30px 0;
+}
+
+.slide--brand-slider {
+  padding: 0 2.5rem;
+}
+
+.sliderArrows--brand-slider {
+  color: #f6ba15;
+}
+
+.sliderLayoutContainer--guitar-slider-top {
+  padding-bottom: 30px;
+}
+
+.sliderLayoutContainer--guitar-slider-mobile {
+  margin-bottom: 60px;
+}
+
+.paginationDotsContainer--guitar-slider-mobile {
+  bottom: -20px;
+}
+.slideChildrenContainer--guitar-slider-top :global(.vtex-product-summary-2-x-container){
+  height: 440px;
+}
+
+/* black friday */
+@media (max-width: 1025px) {
+  .slide--promotions-slider--visible{
+    /* background-color: #f6f1eb; */
+    /* border: 2px solid #4b4b4b; */
+    height: 85px;
+    /* border-radius: 30px; */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sliderLayoutContainer--brand-slider {
+    margin: 20px 0 0;
+  }
+  
+  .sliderLeftArrow--guitar-slider-top {
+    /*top: 45%;
+    left: -50px;*/
+  }
+
+  .sliderRightArrow--guitar-slider-top {
+    /*top: 45%;
+    right: -50px;*/
+  }
+
+  .sliderArrows--guitar-slider-bottom {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .slideChildrenContainer--promotions-slider{
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slideChildrenContainer--promotions-slider{
+    height: fit-content;
+  }
+}

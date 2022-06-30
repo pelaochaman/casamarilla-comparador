@@ -1,0 +1,31 @@
+.newsletterForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.emailInputContainer :global(.vtex-input) {
+  width: 300px;
+}
+
+.formSubmitContainer :global(.vtex-button) {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+.emailInputContainer--newsletter-email {
+  min-width: 350px;
+}
+
+@media screen and (max-width: 640px) {
+  .emailInputContainer--newsletter-email,
+  .formSubmitContainer--newsletter-submit {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .formSubmitContainer :global(.vtex-button) {
+    width: 100%;
+  }
+}

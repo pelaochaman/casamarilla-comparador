@@ -1,0 +1,42 @@
+.addressStoreName {
+  font-size: 1rem;
+  display: block;
+}
+
+.addressStoreAddress {
+  font-size: 0.875rem;
+  display: block;
+}
+
+.addressListLink {
+  font-size: 0.825rem;
+}
+
+.storeName {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.backlinkContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.instructionsText {
+  max-width: 15ch;
+  white-space: pre;
+  line-height: 1.5;
+}
+
+.hoursLabel {
+  margin-bottom: 10px;
+}
+
+.hourRow {
+  margin-bottom: 5px;
+}
+
+.addressContainer .addressLabel {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}

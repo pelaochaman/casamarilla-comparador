@@ -1,0 +1,425 @@
+{
+     /* Black Friday */
+  /* CUERDAS */
+  /******** 50% de oferta en la segunda cuerda ********/
+  "vtex.product-highlights@2.x:product-highlights#flag-cuerdas-segunda-cuerda": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Promo 50% 2da unidad cuerdas"
+      },
+      "blockClass": "cyan-text"
+    },
+    "children": ["product-highlight-wrapper#segunda-cuerda"]
+  },
+  "product-highlight-wrapper#segunda-cuerda": {
+    "children": [
+      "image#promo-segunda-cuerda",
+      "product-highlight-text#segunda-cuerda"
+    ]
+  },
+  "image#promo-segunda-cuerda": {
+    "props": {
+      "src": "/arquivos/ICONOS-3-(dcto-2da un.).png",
+      "blockClass": "icon-for-offer"
+    }
+  },
+  "product-highlight-text#segunda-cuerda": {
+    "props": {
+      "message": "-50% en 2da unidad encordados",
+      "blockClass": ["text-for-offer", "cyan-text"]
+    }
+  },
+  /******** Promo Cuerdas - 40% en fundas ********/
+  "vtex.product-highlights@2.x:product-highlights#flag-guitarra-bajo-funda": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Promo Cuerdas - 40% en fundas"
+      }
+    },
+    "children": ["product-highlight-wrapper#guitarra-bajo-funda"]
+  },
+  "product-highlight-wrapper#guitarra-bajo-funda": {
+    "children": [
+      "image#promo-guitarra-bajo-funda",
+      "product-highlight-text#guitarra-bajo-funda"
+    ]
+  },
+  "image#promo-guitarra-bajo-funda": {
+    "props": {
+      "src": "/arquivos/ICONOS-(pack).png",
+      "blockClass": "icon-for-offer"
+    }
+  },
+  "product-highlight-text#guitarra-bajo-funda": {
+    "props": {
+      "message": "Guitarras & -40% en fundas",
+      "blockClass": "text-for-offer"
+    }
+  },
+  /*********** Promo ukelele - 40% en afinador ***********/
+  "vtex.product-highlights@2.x:product-highlights#flag-cuerdas-ukelele": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Promo ukelele - 40% en afinador"
+      }
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+  "product-highlight-wrapper": {
+    "children": [
+      "image#promo-ukelele",
+      "product-highlight-text"
+    ]
+  },
+  "image#promo-ukelele": {
+    "props": {
+      "src": "/arquivos/ICONOS-(pack).png",
+      "blockClass": "icon-for-offer"
+      /* "link": {
+          "url": "/"
+      } */
+    }
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "Ukeleles & -40% en afinadores",
+      /* "link": "/, */
+      "blockClass": "text-for-offer"
+    }
+  },
+  /******** Nueva promo - 3x2 en accesorios de cuerdas ********/
+  "vtex.product-highlights@2.x:product-highlights#flag-cuerdas-accesorios-tres-por-dos": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Promo Cuerdas - 3x2 accesorios"
+      }
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+  "product-highlight-wrapper": {
+    "children": [
+      "image#promo-cuerdas-accesorios-tres-por-dos",
+      "product-highlight-text#promo-cuerdas-accesorios-tres-por-dos"
+    ]
+  },
+  "image#promo-cuerdas-accesorios-tres-por-dos": {
+    "props": {
+      "src": "/arquivos/ICONOS-3x2.png",
+      "blockClass": "icon-for-offer"
+      /* "link": {
+          "url": "/"
+      } */
+    }
+  },
+  "product-highlight-text#promo-cuerdas-accesorios-tres-por-dos": {
+    "props": {
+      "message": "3x2 en accesorios de cuerdas",
+      /* "link": "/, */
+      "blockClass": "text-for-offer"
+    }
+  },
+  
+  /* PERCUSIÓN */
+  /******** 50% en la segunda unidad de baquetas ********/
+  "vtex.product-highlights@2.x:product-highlights#flag-percusión-segunda-baqueta": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Promo 50% 2da unidad baquetas"
+      }
+    },
+    "children": ["product-highlight-wrapper#percusión-segunda-baqueta"]
+  },
+  "product-highlight-wrapper#percusión-segunda-baqueta": {
+    "children": [
+      "image#promo-percusión-segunda-baqueta",
+      "product-highlight-text#promo-percusión-segunda-baqueta"
+    ]
+  },
+  "image#promo-percusión-segunda-baqueta": {
+    "props": {
+      "src": "/arquivos/ICONOS-3x2.png",
+      "blockClass": "icon-for-offer"
+    }
+  },
+  "product-highlight-text#promo-percusión-segunda-baqueta": {
+    "props": {
+      "message": "3x2 en baquetas",
+      "blockClass": "text-for-offer"
+    }
+  },
+  /******** 40% en la segunda unidad de platillos ********/
+  "vtex.product-highlights@2.x:product-highlights#flag-percusión-segunda-platillos": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Promo 40% 2da unidad platillos"
+      }
+    },
+    "children": ["product-highlight-wrapper#percusión-segunda-platillos"]
+  },
+  "product-highlight-wrapper#percusión-segunda-platillos": {
+    "children": [
+      "image#promo-percusión-segunda-platillos",
+      "product-highlight-text#promo-percusión-segunda-platillos"
+    ]
+  },
+  "image#promo-percusión-segunda-platillos": {
+    "props": {
+      "src": "/arquivos/ICONOS-3-(dcto-2da un.).png",
+      "blockClass": "icon-for-offer"
+    }
+  },
+  "product-highlight-text#promo-percusión-segunda-platillos": {
+    "props": {
+      "message": "-40% en 2da unidad platillos",
+      "blockClass": "text-for-offer"
+    }
+  },
+  /******** Promo 3x2 parches ********/
+  "vtex.product-highlights@2.x:product-highlights#flag-percusión-parches": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Promo 3x2 parches"
+      }
+    },
+    "children": ["product-highlight-wrapper#percusión-parches"]
+  },
+  "product-highlight-wrapper#percusión-parches": {
+    "children": [
+      "image#promo-parches",
+      "product-highlight-text#promo-parches"
+    ]
+  },
+  "image#promo-parches": {
+    "props": {
+      "src": "/arquivos/ICONOS-3x2.png",
+      "blockClass": "icon-for-offer"
+    }
+  },
+  "product-highlight-text#promo-parches": {
+    "props": {
+      "message": "3x2 parches de batería",
+      "blockClass": "text-for-offer"
+    }
+  },
+  /* AUDIO */
+  /******** Promo 30% 2da unidad monitores ********/
+  "vtex.product-highlights@2.x:product-highlights#flag-audio-segunda-monitores": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Promo 30% 2da unidad monitores"
+      }
+    },
+    "children": ["product-highlight-wrapper#audio-segunda-monitores"]
+  },
+  "product-highlight-wrapper#audio-segunda-monitores": {
+    "children": [
+      "image#promo-audio-segunda-monitores",
+      "product-highlight-text#promo-audio-segunda-monitores"
+    ]
+  },
+  "image#promo-audio-segunda-monitores": {
+    "props": {
+      "src": "/arquivos/ICONOS-3-(dcto-2da un.).png",
+      "blockClass": "icon-for-offer"
+    }
+  },
+  "product-highlight-text#promo-audio-segunda-monitores": {
+    "props": {
+      "message": "-30% en 2da unidad monitores",
+      "blockClass": "text-for-offer"
+    }
+  },
+  /******** Promo Micrófonos - 40% en cables ********/
+  "vtex.product-highlights@2.x:product-highlights#flag-audio-microfono-cables": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Promo Micrófonos - 40% en cables"
+      }
+    },
+    "children": ["product-highlight-wrapper#audio-microfono-cables"]
+  },
+  "product-highlight-wrapper#audio-microfono-cables": {
+    "children": [
+      "image#promo-audio-microfono-cables",
+      "product-highlight-text#promo-audio-microfono-cables"
+    ]
+  },
+  "image#promo-audio-microfono-cables": {
+    "props": {
+      "src": "/arquivos/ICONOS-(pack).png",
+      "blockClass": "icon-for-offer"
+    }
+  },
+  "product-highlight-text#promo-audio-microfono-cables": {
+    "props": {
+      "message": "Micrófonos & -40% en cables",
+      "blockClass": "text-for-offer"
+    }
+  },
+  /* TECLAS */
+  /******** Promo Teclas - 40% en fundas o atriles ********/
+  "vtex.product-highlights@2.x:product-highlights#flag-teclas-atril-funda": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Promo Teclas - 40% en fundas o atriles"
+      }
+    },
+    "children": ["product-highlight-wrapper#teclas-atril-funda"]
+  },
+  "product-highlight-wrapper#teclas-atril-funda": {
+    "children": [
+      "image#promo-teclas-atril-funda",
+      "product-highlight-text#promo-teclas-atril-funda"
+    ]
+  },
+  "image#promo-teclas-atril-funda": {
+    "props": {
+      "src": "/arquivos/ICONOS-(pack).png",
+      "blockClass": "icon-for-offer"
+    }
+  },
+  "product-highlight-text#promo-teclas-atril-funda": {
+    "props": {
+      "message": "Teclados & -40% en funda o atril",
+      "blockClass": "text-for-offer"
+    }
+  },
+  /* VIENTOS */
+  /******** Promo segundad unidad en armónicas ********/
+  "vtex.product-highlights@2.x:product-highlights#flag-vientos-seguna-armonica": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Promo 30% 2da unidad armónicas"
+      }
+    },
+    "children": ["product-highlight-wrapper#vientos-seguna-armonica"]
+  },
+  "product-highlight-wrapper#vientos-seguna-armonica": {
+    "children": [
+      "image#promo-vientos-seguna-armonica",
+      "product-highlight-text#promo-vientos-seguna-armonica"
+    ]
+  },
+  "image#promo-vientos-seguna-armonica": {
+    "props": {
+      "src": "/arquivos/ICONOS-3-(dcto-2da un.).png",
+      "blockClass": "icon-for-offer"
+    }
+  },
+  "product-highlight-text#promo-vientos-seguna-armonica": {
+    "props": {
+      "message": "-30% en 2da unidad armónicas",
+      "blockClass": "text-for-offer"
+    }
+  },
+  /******** Promo 3x2 cañas y boquillas ********/
+  "vtex.product-highlights@2.x:product-highlights#flag-vientos-canas-boquillas": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Promo 3x2 cañas y boquillas"
+      }
+    },
+    "children": ["product-highlight-wrapper#vientos-canas-boquillas"]
+  },
+  "product-highlight-wrapper#vientos-canas-boquillas": {
+    "children": [
+      "image#promo-vientos-canas-boquillas",
+      "product-highlight-text#promo-vientos-canas-boquillas"
+    ]
+  },
+  "image#promo-vientos-canas-boquillas": {
+    "props": {
+      "src": "/arquivos/ICONOS-3x2.png",
+      "blockClass": "icon-for-offer"
+    }
+  },
+  "product-highlight-text#promo-vientos-canas-boquillas": {
+    "props": {
+      "message": "3x2 cañas y boquillas",
+      "blockClass": "text-for-offer"
+    }
+  },
+  /******** Cyber Day 2022 ********/
+  "vtex.product-highlights@2.x:product-highlights#flag-cyber-monday-total": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Cyber Monday Total"
+      }
+    },
+    "children": ["product-highlight-wrapper#cyber-monday-total"]
+  },
+  "product-highlight-wrapper#cyber-monday-total": {
+    "children": [
+      "image#cyber-monday-total",
+      "product-highlight-text#cyber-monday-total"
+    ]
+  },
+  "image#cyber-monday-total": {
+    "props": {
+      "src": "/arquivos/banderin-alargueCyber-2022.png",
+      "blockClass": "icon-cyberday-2022"
+    }
+  },
+  "product-highlight-text#cyber-monday-total": {
+    "props": {
+      // "message": "Cyber Day 2022",
+      "blockClass": "text-for-offer"
+    }
+  },
+
+  /******** Oferta Relampago Cyber Day 2022 ********/
+  "vtex.product-highlights@2.x:product-highlights#flag-oferta-relampago": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": "Oferta Relámpago Grupo 1"
+      }
+    },
+    "children": ["product-highlight-wrapper#oferta-relampago"]
+  },
+  "product-highlight-wrapper#oferta-relampago": {
+    "children": [
+      "image#oferta-relampago",
+      "product-highlight-text#oferta-relampago"
+    ]
+  },
+  "image#oferta-relampago": {
+    "props": {
+      "src": "/arquivos/flag-oferta-relampago-30-05-2022.png",
+      "blockClass": "icon-oferta-relampago"
+    }
+  },
+  "product-highlight-text#oferta-relampago": {
+    "props": {
+      // "message": "Oferta relampago",
+      "blockClass": "text-for-offer"
+    }
+  }
+}

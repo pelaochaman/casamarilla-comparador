@@ -1,0 +1,186 @@
+{
+    "store.custom#custom-landing-audio": {
+        "blocks": [
+            "search-result-layout.customQuery#custom-landing-audio"
+        ]
+    },
+    "search-result-layout.customQuery#custom-landing-audio":{
+        "props": {
+            "querySchema": {
+                "maxItemsPerPage": 8,
+                "queryField": "158",
+                "mapField": "productClusterIds"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#black-friday-audio",
+            "search-result-layout.mobile#black-friday-audio",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#black-friday-audio":{
+        "children": [
+            "responsive-layout.desktop#black-friday-audio"
+        ]
+    },
+    "responsive-layout.desktop#black-friday-audio": {
+        "props": {
+          "pagination": "show-more",
+          "showFacetQuantity": true
+        },
+        "children": [
+          "breadcrumb.search",
+          "order-by.v2",
+          "flex-layout.row#botones-promocion-audio",
+          "flex-layout.row#result",
+          "search-fetch-more",
+          "search-products-count-per-page",
+          "search-products-progress-bar"
+        ]
+    },
+    "flex-layout.row#botones-promocion-audio":{
+        "props": {
+          "blockClass": "black-friday-botones-container"
+        },
+        "children": [
+            "flex-layout.row#oferta-1-audio",
+            "flex-layout.row#oferta-2-audio",
+            "flex-layout.row#oferta-3-audio"/* ,
+            "flex-layout.row#oferta-4-audio" */
+        ]
+    },
+    "flex-layout.row#oferta-1-audio":{
+        "children": [
+            "image#oferta-1-audio",
+            "rich-text#oferta-1-audio"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true,
+            "blockClass": "benefits-band-col"
+        }
+    },
+    "rich-text#oferta-1-audio":{
+        "props": {
+            "text": "[50% dcto en la 2° un de monitores ¡Combínalos como quieras!](/166?map=productClusterIds)",
+            "blockClass": "btn-ofertas"
+        }
+    },
+    "image#oferta-1-audio":{
+        "props": {
+            "src": "/arquivos/ICONOS-3-(dcto-2da un.).png",
+            "blockClass": "contenerdor-btn-ofertas-1",
+            "link": {
+                "url": "/166?map=productClusterIds"
+            }
+        }
+    },
+    "flex-layout.row#oferta-2-audio":{
+        "children": [
+            "image#oferta-2-audio",
+            "rich-text#oferta-2-audio"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true,
+            "blockClass": "benefits-band-col"
+        }        
+    },
+    "image#oferta-2-audio":{
+        "props": {
+            "src": "/arquivos/ICONOS-(pack).png",
+            "blockClass": "contenerdor-btn-ofertas-1",
+            "link": {
+                "url": "/169?map=productClusterIds"
+            }
+        }
+    },
+    "rich-text#oferta-2-audio":{
+        "props": {
+            "text": "[Elige tu micrófono y te llevas un cable con 40% de descuento](/169?map=productClusterIds)",
+            "blockClass": "btn-ofertas"
+        }
+    },
+    "flex-layout.row#oferta-3-audio":{
+        "children": [
+            "image#oferta-3-audio",
+            "rich-text#oferta-3-audio"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true,
+            "blockClass": "benefits-band-col"
+        }
+    },
+    "image#oferta-3-audio":{
+        "props": {
+            "src": "/arquivos/ICONOS-(dcto-regular).png",
+            "blockClass": "contenerdor-btn-ofertas-1",
+            "link": {
+                "url": "/173?map=productClusterIds"
+            }
+        }
+    },
+    "rich-text#oferta-3-audio":{
+        "props": {
+            "text": "[Encuentra nuestros descuentos especiales para cada producto](/173?map=productClusterIds)",
+            "blockClass": "btn-ofertas"
+        }
+    },
+    "flex-layout.row#oferta-4-audio":{
+        "children": [
+            "image#oferta-4-audio",
+            "rich-text#oferta-4-audio"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true,
+            "blockClass": "benefits-band-col"
+        }
+
+    },
+    "image#oferta-4-audio":{
+        "props": {
+            "src": "/arquivos/discount (1).png",
+            "blockClass": "contenerdor-btn-ofertas-1",
+            "link": {
+                "url": "/"
+            }
+        }
+    },
+    "rich-text#oferta-4-audio":{
+        "props": {
+            "text": "[texto aquí](/",
+            "blockClass": "btn-ofertas"
+        }
+    },
+    "search-result-layout.mobile#black-friday-audio":{
+        "props": {
+            "showFacetQuantity": true
+        },
+        "children": [
+            "breadcrumb.search",
+            "flex-layout.row#botones-promocion-audio-mobile",
+            "flex-layout.row#filter-order",
+            "search-fetch-previous",
+            "search-content",
+            "search-fetch-more"
+        ]
+    },
+    "flex-layout.row#botones-promocion-audio-mobile":{
+        "props": {
+          "blockClass": "black-friday-botones-container-mobile"
+        },
+        "children": [
+            "slider-layout#promociones-mobile-audio"
+        ]
+    }
+}

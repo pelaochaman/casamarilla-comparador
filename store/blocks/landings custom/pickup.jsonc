@@ -1,0 +1,22 @@
+{
+  "store.custom#pickup": {
+    "blocks": ["flex-layout.row#pickup-container"]
+  },
+  "flex-layout.row#pickup-container": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "pickup-container"
+    },
+    "children": ["rich-text#pickup-title", "rich-text#pickup-content"]
+  },
+  "rich-text#pickup-title": {
+    "props": {
+      "text": "# RETIRO EN TIENDA"
+    }
+  },
+  "rich-text#pickup-content": {
+    "props": {
+      "text": "Los productos adquiridos a través del “catálogo de ventas web” serán sujetos a las condiciones de despacho disponibles en el sitio. La información de la tienda elegida para el retiro será de exclusiva responsabilidad del usuario al momento de completar el formulario de compra.\n\nLos plazos del retiro: Se cuentan desde que Casa Amarilla haya enviado el correo de confirmación del despacho con lo dispuesto en la cláusula 14.1 del documento “Términos y Condiciones”. Los referidos plazos serán desde 48 horas hábiles una vez efectuada la compra, esto es, de lunes a viernes, excluyendo días festivos. El usuario se debe presentar en la tienda escogida, con el mail de confirmación y su cédula de identidad. En caso de enviar a otra persona, esta se debe presentar con el mail,de confirmación y la copia de la cédula de identidad del comprador. El producto estará disponible en la tienda elegida después de 2 días hábiles una vez efectuada la compra."
+    }
+  }
+}

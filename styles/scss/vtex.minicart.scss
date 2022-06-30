@@ -1,0 +1,68 @@
+.opened {
+  z-index: 99999999;
+}
+
+.openIconContainer {
+  padding: 0.4rem;
+}
+
+.openIconContainer :global(.vtex-button) {
+  background-color: #000;
+  outline: none;
+  border: none;
+}
+
+.minicartIconContainer :global(.vtex-store-icons-0-x-cartIcon) {
+  color: #f6ba15;
+}
+
+.cartIcon:hover {
+  color: #f6ba15;
+}
+
+.minicartIconContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* .minicartIconContainer::after {
+  content: 'Carrito';
+  font-size: 0.875rem;
+  color: #fff;
+  text-transform: capitalize;
+  margin-left: 10px;
+} */
+
+.minicartQuantityBadgeDefault {
+  left: 10px;
+  top: -10px;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label) {
+  font-size: 0;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label)::after {
+  font-size: initial;
+  content: 'Ir a mi carro';
+}
+
+@media screen and (max-width: 1024px) {
+  .openIconContainer {
+    padding: 0;
+  }
+
+  .openIconContainer :global(.vtex-button__label) {
+    padding: 0;
+    margin: 0 1rem;
+  }
+
+  .minicartIconContainer::after {
+    display: none;
+  }
+}

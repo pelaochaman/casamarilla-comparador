@@ -1,0 +1,55 @@
+{
+    "store.search.product-comparison#subcategory": {
+        "blocks": [
+            //"search-result-layout#subcategorias"
+            "search-result-layout"
+        ],
+        "props": {
+          "context": {
+            "maxItemsPerPage": 12,
+            "skusFilter": "ALL",
+            "simulationBehavior": "default"
+          }
+        }
+    }/*,
+    "search-result-layout#subcategorias": {
+        "blocks": [
+          "search-result-layout.desktop",
+          "search-result-layout.mobile",
+          "search-not-found-layout#subcategorias"
+        ]
+    },
+    "search-not-found-layout#subcategorias": {
+        "children": [
+            "flex-layout.row#searchbread",
+            "flex-layout.row#notfound-subcategorias"
+        ]
+    },
+    "flex-layout.row#searchbread": {
+        "children": ["breadcrumb.search"],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+    "flex-layout.row#notfound-subcategorias": {
+        "props": {
+            "fullWidth": true,
+            "blockClass": "not-found-categorias"
+        },
+        "children": ["flex-layout.col#notfound-subcategorias"]
+    },
+    "flex-layout.col#notfound-subcategorias": {
+        "props": {
+        "blockClass": "not-found-categorias"
+        },
+        "children": ["rich-text#notfound-subcategorias"]
+    },
+    "rich-text#notfound-subcategorias": {
+        "props": {
+        "text": "## Oops, no tenemos stock pero pronto nos llegará",
+        "textAlignment": "CENTER",
+        "blockClass": "not-found-categorias"
+        }
+    }*/
+}

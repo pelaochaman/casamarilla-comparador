@@ -1,0 +1,25 @@
+.heading--promos-title {
+  font-weight: bolder;
+  font-size: 3.5rem;
+}
+
+.wrapper--promo-title {
+  margin-bottom: 1.75rem;
+}
+
+.heading--promo-title {
+  font-weight: 500;
+  margin: 0 0 0.75rem 0;
+}
+
+.paragraph--promo-text,
+.paragraph--promo-item {
+  margin: 0;
+  max-width: 108ch;
+  line-height: 2;
+}
+
+.paragraph--promo-item::before {
+  content: '-';
+  margin-right: 5px;
+}

@@ -1,0 +1,57 @@
+{
+  "flex-layout.row#newsletter": {
+    "props": {
+      "marginTop": 9,
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "colSizing": "auto",
+      "blockClass": "newsletter-container"
+    },
+    "children": [
+      "flex-layout.col#social-media-wrapper",
+      "flex-layout.col#spacer",
+      "flex-layout.col#text",
+      "flex-layout.col#fields"
+    ]
+  },
+  "flex-layout.col#social-media-wrapper": {
+    "children": ["flex-layout.row#social-media-container"]
+  },
+  "flex-layout.row#social-media-container": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "social-media-row"
+    },
+    "children": ["menu-item#instagram", "menu-item#facebook", "menu-item#youtube"]
+  },
+  "flex-layout.col#text": {
+    "children": ["rich-text#subscribe"]
+  },
+  "rich-text#subscribe": {
+    "props": {
+      "text": "SUSCRIBETE A NUESTRO NEWSLETTER",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "newsletter-subscribe"
+    }
+  },
+  "flex-layout.col#fields": {
+    "children": ["newsletter-form"]
+  },
+  "newsletter-form": {
+    "children": ["newsletter-input-email", "newsletter-submit"]
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Ingresa tu email",
+      "blockClass": "newsletter-email"
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "Suscribirse",
+      "blockClass": "newsletter-submit"
+    }
+  }
+}

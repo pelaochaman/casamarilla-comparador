@@ -1,0 +1,66 @@
+{
+    "store.custom#inscripcion-master": {
+      "children": [
+        "list-context.image-list#main-carousel",
+        "flex-layout.row#inscripciones",
+        "formularioMaster"
+      ]
+    },
+    "list-context.image-list#main-carousel": {
+        "children": ["slider-layout#images-clases"],
+        "props": {
+          "height":600,
+          "width":100,
+          "images": [
+            {
+              "image": "/arquivos/1920x600-masterclass18-02-22.jpg",
+              "mobileImage": "/arquivos/480x480-masterclassmobile-18-02-22.jpg",
+              "link": {
+                "url": "#"
+              },
+              "blockClass":"slider-home"
+            },
+            {
+              "image": "/arquivos/1920x600-masterclass18-02-22.jpg",
+              "mobileImage": "/arquivos/480x480-masterclassmobile-18-02-22.jpg",
+              "link": {
+                "url": "#"
+              },
+              "blockClass":"slider-home"
+            }
+          ]
+        }
+    },
+    "slider-layout#images-clases": {
+        "props": {
+            "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+            },
+            "autoplay": {
+            "timeout": 2500,
+            "stopOnHover": true
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "blockClass": "slider-home-desktop"
+        }
+    },
+    "flex-layout.row#inscripciones": {
+        "children": [
+          "rich-text#titulo-inscripciones"
+        ],
+        "props": {
+          "blockClass": "inscripcion-master"
+        }
+    },
+    "rich-text#titulo-inscripciones": {
+        "props": {
+          "text": "**INSCRIPCIÓN MASTER** \n\n Por la compra de tu Armónica o Ukelele durante marzo o abril, inscríbete de forma gratuita a una clase por Zoom junto a Claudio Bluesman o Diego Alonso a realizarse en Mayo. Sólo debes dejar tus datos y serás contactado vía correo electrónico con la información y el link de la clase. ¡Apúrate! Los cupos son limitados.",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": ["inscripcion-title","title-inscripcion-master"]
+        }
+    }
+}

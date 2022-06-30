@@ -1,0 +1,22 @@
+{
+  "store.custom#delivery": {
+    "blocks": ["flex-layout.row#delivery-container"]
+  },
+  "flex-layout.row#delivery-container": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "delivery-container"
+    },
+    "children": ["rich-text#delivery-title", "rich-text#delivery-content"]
+  },
+  "rich-text#delivery-title": {
+    "props": {
+      "text": "# Despacho"
+    }
+  },
+  "rich-text#delivery-content": {
+    "props": {
+      "text": "Los plazos para el despacho y entrega: Se cuentan desde que Casa Amarilla haya enviado el correo de confirmación de envío con lo dispuesto en la cláusula 14.1 del documento “Términos y Condiciones”. Los referidos plazos serán de hasta 11 días hábiles, esto es, de lunes a viernes, excluyendo días festivos.\n\nDocumento tributario: La boleta o factura correspondiente a la compra será entregada conjuntamente con el producto. Adicionalmente el cliente puede solicitar su documento de compra a contacto@casamarilla.cl.\n\n15.3.- Revisión por parte del cliente: El cliente es responsable por los daños ocasionados al producto una vez entregado. En el caso de despacho a domicilio, al momento de firmar la recepción del producto, el cliente o quien reciba el producto debe revisarlo y la recepción conforme implica que el producto no presentaba daños en ese momento. Casa Amarilla no se hará responsable por daños en productos que cuenten con firma conforme en la guía de despacho, sea esta firma del cliente o de quien reciba el producto en la dirección señalada al momento de la compra.\n\nLa entrega en domicilio se realizará dentro de 4 días hábiles en todos los lugares donde haya cobertura de entrega por parte del operador logístico. Para zonas rurales donde no haya una ruta definida o la dirección corresponda a “zona roja o peligrosa” el operador tendrá la facultad de entregar su pedido en la agencia o sucursal más cercana, siendo el cliente responsable de acudir a retirar su compra a dicha sucursal."
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+    "store.custom#black-friday": {
+      "blocks": [
+        "responsive-layout.desktop#desktop-black-friday", 
+        "responsive-layout.mobile#mobile-black-friday"
+      ]
+    }, 
+    "responsive-layout.desktop#desktop-black-friday": {
+    "children": [
+      "flex-layout.row#black-friday"
+    ]
+    },
+    "flex-layout.row#black-friday":{
+      "props": {
+        "blockClass": "black-friday-container"
+      },
+      "children": ["flex-layout.col#black-friday"]
+    },
+    "flex-layout.col#black-friday":{
+      "props": {
+        "blockClass": "black-friday-container"
+      },
+      "children": ["flex-layout.row#black-friday-main-container", "flex-layout.col#contenedor-categorias"]
+    },
+    "flex-layout.row#black-friday-main-container": {
+        "props": {
+          "blockClass": "black-friday-container"
+        },
+        "children": ["rich-text#black-friday-title"]
+    },
+    "rich-text#black-friday-title": {
+      "props": {
+        "text": "## Selecciona la categoría que estás buscando y te mostraremos nuestras ofertas activas:",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "blockClass": "black-friday-title"
+      }
+    },
+    "flex-layout.col#contenedor-categorias":{
+      "props": {
+        "blockClass": "black-friday-category-container",
+        "preventVerticalStretch": true
+      },
+      "children": [
+        "flex-layout.row#cuerdas-percusion-container",
+        "flex-layout.row#audio-teclas-container",
+        "flex-layout.row#vientos-container"
+      ]
+    },
+    "flex-layout.row#cuerdas-percusion-container": {
+      "props": {
+        "blockClass": ""
+      },
+      "children": ["stack-layout#category-banner-1", "stack-layout#category-banner-2"]
+    },
+    "stack-layout#category-banner-1": {
+      "props": {
+        "blockClass": "black-friday-block-banner"
+      },
+      "children": ["image#categoria-cuerdas", "link#categoria-cuerdas-btn"]
+    },
+    "image#categoria-cuerdas": {
+      "props": {
+        "src": "/arquivos/cuerdas.jpg",
+        "blockClass": "black-friday-banners",
+        "link": {
+          "url": "/black-friday/cuerdas"
+        }
+      }
+    },
+    "link#categoria-cuerdas-btn": {
+      "props": {
+        "href": "/black-friday/cuerdas",
+        "label": "Cuerdas",
+        "blockClass": "black-friday-category"
+      }
+    },
+    "stack-layout#category-banner-2": {
+      "props": {
+        "blockClass": "black-friday-block-banner"
+      },
+      "children": ["image#categoria-percusion", "link#categoria-percusion-btn"]
+    },
+    "image#categoria-percusion": {
+      "props": {
+        "src": "/arquivos/percusion-prueba-min.jpg",
+        "blockClass": "black-friday-banners",
+        "link": {
+          "url": "/black-friday/percusion"
+        }
+      }
+    },
+    "link#categoria-percusion-btn": {
+      "props": {
+        "href": "/black-friday/percusion",
+        "label": "Percusión",
+        "blockClass": "black-friday-category"
+      }
+    },
+    "flex-layout.row#audio-teclas-container": {
+      "props": {
+        "blockClass": ""
+      },
+      "children": ["stack-layout#category-banner-3", "stack-layout#category-banner-4"]
+    },
+    "stack-layout#category-banner-3": {
+      "props": {
+        "blockClass": "black-friday-block-banner"
+      },
+      "children": ["image#categoria-audio", "link#categoria-audio-texto"]
+    },
+    "image#categoria-audio": {
+      "props": {
+        "src": "/arquivos/audio-prueba-min.jpg",
+        "blockClass": "black-friday-banners",
+        "link": {
+          "url": "/black-friday/audio"
+        }
+      }
+    },
+    "link#categoria-audio-texto": {
+      "props": {
+        "href": "/black-friday/audio",
+        "label": "Audio",
+        "blockClass": "black-friday-category"
+      }
+    },
+    "stack-layout#category-banner-4": {
+      "props": {
+        "blockClass": "black-friday-block-banner"
+      },
+      "children": ["image#categoria-teclas", "link#categoria-teclas-texto"]
+    },
+    "image#categoria-teclas": {
+      "props": {
+        "src": "/arquivos/teclas.jpg",
+        "blockClass": "black-friday-banners",
+        "link": {
+          "url": "/black-friday/teclas"
+        }
+      }
+    },
+    "link#categoria-teclas-texto": {
+      "props": {
+        "href": "/black-friday/teclas",
+        "label": "Teclas",
+        "blockClass": "black-friday-category"
+      }
+    },
+    "flex-layout.row#vientos-container":{
+      "props": {
+        "blockClass": ""
+      },
+      "children": ["stack-layout#category-banner-5"]
+    },
+    "stack-layout#category-banner-5": {
+      "props": {
+        "blockClass": "black-friday-block-banner"
+      },
+      "children": ["image#categoria-vientos", "link#categoria-vientos-texto"]
+    },
+    "image#categoria-vientos": {
+      "props": {
+        "src": "/arquivos/vientos-prueba-min.jpg",
+        "blockClass": "black-friday-banners",
+        "link": {
+          "url": "/black-friday/vientos"
+        }
+      }
+    },
+    "link#categoria-vientos-texto": {
+      "props": {
+        "href": "/black-friday/vientos",
+        "label": "Vientos",
+        "blockClass": "black-friday-category"
+      }
+    },
+    "responsive-layout.mobile#mobile-black-friday": {
+      "children": [
+        "flex-layout.row#black-friday-mobile"
+      ]
+    },
+    "flex-layout.row#black-friday-mobile":{
+      "props": {
+        "blockClass": "black-friday-container"
+      },
+      "children": ["flex-layout.col#black-friday"]
+    }
+}
+  

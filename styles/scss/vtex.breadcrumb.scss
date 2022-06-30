@@ -1,0 +1,40 @@
+.homeLink::after {
+  content: 'Inicio';
+  color: #c4c4c4;
+}
+
+.homeIcon {
+  display: none;
+}
+
+.container,
+.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.arrow::before {
+  content: '/';
+}
+
+.arrow::before,
+.link,
+.term {
+  text-transform: uppercase;
+  color: #aeaeae;
+  font-weight: 500;
+}
+
+.arrow-desktop::before,
+.link-desktop,
+.term-desktop {
+  font-size: 1.25rem;
+}
+
+.caretIcon {
+  display: none;
+}
+
+.container--breadcrumb-mobile {
+  flex-wrap: wrap;
+}

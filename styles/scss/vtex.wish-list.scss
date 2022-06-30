@@ -1,0 +1,23 @@
+.wishlistIconContainer {
+  text-align: right;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 3;
+}
+
+.wishlistIconContainer :global(.vtex-button) {
+  border: 0;
+  outline: none;
+  min-height: auto;
+}
+
+.wishlistIconContainer :global(.vtex-button__label) {
+  padding: 0 !important;
+}
+
+.wishlistIconContainer :global(.vtex-button):hover,
+.wishlistIconContainer :global(.vtex-button):focus {
+  background: none !important;
+}
+

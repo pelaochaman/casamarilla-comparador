@@ -1,0 +1,27 @@
+.groupName {
+  color: #848484;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: none;
+}
+
+.specificationName {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.specificationName[data-specification-name="Video"],
+.specificationName[data-specification-name="Tremolo"],
+.specificationValue[data-specification-name="Tremolo"],
+.specificationName[data-specification-name="Tipo de madera Mastil"],
+.specificationValue[data-specification-name="Tipo de madera Mastil"] {
+  display: none;
+}
+
+.specificationValue {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4b4b4b;
+}

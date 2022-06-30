@@ -1,0 +1,1092 @@
+{
+  "store.custom#promos": {
+    "blocks": ["flex-layout.row#promos-main-container"]
+  },
+  "flex-layout.row#promos-main-container": {
+    "props": {
+      "paddingTop": {
+        "desktop": 6,
+        "mobile": 4
+      },
+      "blockClass": "promos-main-container"
+    },
+    "children": ["flex-layout.col#promos-main-container"]
+  },
+  "flex-layout.col#promos-main-container": {
+    "props": {
+      "paddingLeft": {
+        "desktop": 8,
+        "mobile": 5
+      },
+      "paddingRight": {
+        "desktop": 8,
+        "mobile": 5
+      },
+      "blockClass": "promos-main-container"
+    },
+    "children": ["rich-text#promos-title", "flex-layout.row#promo-1", "flex-layout.row#promo-2"]
+  },
+  "rich-text#promos-title": {
+    "props": {
+      "text": "# Promociones Vigentes",
+      "blockClass": "promos-title"
+    }
+  },
+  "flex-layout.row#promo-1": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": ["flex-layout.col#promo-1"]
+  },
+  "flex-layout.col#promo-1": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": [
+      "rich-text#promo-1-title",
+      "rich-text#promo-1-terms",
+      "rich-text#promo-1-terms-and-conditions-item-1",
+      "rich-text#promo-1-terms-and-conditions-item-2",
+      "rich-text#promo-1-terms-and-conditions-item-3",
+      "rich-text#promo-1-terms-and-conditions-item-4",
+      "rich-text#promo-1-terms-and-conditions-item-5",
+      "rich-text#promo-1-conditions",
+      "rich-text#promo-1-terms-and-conditions-item-6",
+      "rich-text#promo-1-terms-and-conditions-item-7",
+      "rich-text#promo-1-terms-and-conditions-item-8",
+      "rich-text#promo-1-terms-and-conditions-item-9",
+      "rich-text#promo-1-terms-and-conditions-item-10"
+    ]
+  },
+  "rich-text#promo-1-title": {
+    "props": {
+      "text": "## 1.- Promoción \"Casa Amarilla en regiones\"\n## Vigencia: 26.07.2021 - 31.12.2021",
+      "blockClass": "promo-title"
+    }
+  },
+  "rich-text#promo-1-terms": {
+    "props": {
+      "text": "Compra en nuestra página web www.casamarilla.cl y si el producto no cumple con tu expectativa, devuélvelo o cámbialo sin problemas. Sólo debes seguir los siguientes pasos para solicitar devolución del dinero:",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-1-terms-and-conditions-item-1": {
+    "props": {
+      "text": "Tienes un plazo de 20 días después de recibir tu producto para retractarte de tu compra",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-1-terms-and-conditions-item-2": {
+    "props": {
+      "text": "Contáctanos por nuestros canales oficiales: clientes@casamarilla.zendesk.com , Instagram, Facebook o Whatsapp para comentar tu caso. Sólo necesitamos el número de la orden de compra para coordinar la devolución/cambio del producto",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-1-terms-and-conditions-item-3": {
+    "props": {
+      "text": "Debes llevar tu producto a un pick-up cercano o coordinar con nosotros el retiro a tu domicilio, para el cual debes imprimir una etiqueta",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-1-terms-and-conditions-item-4": {
+    "props": {
+      "text": "Una vez llegue el producto pasará por revisión de nuestros especialistas",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-1-terms-and-conditions-item-5": {
+    "props": {
+      "text": "La devolución del total de tu compra se hará efectiva en un plazo de 3 días hábiles desde que fue revisado",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-1-conditions": {
+    "props": {
+      "text": "Condiciones:",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-1-terms-and-conditions-item-6": {
+    "props": {
+      "text": "Tu producto debe estar en las mismas condiciones en que fue enviado, con la etiqueta, con sus accesorios y en su embalaje original",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-1-terms-and-conditions-item-7": {
+    "props": {
+      "text": "Sólo válido para compras en nuestra página web",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-1-terms-and-conditions-item-8": {
+    "props": {
+      "text": "Promoción no corre para productos sellados",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-1-terms-and-conditions-item-9": {
+    "props": {
+      "text": "Condiciones aplican sólo para compra en regiones",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-1-terms-and-conditions-item-10": {
+    "props": {
+      "text": "Si al recibir tu producto éste presenta fallas, debes coordinar con servicio técnico para su reparación",
+      "blockClass": "promo-item"
+    }
+  },
+  // PROMO 2
+  "flex-layout.row#promo-2": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": ["flex-layout.col#promo-2"]
+  },
+  "flex-layout.col#promo-2": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": [
+      "rich-text#promo-2-title",
+      "rich-text#promo-2-terms",
+      "rich-text#promo-2-terms-and-conditions-item-1",
+      "rich-text#promo-2-terms-and-conditions-item-2",
+      "rich-text#promo-2-terms-and-conditions-item-3",
+      "rich-text#promo-2-terms-and-conditions-item-4",
+      "rich-text#promo-2-terms-and-conditions-item-5",
+      "rich-text#promo-2-conditions",
+      "rich-text#promo-2-terms-and-conditions-item-6",
+      "rich-text#promo-2-terms-and-conditions-item-7",
+      "rich-text#promo-2-terms-and-conditions-item-8",
+      "rich-text#promo-2-terms-and-conditions-item-9",
+      "rich-text#promo-2-terms-and-conditions-item-10"
+    ]
+  },
+  "rich-text#promo-2-title": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-title"
+    }
+  },
+  "rich-text#promo-2-terms": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-2-terms-and-conditions-item-1": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-2-terms-and-conditions-item-2": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-2-terms-and-conditions-item-3": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-2-terms-and-conditions-item-4": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-2-terms-and-conditions-item-5": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-2-conditions": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-2-terms-and-conditions-item-6": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-2-terms-and-conditions-item-7": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-2-terms-and-conditions-item-8": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-2-terms-and-conditions-item-9": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-2-terms-and-conditions-item-10": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+
+  // PROMO 3
+  "flex-layout.row#promo-3": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": ["flex-layout.col#promo-3"]
+  },
+  "flex-layout.col#promo-3": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": [
+      "rich-text#promo-3-title",
+      "rich-text#promo-3-terms",
+      "rich-text#promo-3-terms-and-conditions-item-1",
+      "rich-text#promo-3-terms-and-conditions-item-2",
+      "rich-text#promo-3-terms-and-conditions-item-3",
+      "rich-text#promo-3-terms-and-conditions-item-4",
+      "rich-text#promo-3-terms-and-conditions-item-5",
+      "rich-text#promo-3-conditions",
+      "rich-text#promo-3-terms-and-conditions-item-6",
+      "rich-text#promo-3-terms-and-conditions-item-7",
+      "rich-text#promo-3-terms-and-conditions-item-8",
+      "rich-text#promo-3-terms-and-conditions-item-9",
+      "rich-text#promo-3-terms-and-conditions-item-10"
+    ]
+  },
+  "rich-text#promo-3-title": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-title"
+    }
+  },
+  "rich-text#promo-3-terms": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-3-terms-and-conditions-item-1": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-3-terms-and-conditions-item-2": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-3-terms-and-conditions-item-3": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-3-terms-and-conditions-item-4": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-3-terms-and-conditions-item-5": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-3-conditions": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-3-terms-and-conditions-item-6": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-3-terms-and-conditions-item-7": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-3-terms-and-conditions-item-8": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-3-terms-and-conditions-item-9": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-3-terms-and-conditions-item-10": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+
+  // PROMO 4
+  "flex-layout.row#promo-4": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": ["flex-layout.col#promo-4"]
+  },
+  "flex-layout.col#promo-4": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": [
+      "rich-text#promo-4-title",
+      "rich-text#promo-4-terms",
+      "rich-text#promo-4-terms-and-conditions-item-1",
+      "rich-text#promo-4-terms-and-conditions-item-2",
+      "rich-text#promo-4-terms-and-conditions-item-3",
+      "rich-text#promo-4-terms-and-conditions-item-4",
+      "rich-text#promo-4-terms-and-conditions-item-5",
+      "rich-text#promo-4-conditions",
+      "rich-text#promo-4-terms-and-conditions-item-6",
+      "rich-text#promo-4-terms-and-conditions-item-7",
+      "rich-text#promo-4-terms-and-conditions-item-8",
+      "rich-text#promo-4-terms-and-conditions-item-9",
+      "rich-text#promo-4-terms-and-conditions-item-10"
+    ]
+  },
+  "rich-text#promo-4-title": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-title"
+    }
+  },
+  "rich-text#promo-4-terms": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-4-terms-and-conditions-item-1": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-4-terms-and-conditions-item-2": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-4-terms-and-conditions-item-3": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-4-terms-and-conditions-item-4": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-4-terms-and-conditions-item-5": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-4-conditions": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-4-terms-and-conditions-item-6": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-4-terms-and-conditions-item-7": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-4-terms-and-conditions-item-8": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-4-terms-and-conditions-item-9": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-4-terms-and-conditions-item-10": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+
+  // PROMO 5
+  "flex-layout.row#promo-5": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": ["flex-layout.col#promo-5"]
+  },
+  "flex-layout.col#promo-5": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": [
+      "rich-text#promo-5-title",
+      "rich-text#promo-5-terms",
+      "rich-text#promo-5-terms-and-conditions-item-1",
+      "rich-text#promo-5-terms-and-conditions-item-2",
+      "rich-text#promo-5-terms-and-conditions-item-3",
+      "rich-text#promo-5-terms-and-conditions-item-4",
+      "rich-text#promo-5-terms-and-conditions-item-5",
+      "rich-text#promo-5-conditions",
+      "rich-text#promo-5-terms-and-conditions-item-6",
+      "rich-text#promo-5-terms-and-conditions-item-7",
+      "rich-text#promo-5-terms-and-conditions-item-8",
+      "rich-text#promo-5-terms-and-conditions-item-9",
+      "rich-text#promo-5-terms-and-conditions-item-10"
+    ]
+  },
+  "rich-text#promo-5-title": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-title"
+    }
+  },
+  "rich-text#promo-5-terms": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-5-terms-and-conditions-item-1": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-5-terms-and-conditions-item-2": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-5-terms-and-conditions-item-3": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-5-terms-and-conditions-item-4": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-5-terms-and-conditions-item-5": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-5-conditions": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-5-terms-and-conditions-item-6": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-5-terms-and-conditions-item-7": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-5-terms-and-conditions-item-8": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-5-terms-and-conditions-item-9": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-5-terms-and-conditions-item-10": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+
+  // PROMO 6
+  "flex-layout.row#promo-6": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": ["flex-layout.col#promo-6"]
+  },
+  "flex-layout.col#promo-6": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": [
+      "rich-text#promo-6-title",
+      "rich-text#promo-6-terms",
+      "rich-text#promo-6-terms-and-conditions-item-1",
+      "rich-text#promo-6-terms-and-conditions-item-2",
+      "rich-text#promo-6-terms-and-conditions-item-3",
+      "rich-text#promo-6-terms-and-conditions-item-4",
+      "rich-text#promo-6-terms-and-conditions-item-5",
+      "rich-text#promo-6-conditions",
+      "rich-text#promo-6-terms-and-conditions-item-6",
+      "rich-text#promo-6-terms-and-conditions-item-7",
+      "rich-text#promo-6-terms-and-conditions-item-8",
+      "rich-text#promo-6-terms-and-conditions-item-9",
+      "rich-text#promo-6-terms-and-conditions-item-10"
+    ]
+  },
+  "rich-text#promo-6-title": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-title"
+    }
+  },
+  "rich-text#promo-6-terms": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-6-terms-and-conditions-item-1": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-6-terms-and-conditions-item-2": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-6-terms-and-conditions-item-3": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-6-terms-and-conditions-item-4": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-6-terms-and-conditions-item-5": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-6-conditions": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-6-terms-and-conditions-item-6": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-6-terms-and-conditions-item-7": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-6-terms-and-conditions-item-8": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-6-terms-and-conditions-item-9": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-6-terms-and-conditions-item-10": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+
+  // PROMO 7
+  "flex-layout.row#promo-7": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": ["flex-layout.col#promo-7"]
+  },
+  "flex-layout.col#promo-7": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": [
+      "rich-text#promo-7-title",
+      "rich-text#promo-7-terms",
+      "rich-text#promo-7-terms-and-conditions-item-1",
+      "rich-text#promo-7-terms-and-conditions-item-2",
+      "rich-text#promo-7-terms-and-conditions-item-3",
+      "rich-text#promo-7-terms-and-conditions-item-4",
+      "rich-text#promo-7-terms-and-conditions-item-5",
+      "rich-text#promo-7-conditions",
+      "rich-text#promo-7-terms-and-conditions-item-6",
+      "rich-text#promo-7-terms-and-conditions-item-7",
+      "rich-text#promo-7-terms-and-conditions-item-8",
+      "rich-text#promo-7-terms-and-conditions-item-9",
+      "rich-text#promo-7-terms-and-conditions-item-10"
+    ]
+  },
+  "rich-text#promo-7-title": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-title"
+    }
+  },
+  "rich-text#promo-7-terms": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-7-terms-and-conditions-item-1": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-7-terms-and-conditions-item-2": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-7-terms-and-conditions-item-3": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-7-terms-and-conditions-item-4": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-7-terms-and-conditions-item-5": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-7-conditions": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-7-terms-and-conditions-item-6": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-7-terms-and-conditions-item-7": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-7-terms-and-conditions-item-8": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-7-terms-and-conditions-item-9": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-7-terms-and-conditions-item-10": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+
+  // PROMO 8
+  "flex-layout.row#promo-8": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": ["flex-layout.col#promo-8"]
+  },
+  "flex-layout.col#promo-8": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": [
+      "rich-text#promo-8-title",
+      "rich-text#promo-8-terms",
+      "rich-text#promo-8-terms-and-conditions-item-1",
+      "rich-text#promo-8-terms-and-conditions-item-2",
+      "rich-text#promo-8-terms-and-conditions-item-3",
+      "rich-text#promo-8-terms-and-conditions-item-4",
+      "rich-text#promo-8-terms-and-conditions-item-5",
+      "rich-text#promo-8-conditions",
+      "rich-text#promo-8-terms-and-conditions-item-6",
+      "rich-text#promo-8-terms-and-conditions-item-7",
+      "rich-text#promo-8-terms-and-conditions-item-8",
+      "rich-text#promo-8-terms-and-conditions-item-9",
+      "rich-text#promo-8-terms-and-conditions-item-10"
+    ]
+  },
+  "rich-text#promo-8-title": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-title"
+    }
+  },
+  "rich-text#promo-8-terms": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-8-terms-and-conditions-item-1": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-8-terms-and-conditions-item-2": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-8-terms-and-conditions-item-3": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-8-terms-and-conditions-item-4": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-8-terms-and-conditions-item-5": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-8-conditions": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-8-terms-and-conditions-item-6": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-8-terms-and-conditions-item-7": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-8-terms-and-conditions-item-8": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-8-terms-and-conditions-item-9": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-8-terms-and-conditions-item-10": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+
+  // PROMO 9
+  "flex-layout.row#promo-9": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": ["flex-layout.col#promo-9"]
+  },
+  "flex-layout.col#promo-9": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": [
+      "rich-text#promo-9-title",
+      "rich-text#promo-9-terms",
+      "rich-text#promo-9-terms-and-conditions-item-1",
+      "rich-text#promo-9-terms-and-conditions-item-2",
+      "rich-text#promo-9-terms-and-conditions-item-3",
+      "rich-text#promo-9-terms-and-conditions-item-4",
+      "rich-text#promo-9-terms-and-conditions-item-5",
+      "rich-text#promo-9-conditions",
+      "rich-text#promo-9-terms-and-conditions-item-6",
+      "rich-text#promo-9-terms-and-conditions-item-7",
+      "rich-text#promo-9-terms-and-conditions-item-8",
+      "rich-text#promo-9-terms-and-conditions-item-9",
+      "rich-text#promo-9-terms-and-conditions-item-10"
+    ]
+  },
+  "rich-text#promo-9-title": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-title"
+    }
+  },
+  "rich-text#promo-9-terms": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-9-terms-and-conditions-item-1": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-9-terms-and-conditions-item-2": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-9-terms-and-conditions-item-3": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-9-terms-and-conditions-item-4": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-9-terms-and-conditions-item-5": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-9-conditions": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-9-terms-and-conditions-item-6": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-9-terms-and-conditions-item-7": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-9-terms-and-conditions-item-8": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-9-terms-and-conditions-item-9": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-9-terms-and-conditions-item-10": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+
+  // PROMO 10
+  "flex-layout.row#promo-10": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": ["flex-layout.col#promo-10"]
+  },
+  "flex-layout.col#promo-10": {
+    "props": {
+      "blockClass": "promo-container"
+    },
+    "children": [
+      "rich-text#promo-10-title",
+      "rich-text#promo-10-terms",
+      "rich-text#promo-10-terms-and-conditions-item-1",
+      "rich-text#promo-10-terms-and-conditions-item-2",
+      "rich-text#promo-10-terms-and-conditions-item-3",
+      "rich-text#promo-10-terms-and-conditions-item-4",
+      "rich-text#promo-10-terms-and-conditions-item-5",
+      "rich-text#promo-10-conditions",
+      "rich-text#promo-10-terms-and-conditions-item-6",
+      "rich-text#promo-10-terms-and-conditions-item-7",
+      "rich-text#promo-10-terms-and-conditions-item-8",
+      "rich-text#promo-10-terms-and-conditions-item-9",
+      "rich-text#promo-10-terms-and-conditions-item-10"
+    ]
+  },
+  "rich-text#promo-10-title": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-title"
+    }
+  },
+  "rich-text#promo-10-terms": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-10-terms-and-conditions-item-1": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-10-terms-and-conditions-item-2": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-10-terms-and-conditions-item-3": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-10-terms-and-conditions-item-4": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-10-terms-and-conditions-item-5": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-10-conditions": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-text"
+    }
+  },
+  "rich-text#promo-10-terms-and-conditions-item-6": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-10-terms-and-conditions-item-7": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-10-terms-and-conditions-item-8": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-10-terms-and-conditions-item-9": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  },
+  "rich-text#promo-10-terms-and-conditions-item-10": {
+    "props": {
+      "text": "",
+      "blockClass": "promo-item"
+    }
+  }
+}

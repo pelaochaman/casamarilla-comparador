@@ -1,0 +1,369 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  /* DESKTOP */
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#newsletter", // Newsletter
+      "flex-layout.row#content-seo", // Contenido SEO
+      "flex-layout.row#footer", // Informacion footer
+      "retail-rocket-container#exit-intent-bar",
+      "flex-layout.row#footer-bottom" // Logos vtex y propulso
+      //"emailRetailRocket"
+    ]
+  },
+
+  // Inicio informacion footer
+  "flex-layout.row#footer": {
+    "props": {
+      "colSizing": {
+        "tablet": "auto"
+      },
+      "blockClass": "footer-container"
+    },
+    "children": [
+      "flex-layout.col#bottom-logo",
+      "flex-layout.col#account",
+      "flex-layout.col#customer-service",
+      "flex-layout.col#about-us"/* ,
+      "link#whatsapp-button" */
+    ]
+  },
+  "flex-layout.col#bottom-logo": {
+    "props": {
+      "blockClass": "footer-col"
+    },
+    "children": ["logo#footer"]
+  },
+  "logo#footer": {
+    "props": {
+      "title": "Casa Amarilla",
+      "href": "/",
+      "url": "/arquivos/logo.png"
+    }
+  },
+  "flex-layout.col#account": {
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "footer-col"
+    },
+    "children": [
+      "rich-text#account-heading",
+      "rich-text#account-1",
+      "rich-text#account-2",
+      "rich-text#account-3",
+      "rich-text#account-4"
+    ]
+  },
+  "rich-text#account-heading": {
+    "props": {
+      "text": "### MI CUENTA",
+      "blockClass": "footer-heading"
+    }
+  },
+  "rich-text#account-1": {
+    "props": {
+      "text": "[Iniciar sesión](/login)",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#account-2": {
+    "props": {
+      "text": "[Registro](/login)",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#account-3": {
+    "props": {
+      "text": "[Olvidé mi contraseña](/login)",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#account-4": {
+    "props": {
+      "text": "[Mi Wishlist](/account#/wishlist)",
+      "blockClass": "footer-text"
+    }
+  },
+  "flex-layout.col#customer-service": {
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "footer-col"
+    },
+    "children": [
+      "rich-text#customer-service-heading",
+      "rich-text#customer-service-1",
+      "rich-text#customer-service-2",
+      "rich-text#customer-service-3",
+      "rich-text#customer-service-4",
+      "rich-text#customer-service-5",
+      "rich-text#customer-service-6"
+    ]
+  },
+  "rich-text#customer-service-heading": {
+    "props": {
+      "text": "### SERVICIO AL CLIENTE",
+      "blockClass": "footer-heading"
+    }
+  },
+  "rich-text#customer-service-1": {
+    "props": {
+      "text": "[Preguntas Frecuentes](/preguntas-frecuentes)",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#customer-service-2": {
+    "props": {
+      "text": "[Métodos de pago](/metodos-de-pago)",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#customer-service-3": {
+    "props": {
+      "text": "[Despacho a domicilio](/envios)",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#customer-service-4": {
+    "props": {
+      "text": "[Retiro en Tienda](/retiro-en-tienda)",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#customer-service-5": {
+    "props": {
+      "text": "[Términos y Condiciones](/terminos-y-condiciones)",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#customer-service-6": {
+    "props": {
+      "text": "[Promociones Vigentes](/promociones)",
+      "blockClass": "footer-text"
+    }
+  },
+  "flex-layout.col#about-us": {
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "footer-col"
+    },
+    "children": [
+      "rich-text#about-us-heading",
+      "rich-text#about-us-1",
+      "rich-text#about-us-2",
+      "rich-text#about-us-3",
+      "rich-text#about-us-4"
+      // "rich-text#about-us-5"
+    ]
+  },
+  "rich-text#about-us-heading": {
+    "props": {
+      "text": "### SOBRE NOSOTROS",
+      "blockClass": "footer-heading"
+    }
+  },
+  "rich-text#about-us-1": {
+    "props": {
+      "text": "[Quienes somos](/about-us)",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#about-us-2": {
+    "props": {
+      "text": "[Tiendas](/tiendas)",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#about-us-3": {
+    "props": {
+      "text": "[Contáctanos](/contacto)",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#about-us-4": {
+    "props": {
+      "text": "[Trabaja con Nosotros](/trabaja-con-nosotros)",
+      "blockClass": "footer-text"
+    }
+  },
+  "rich-text#about-us-5": {
+    "props": {
+      "text": "[Stock Cyber](/arquivos/stock-cyber-2022.pdf)",
+      "blockClass": "footer-text"
+    }
+  },
+  // Fin informacion footer
+
+  // Inicio (no se ve)
+  "menu-item#whatsapp": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+        "href": "https://api.whatsapp.com/send/?phone=56964483909&text&app_absent=0"
+      },
+      "iconProps": {
+        "id": "bnd-instagram",
+        "size": 30,
+        "viewBox": "0 0 28 28"
+      },
+      "blockClass": "newsletter-icon"
+    }
+  },
+  "link#whatsapp-button": {
+    "props": {
+      "href": "https://api.whatsapp.com/send/?phone=56964483909&text&app_absent=0",
+      "label": "Escríbenos",
+      "displayMode": "button",
+      "blockClass": "whatsapp-button",
+      "target": "_blank"
+    }
+  },
+  // Fin (no se ve)
+
+  /* MOBILE */
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#newsletter", // Newsletter
+      "flex-layout.row#content-seo", // Contenido SEO
+      "flex-layout.row#footer", // Informacion footer
+      "flex-layout.row#footer-bottom", // Logos vtex y propulso
+      "retail-rocket-container#exit-intent-bar"
+    ]
+  },
+
+  /* Inicio (no se ve) */
+  "iframe#whatsapp": {
+    "props": {
+      "width": "120px",
+      "height": "30px",
+      "src": "https://cdn.smooch.io/message-us/index.html?channel=whatsapp&color=green&size=compact&radius=20px&label=Escr%C3%ADbenos&number=56964483909"
+    }
+  },
+  /* Fin (no se ve) */
+
+  // Inicio contenido SEO
+  "flex-layout.row#content-seo": {
+    "props": {
+      "colSizing": {
+        "tablet": "auto"
+      },
+      "blockClass": "footer-content-seo"
+    },
+    "children": [
+      "flex-layout.col#content-seo-first",
+      "flex-layout.col#content-seo-second"
+    ]
+  },
+  "flex-layout.col#content-seo-first": {
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "footer-content-seo-first"
+    },
+    "children": [
+      "rich-text#title-seo-first",
+      "rich-text#text-seo-first"
+    ]
+  },
+  "rich-text#title-seo-first": {
+    "props": {
+      "text": "Te damos la bienvenida al nuevo sitio de casamarilla.cl",
+      "blockClass": "footer-title-seo-first"
+    }
+  },
+  "rich-text#text-seo-first": {
+    "props": {
+      "text": "Si eres amante empezar a tocar un instrumento, necesitas accesorios, ver contenido o eres profesional y estás buscando tu próxima herramienta de trabajo, encuentra acá tus productos como: Guitarras Acústicas, Guitarras Eléctricas, Cuerdas, Acordeones, Guitarras Electroacústicas, Bajo Eléctrico, Teclados, Ukeleles, Amplificadores de Guitarra, Fundas & Cases, Baquetas, Amplificadores de Bajo, Armónicas, Violines, Atriles, Pianos, Cables, Melódicas, Platillos, Recorders, Sintetizadores, Parches, Audífonos, Repuestos Y Otros, Trompetas, Micrófonos Inalámbricos, Straps, Baterías Acústicas, Capodastros, Micrófonos, Parlantes, Afinadores, Controladores, Uñetas & Slides, Flautas, Cañas & Boquillas, Saxos, Pedales De Batería, Bajo Electroacústico, Tambores, Claves & Metálofonos, Monitores, Clarinetes, Pedales De Teclado, Baterías Digitales, Bancas & Pisos, Interfaces, Cencerros, Congas, Pad De Práctica, Panderos & Panderetas, Shakers, Mixers, Quintos, Tumbas, Guiros, Puentes & Clavijeros, Efectos, Cajones & Cajas, Limpieza Y Mantención, Dj, Merchandising, Percusion Menor, Folcloricos, Bongoes.",
+      "blockClass": "footer-text-seo-first"
+    }
+  },
+  "flex-layout.col#content-seo-second": {
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "footer-content-seo-second"
+    },
+    "children": [
+      "rich-text#title-seo-second",
+      "rich-text#text-seo-second"
+    ]
+  },
+  "rich-text#title-seo-second": {
+    "props": {
+      "text": "title",
+      "blockClass": "footer-title-seo-second"
+    }
+  },
+  "rich-text#text-seo-second": {
+    "props": {
+      "text": "Tenemos las mejores y más reconocidas marcas para ti, encuentra en casamarilla.cl a Fender, Hohner, Daddario, Squier, Greg Bennett, Alhambra, Fino Musical, Medeli, Gewa, Gator, Flight, Meinl, Quiklok, Promark, Palmer, Gibraltar, Planet Waves, Shure, Nord, Evans, Roy Benson, Admira, Tropical, Cort, Elixir, Akg, Hoffer, Ashdown, Bose, Maxtone, Alesis, Cascha, Pearl River, Giannini, Rico, 1920.",
+      "blockClass": "footer-text-seo-second"
+    }
+  },
+  // Fin contenido SEO
+
+  // Inicio seccion logos vtex y propulso
+  "flex-layout.row#footer-bottom": {
+    "children": [
+      //"rich-text#footer-derechos",
+      "flex-layout.row#footer-logos-empresa"
+    ],
+    "props": {
+      "blockClass": "footer-bottom",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#footer-derechos": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "TODOS LOS DERECHOS RESERVADOS CASAMARILLA 2022.",
+      "blockClass": "footer-copy"
+    }
+  },
+  "flex-layout.row#footer-logos-empresa": {
+    "children": [
+      "image#camaraDeComercio",
+      "image#vtex",
+      "image#propulsow"
+    ],
+    "props": {
+      "blockClass": "footer-empresa",
+      "verticalAlign": "center"
+    }
+  },
+  "image#camaraDeComercio": {
+    "props": {
+      "width": 50,
+      "height": 70,
+      "src": "/arquivos/sello-confianza-ecommerce-CCS.png",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "logo-cc"
+    }
+  },
+  "image#vtex": {
+    "props": {
+      "width": 90,
+      // "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/VTEX_Logo.svg/1200px-VTEX_Logo.svg.png",
+      "src": "/arquivos/logo_vtex_new_white.svg",
+      "link": {
+        "url": "https://vtex.com/"
+      },
+      "blockClass": "logo-vtex"
+    }
+  },
+  "image#propulsow": {
+    "props": {
+      "src": "/arquivos/propulsowLogo-blanco.svg",
+      "link": {
+        "url": "https://propulsow.cl/?utm_source=www.casamarilla.com&utm_medium=Referral&utm_campaign=FooterLink&utm_term=diseno+desarrollo+propulsow+propulsow.cl+ecommerce"
+      },
+      "width": 150,
+      "height": 30,
+      "blockClass": "logo-ko"
+    }
+  }
+  // Fin seccion logos vtex y propulso
+}

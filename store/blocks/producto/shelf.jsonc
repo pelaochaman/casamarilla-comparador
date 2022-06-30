@@ -1,0 +1,178 @@
+{
+  "product-summary.shelf#main": {
+    "children": [
+      "add-to-list-btn",
+      /* "vtex.product-highlights@2.x:product-highlights#flag-cuerdas-segunda-cuerda", */
+      /* "vtex.product-highlights@2.x:product-highlights#flag-guitarra-bajo-funda", */
+      /* "vtex.product-highlights@2.x:product-highlights#flag-cuerdas-ukelele", */
+      "vtex.product-highlights@2.x:product-highlights#flag-cuerdas-accesorios-tres-por-dos",
+      "vtex.product-highlights@2.x:product-highlights#flag-percusión-segunda-baqueta",
+      "vtex.product-highlights@2.x:product-highlights#flag-percusión-segunda-platillos",
+      "vtex.product-highlights@2.x:product-highlights#flag-percusión-parches",
+      "vtex.product-highlights@2.x:product-highlights#flag-audio-segunda-monitores",
+      "vtex.product-highlights@2.x:product-highlights#flag-audio-microfono-cables",
+      "vtex.product-highlights@2.x:product-highlights#flag-teclas-atril-funda",
+      "vtex.product-highlights@2.x:product-highlights#flag-vientos-seguna-armonica",
+      "vtex.product-highlights@2.x:product-highlights#flag-vientos-canas-boquillas",
+      "vtex.product-highlights@2.x:product-highlights#flag-cyber-monday-total", 
+      "vtex.product-highlights@2.x:product-highlights#flag-oferta-relampago",
+      "product-summary-image",
+      "vtex.store-components:product-brand",
+      "product-summary-name",
+      "product-summary-sku-selector",
+      "product-selling-price",
+      "product-list-price",
+      "product-installments#shelf",
+      "add-to-cart-button"
+    ],
+    "props": {
+      "blockClass": "product-summary"
+    }
+  },
+  "product-summary.shelf#main-result": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-price",
+      "add-to-cart-button"
+    ],
+    "props": {
+      "blockClass": "product-summary"
+    }
+  },
+  "product-summary-sku-selector": {
+    "props": {
+      "showVariationsLabels": false,
+      "displayMode": "slider",
+      "sliderDisplayThreshold": 3,
+      "sliderItemsPerPage": {
+        "desktop": 3,
+        "mobile": 2
+      },
+      "visibility": "more-than-one",
+      "blockClass": "summary"
+    }
+  },
+  "product-installments#shelf": {
+    "props": {
+      "markers": ["installments"],
+      "message": "{installmentsNumber} x {installmentValue}{hasInterest, select, true {, {interestRate} de interés} false { sin interés}}",
+      "blockClass": "product-installments"
+    }
+  },
+  "add-to-cart-button": {
+    "props": {
+      "text": "AGREGAR AL CARRO",
+      "unavailableText": "AGOTADO",
+      "showTooltipOnSkuNotSelected": true,
+      "blockClass": "product-buy-button"
+    }
+  },
+
+  /////// CYBER /////////
+  "shelf#Cyber-1": {
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "props": {
+      "collection": 150,
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "mobileOnly",
+      "showPaginationDots": "mobileOnly",
+      "simulationBehavour":"default",
+      "productList": {
+        "maxItems": 100,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText": "  "
+      },
+      "blockClass": "shelf-cyber"
+    }
+  },
+  "shelf#Cyber-2": {
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "props": {
+      "collection": 153,
+      "orderBy": "OrderByTopSaleDESC",
+      "showPaginationDots": "mobileOnly",
+      "paginationDotsVisibility": "mobileOnly",
+      "simulationBehavour":"default",
+      "productList": {
+        "maxItems": 100,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText": "  "
+      },
+      "blockClass": "shelf-cyber"
+    }
+  },
+  "shelf#Cyber-3": {
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "props": {
+      "collection": 152,
+      "orderBy": "OrderByTopSaleDESC",
+      "showPaginationDots": "mobileOnly",
+      "paginationDotsVisibility": "mobileOnly",
+      "simulationBehavour":"default",
+      "productList": {
+        "maxItems": 100,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText": "  "
+      },
+      "blockClass": "shelf-cyber"
+    }
+  },
+  "shelf#Cyber-4": {
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "props": {
+      "collection": 154,
+      "orderBy": "OrderByTopSaleDESC",
+      "showPaginationDots": "mobileOnly",
+      "paginationDotsVisibility": "mobileOnly",
+      "simulationBehavour":"default",
+      "productList": {
+        "maxItems": 100,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText": "  "
+      },
+      "blockClass": "shelf-cyber"
+    }
+  },
+  "shelf#Cyber-5": {
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "props": {
+      "collection": 151,
+      "orderBy": "OrderByTopSaleDESC",
+      "showPaginationDots": "mobileOnly",
+      "paginationDotsVisibility": "mobileOnly",
+      "simulationBehavour":"default",
+      "productList": {
+        "maxItems": 100,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText": "  "
+      },
+      "blockClass": "shelf-cyber"
+    }
+  }
+}

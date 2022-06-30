@@ -1,0 +1,186 @@
+{
+    "store.custom#custom-landing-percusion": {
+        "blocks": [
+            "search-result-layout.customQuery#custom-landing-percusion"
+        ]
+    },
+    "search-result-layout.customQuery#custom-landing-percusion":{
+        "props": {
+            "querySchema": {
+                "maxItemsPerPage": 8,
+                "queryField": "157",
+                "mapField": "productClusterIds"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#black-friday-percusion",
+            "search-result-layout.mobile#black-friday-percusion",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#black-friday-percusion":{
+        "children": [
+            "responsive-layout.desktop#black-friday-percusion"
+        ]
+    },
+    "responsive-layout.desktop#black-friday-percusion": {
+        "props": {
+          "pagination": "show-more",
+          "showFacetQuantity": true
+        },
+        "children": [
+          "breadcrumb.search",
+          "order-by.v2",
+          "flex-layout.row#botones-promocion-percusion",
+          "flex-layout.row#result",
+          "search-fetch-more",
+          "search-products-count-per-page",
+          "search-products-progress-bar"
+        ]
+    },
+    "flex-layout.row#botones-promocion-percusion":{
+        "props": {
+          "blockClass": "black-friday-botones-container"
+        },
+        "children": [
+            "flex-layout.row#oferta-1-percusion",
+            "flex-layout.row#oferta-2-percusion",
+            "flex-layout.row#oferta-3-percusion",
+            "flex-layout.row#oferta-4-percusion"
+        ]
+    },
+    "flex-layout.row#oferta-1-percusion":{
+        "children": [
+            "image#oferta-1-percusion",
+            "rich-text#oferta-1-percusion"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true,
+            "blockClass": "benefits-band-col"
+        }
+    },
+    "rich-text#oferta-1-percusion":{
+        "props": {
+            
+            "text": "[ 3x2 en baquetas. ¡Combínalas como quieras!](/162?map=productClusterIds)",
+            "blockClass": "btn-ofertas"
+        }
+    },
+    "image#oferta-1-percusion":{
+        "props": {
+            "src": "/arquivos/ICONOS-3x2.png",
+            "blockClass": "contenerdor-btn-ofertas-1",
+            "link": {
+                "url": "/162?map=productClusterIds"
+            }
+        }
+    },
+    "flex-layout.row#oferta-2-percusion":{
+        "children": [
+            "image#oferta-2-percusion",
+            "rich-text#oferta-2-percusion"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true,
+            "blockClass": "benefits-band-col"
+        }
+    },
+    "image#oferta-2-percusion":{
+        "props": {
+            "src": "/arquivos/ICONOS-3-(dcto-2da un.).png",
+            "blockClass": "contenerdor-btn-ofertas-1",
+            "link": {
+                "url": "/163?map=productClusterIds"
+            }
+        }
+    },
+    "rich-text#oferta-2-percusion":{
+        "props": {
+            "text": "[40% dcto en la 2° un de platillos. ¡Combínalos como quieras!](/163?map=productClusterIds)",
+            "blockClass": "btn-ofertas"
+        }
+    },
+    "flex-layout.row#oferta-3-percusion":{
+        "children": [
+            "image#oferta-3-percusion",
+            "rich-text#oferta-3-percusion"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true,
+            "blockClass": "benefits-band-col"
+        }
+    },
+    "image#oferta-3-percusion":{
+        "props": {
+            "src": "/arquivos/ICONOS-3x2.png",
+            "blockClass": "contenerdor-btn-ofertas-1",
+            "link": {
+                "url": "/167?map=productClusterIds"
+            }
+        }
+    },
+    "rich-text#oferta-3-percusion":{
+        "props": {
+            "text": "[3x2 en parches de batería. ¡Combínalos como quieras!](/167?map=productClusterIds)",
+            "blockClass": ["btn-ofertas", "btn-ofertas-verdes"]
+        }
+    },
+    "flex-layout.row#oferta-4-percusion":{
+        "children": [
+            "image#oferta-4-percusion",
+            "rich-text#oferta-4-percusion"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true,
+            "blockClass": "benefits-band-col"
+        }
+    },
+    "image#oferta-4-percusion":{
+        "props": {
+            "src": "/arquivos/ICONOS-(dcto-regular).png",
+            "blockClass": "contenerdor-btn-ofertas-1",
+            "link": {
+                "url": "/174?map=productClusterIds"
+            }
+        }
+    },
+    "rich-text#oferta-4-percusion":{
+        "props": {
+            "text": "[Encuentra nuestros descuentos especiales para cada producto](/174?map=productClusterIds)",
+            "blockClass": "btn-ofertas"
+        }
+    },
+    "search-result-layout.mobile#black-friday-percusion":{
+        "props": {
+            "showFacetQuantity": true
+        },
+        "children": [
+            "breadcrumb.search",
+            "flex-layout.row#botones-promocion-percusion-mobile",
+            "flex-layout.row#filter-order",
+            "search-fetch-previous",
+            "search-content",
+            "search-fetch-more"
+        ]
+    },
+    "flex-layout.row#botones-promocion-percusion-mobile":{
+        "props": {
+            "blockClass": "black-friday-botones-container-mobile"
+          },
+          "children": [
+            "slider-layout#promociones-mobile-percusion"
+          ]
+    }
+}

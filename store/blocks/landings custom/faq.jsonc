@@ -1,0 +1,415 @@
+{
+  "store.custom#faq": {
+    "children": ["flex-layout.row#faq"]
+  },
+
+  "flex-layout.row#faq": {
+    "props": {
+      "blockClass": "faq-container"
+    },
+    "children": ["flex-layout.col#faq"]
+  },
+
+  "flex-layout.col#faq": {
+    "children": ["rich-text#faq", "disclosure-layout-group#group"]
+  },
+  "rich-text#faq": {
+    "props": {
+      "text": "## Preguntas Frecuentes"
+    }
+  },
+
+  "disclosure-layout-group#group": {
+    "children": [
+      "disclosure-layout#first",
+      "disclosure-layout#second",
+      "disclosure-layout#third",
+      "disclosure-layout#fourth",
+      "disclosure-layout#sixth",
+      "disclosure-layout#seventh",
+      "disclosure-layout#eighth",
+      "disclosure-layout#ninth",
+      "disclosure-layout#tenth",
+      "disclosure-layout#eleventh",
+      "disclosure-layout#twelveth",
+      "disclosure-layout#thirteenth"
+    ]
+  },
+
+  "disclosure-layout#first": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#first", "disclosure-content#first"]
+  },
+  "disclosure-trigger#first": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question1"]
+  },
+  "disclosure-content#first": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer1"]
+  },
+  "rich-text#question1": {
+    "props": {
+      "text": "¿Como comprar?"
+    }
+  },
+  "rich-text#answer1": {
+    "props": {
+      "text": "Ingresa y selecciona el (los) producto que deseas comprar. Luego debes hacer click en “Agregar al carro de compras”.\nEl producto seleccionado quedará en tu carro de compras.\nPara seguir comprando debes cerrar el dialogo Pagar y puedes continuar conociendo nuestros productos.\nCuando termines de agregar todos los productos que deseas comprar, debes seleccionar “Ir a pagar”\nEscoge despacho a domicilio, retiro en tienda según tu preferencia. (Recuerda revisar el valor de tu despacho)\nLuego debes seleccionar el método de pago que deseas y hacer click en “Pagar”\nDebes seguir las indicaciones de webpay o Kiphu y ¡TU COMPRA ESTÁ OK!\nAl finalizar el proceso de pago te llegará un correo de confirmación de tu compra. En otro correo electrónico te enviaremos tu factura y número de seguimiento.\nSi tienes cualquier tipo de inconveniente para hacer tu compra puedes escribirnos a indícanos en el asunto el número de tu pedido o el tipo de problema."
+    }
+  },
+
+  "disclosure-layout#second": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#second", "disclosure-content#second"]
+  },
+  "disclosure-trigger#second": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question2"]
+  },
+  "disclosure-content#second": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2"]
+  },
+  "rich-text#question2": {
+    "props": {
+      "text": "¿Con qué medios de pago puedo comprar?"
+    }
+  },
+  "rich-text#answer2": {
+    "props": {
+      "text": "Puedes pagar tus compras con Webpay y también Khipu. Las tarjetas aceptadas son Visa, MasterCard, American Express, Diners Club International y Magna. Sólo tarjetas nacionales."
+    }
+  },
+
+  "disclosure-layout#third": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#third", "disclosure-content#third"]
+  },
+  "disclosure-trigger#third": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question3"]
+  },
+  "disclosure-content#third": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer3"]
+  },
+  "rich-text#question3": {
+    "props": {
+      "text": "¿Qué es Khipu?"
+    }
+  },
+  "rich-text#answer3": {
+    "props": {
+      "text": "Kiphu es una plataforma de pago que funciona a través de transferencias bancarias electrónicas. Para utilizar esta opción solo debes ingresar a nuestro sitio desde un computador y agregar al carro de compra todos los productos que quieras comprar. Luego de seleccionar \"Ir a pagar\", seleccionas Kiphu, y haces click en \"Pagar\". Debes seguir los pasos que entrega Kiphu y ¡listo!"
+    }
+  },
+
+  "disclosure-layout#fourth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#fourth", "disclosure-content#fourth"]
+  },
+  "disclosure-trigger#fourth": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question4"]
+  },
+  "disclosure-content#fourth": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2"]
+  },
+  "rich-text#question4": {
+    "props": {
+      "text": "Me falló el pago en Webpay, ¿Por qué? ¿Qué puedo hacer?"
+    }
+  },
+  "rich-text#answer4": {
+    "props": {
+      "text": "El sistema Webpay de Transbank esporádicamente presenta problemas de conexión. Si tu compra es rechazada por favor intenta nuevamente luego de unos minutos. El problema debería resolverse y la compra podrá procesarse sin problemas. Si tu compra aparece como rechazada y el cargo fue hecho a tu cuenta bancaria, esto se debe a problemas de sincronización internos de Transbank. Los montos cargados a tu cuenta serán devueltos hasta 72 horas hábiles."
+    }
+  },
+
+  "disclosure-layout#sixth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#sixth", "disclosure-content#sixth"]
+  },
+  "disclosure-trigger#sixth": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question6"]
+  },
+  "disclosure-content#sixth": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer6"]
+  },
+  "rich-text#question6": {
+    "props": {
+      "text": "La compra figura como rechazada pero el monto fue descontado de mi tarjeta. ¿Cómo proceder?"
+    }
+  },
+  "rich-text#answer6": {
+    "props": {
+      "text": "En estos casos, el propio sistema de WebPay realizará el reembolso dentro de las siguientes 72 horas hábiles."
+    }
+  },
+
+  "disclosure-layout#seventh": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#seventh", "disclosure-content#seventh"]
+  },
+  "disclosure-trigger#seventh": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question7"]
+  },
+  "disclosure-content#seventh": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer7"]
+  },
+  "rich-text#question7": {
+    "props": {
+      "text": "¿Puedo comprar desde el extranjero?"
+    }
+  },
+  "rich-text#answer7": {
+    "props": {
+      "text": "Solo se aceptan tarjetas nacionales, además nuestros envíos se realizan solo dentro del territorio nacional."
+    }
+  },
+
+  "disclosure-layout#eighth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#eighth", "disclosure-content#eighth"]
+  },
+  "disclosure-trigger#eighth": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question8"]
+  },
+  "disclosure-content#eighth": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer8"]
+  },
+  "rich-text#question8": {
+    "props": {
+      "text": "¿Cómo puedo proceder con el cambio de mi producto?"
+    }
+  },
+  "rich-text#answer8": {
+    "props": {
+      "text": "El cambio puede ser realizado dentro de los 10 primeros días a contar desde la entrega del producto en tu domicilio. Revisar términos y condiciones"
+    }
+  },
+
+  "disclosure-layout#ninth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#ninth", "disclosure-content#ninth"]
+  },
+  "disclosure-trigger#ninth": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question9"]
+  },
+  "disclosure-content#ninth": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer9"]
+  },
+  "rich-text#question9": {
+    "props": {
+      "text": "¿Cómo se realiza el despacho de mis productos?"
+    }
+  },
+  "rich-text#answer9": {
+    "props": {
+      "text": "El pedido es preparado y entregado a una empresa logística, la cual tiene la responsabilidad de entregar de manera oportuna los productos a todo el territorio de Chile Continental."
+    }
+  },
+
+  "disclosure-layout#tenth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#tenth", "disclosure-content#tenth"]
+  },
+  "disclosure-trigger#tenth": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question10"]
+  },
+  "disclosure-content#tenth": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer10"]
+  },
+  "rich-text#question10": {
+    "props": {
+      "text": "¿Cuál es la empresa encargada de los despachos?"
+    }
+  },
+  "rich-text#answer10": {
+    "props": {
+      "text": "La entrega de tus productos se realiza mediante la empresa Chilepost en RM & Bluexprerss para todo el pais con la opción de envío seleccionada al momento de comprar."
+    }
+  },
+
+  "disclosure-layout#eleventh": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#eleventh", "disclosure-content#eleventh"]
+  },
+  "disclosure-trigger#eleventh": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question11"]
+  },
+  "disclosure-content#eleventh": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer11"]
+  },
+  "rich-text#question11": {
+    "props": {
+      "text": "¿Cuánto se demora el envío?"
+    }
+  },
+  "rich-text#answer11": {
+    "props": {
+      "text": "El tiempo de entrega en Santiago es 4 a 6 dias hábiles y a las demás regiones es de hasta 10 dias hábiles."
+    }
+  },
+
+  "disclosure-layout#twelveth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#twelveth", "disclosure-content#twelveth"]
+  },
+  "disclosure-trigger#twelveth": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question12"]
+  },
+  "disclosure-content#twelveth": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer12"]
+  },
+  "rich-text#question12": {
+    "props": {
+      "text": "¿Puedo retirar en tienda?"
+    }
+  },
+  "rich-text#answer12": {
+    "props": {
+      "text": "Los productos comprados a través de Internet pueden ser retirados en las tiendas que aparecen en el proceso de compra. Ver detalle de dirección y horario."
+    }
+  },
+
+  "disclosure-layout#thirteenth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#thirteenth", "disclosure-content#thirteenth"]
+  },
+  "disclosure-trigger#thirteenth": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question13"]
+  },
+  "disclosure-content#thirteenth": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer13"]
+  },
+  "rich-text#question13": {
+    "props": {
+      "text": "¿Se realizan despachos los fines de semana?"
+    }
+  },
+  "rich-text#answer13": {
+    "props": {
+      "text": "Nuestros operadores logísticos asociados no despachan los fines de semana. Los envíos solo se efectúan de lunes a viernes desde las 09:00 horas hasta las 19.00 horas. Todos los pedidos que se realicen el fin de semana serán despachados a partir del lunes siguiente."
+    }
+  },
+
+  "disclosure-state-indicator": {
+    "props": {
+      "Show": "icon-caret#down",
+      "Hide": "icon-caret#up"
+    }
+  },
+  "icon-caret#down": {
+    "props": {
+      "orientation": "down"
+    }
+  },
+  "icon-caret#up": {
+    "props": {
+      "orientation": "up"
+    }
+  }
+}

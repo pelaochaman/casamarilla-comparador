@@ -1,0 +1,103 @@
+{
+    "store.search.product-comparison#brand": {
+        "blocks": [
+          "search-result-layout#brand"
+        ],
+        "props": {
+          "context": {
+            "orderByField": "OrderByReleaseDateDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 12,
+            "skusFilter": "ALL",
+            "simulationBehavior": "default"
+          }
+        }
+    },
+    "search-result-layout#brand": {
+      "blocks": [
+        "search-result-layout.desktop.product-comparison#brand",
+        "search-result-layout.mobile#brand",
+        "search-not-found-layout"
+      ]
+    },
+    /* DESKTOP */
+    "search-result-layout.desktop.product-comparison#brand": {
+      "props": {
+          "pagination": "show-more",
+          "showFacetQuantity": true
+      },
+      "children": [
+          //"bannerCollection",
+          "breadcrumb.search",
+          "search-banner#banner-category",
+          "total-products.v2",
+          "order-by.v2",
+          "search-fetch-previous",
+          "flex-layout.row#result",
+          "search-fetch-more",
+          "search-products-count-per-page",
+          "search-products-progress-bar",
+          "product-comparison-drawer"
+      ]
+  },
+  //PRODUCT COMPARISON DRAWER
+  "product-comparison-drawer": {
+    "blocks": ["list-context.comparison-product-summary-slider#drawer"]
+  },
+  "list-context.comparison-product-summary-slider#drawer": {
+    "blocks": ["product-summary.shelf.product-comparison#drawer"],
+    "children": ["slider-layout#comparison-drawer"]
+  },
+  "slider-layout#comparison-drawer": {
+    "props": {
+      "blockClass": "comparison-drawer",
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "showPaginationDots": "never",
+      "infinite": true,
+      "fullWidth": true
+    }
+  },
+  "product-summary.shelf.product-comparison#drawer": {
+    "children": [
+      "product-summary-column#drawer-col2",
+      "product-comparison-block.close-button"
+    ],
+    "props": {
+      "blockClass": "drawer-summary"
+    }
+  },
+  "product-summary-column#drawer-col2": {
+    "children": ["product-summary-name", "product-summary-price#comparison"],
+    "props": {
+      "blockClass": "drawer-summary-col2"
+    }
+  },
+  "product-summary-price#comparison": {
+    "props": {
+      "showListPrice": false,
+      "showSellingPriceRange": false,
+      "showLabels": false,
+      "showInstallments": false,
+      "showDiscountValue": false
+    }
+  },
+  /* MOBILE */
+  "search-result-layout.mobile#brand": {
+      "props": {
+          "showFacetQuantity": true
+      },
+      "children": [
+          //"bannerCollection",
+          "breadcrumb.search",
+          "search-banner#banner-category-mobile",
+          "flex-layout.row#filter-order",
+          "search-fetch-previous",
+          "search-content",
+          "search-fetch-more"
+      ]
+  }
+}

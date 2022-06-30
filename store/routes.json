@@ -1,0 +1,65 @@
+{
+  "store.custom#about-us": {
+    "path": "/about-us"
+  },
+  "store.custom#faq": {
+    "path": "/preguntas-frecuentes"
+  },
+  "store.custom#contact": {
+    "path": "/contacto"
+  },
+  "store.custom#terms-and-conditions": {
+    "path": "/terminos-y-condiciones"
+  },
+  "store.custom#payment-methods": {
+    "path": "/metodos-de-pago"
+  },
+  "store.custom#delivery": {
+    "path": "/envios"
+  },
+  "store.custom#pickup": {
+    "path": "/retiro-en-tienda"
+  },
+  "store.custom#promos": {
+    "path": "/promociones"
+  },
+  "store.custom#cyber": {
+    "path": "/cyber-2021"
+  },
+  "store.custom#landing-cyber": {
+    "path": "/precyber"
+  },
+  "store.custom#landing-cyber-home": {
+    "path": "/cyber"
+  },
+  "store.custom#black-friday": {
+    "path": "/black-friday"
+  },
+  "store.custom#decibel": {
+    "path": "/decibel"
+  },
+  "store.custom#custom-landing-cuerdas": {
+    "path": "/black-friday/cuerdas"
+  },
+  "store.custom#custom-landing-vientos": {
+    "path": "/black-friday/vientos"
+  },
+  "store.custom#custom-landing-teclas": {
+    "path": "/black-friday/teclas"
+  },
+  "store.custom#custom-landing-audio": {
+    "path": "/black-friday/audio"
+  },
+  "store.custom#custom-landing-percusion": {
+    "path": "/black-friday/percusion"
+  },
+  "store.custom#inscripcion-master": {
+    "path": "/inscripcion-master"
+  },
+  "store.custom#trabaja-con-nosotros":{
+    "path": "/trabaja-con-nosotros"
+  },
+  "store.custom#product-comparison": {
+    "path": "/product-comparison"
+  }
+}

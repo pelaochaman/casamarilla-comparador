@@ -1,0 +1,486 @@
+{
+  "store.custom#landing-cyber-home": {
+    "blocks": [
+      "responsive-layout.desktop#desktop-home-v2",
+      "responsive-layout.mobile#mobile-home-v2" /**/
+    ]
+  },
+
+  // INICIO DESKTOP
+  "responsive-layout.desktop#desktop-home-v2": {
+    "children": [
+      "slider-layout#home-desktop-v2", // Slider principal
+      "flex-layout.row#benefits", // Beneficios
+      "flex-layout.row#calugas-1", // Seccion calugas 1
+      // "rich-text#productos-destacados-1-title", // Title productos destacados 1
+      "flex-layout.row#productos-destacados-1", // Carrousel "productos destacados 1" - retail rocket
+      "rich-text#productos-destacados-3-title", // Title productos destacados 3
+      "flex-layout.row#productos-destacados-3", // Carrousel "productos destacados 3"
+      // "rich-text#oferta-relampago-title", // Title oferta relampago
+      // "oferta-relampago1", // Oferta relampago
+      "flex-layout.row#calugas-2", // Seccion calugas 2
+      "rich-text#productos-destacados-2-title", // Title productos destacados 2
+      "flex-layout.row#productos-destacados-2"  // Carrousel "productos destacados 2"
+    ]
+  },
+
+  // Inicio slider principal
+  "slider-layout#home-desktop-v2": {
+    "children": [
+      "image#slide-desktop-1-v2"
+      // "image#slide-desktop-2",
+      // "image#slide-desktop-3",
+      // "image#slide-desktop-4"
+    ],
+    "props": {
+      /*
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": false
+      },
+      */
+      // "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "arrowSize": 45,
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1
+      },
+      "fullWidth": true,
+      "blockClass": "slider-home-desktop"
+    }
+  },
+  "image#slide-desktop-1-v2": {
+    "props": {
+      "src": "/arquivos/banner-desk-alargueCyber-01-06-2022.png",
+      "link": {
+        "url": "/194?map=productClusterIds"
+      }
+    }
+  },
+  // Fin slider principal
+
+  // Inicio beneficios
+  "flex-layout.row#benefits": {
+    "props": {
+      "marginBottom": 8,
+      "blockClass": "benefits-band"
+    },
+    "children": [
+      "flex-layout.row#benefit-1",
+      "flex-layout.row#benefit-2",
+      "flex-layout.row#benefit-3"
+    ]
+  },
+  "flex-layout.row#benefit-1": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "benefits-band-col"
+    },
+    "children": ["image#isotipo-benefit-1", "rich-text#benefit-1"]
+  },
+  "image#isotipo-benefit-1": {
+    "props": {
+      "src": "/arquivos/isotipo-tarjetas.png",
+      "width": "140px",
+      "height": "79px",
+      "blockClass": ["benefits-band-img", "isotipo-targetas"]
+    }
+  },
+  "rich-text#benefit-1": {
+    "props": {
+      "text": "**Paga Hasta con 2\nTarjetas de Crédito**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#benefit-2": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "benefits-band-col"
+    },
+    "children": ["image#isotipo-benefit-2", "rich-text#benefit-2"]
+  },
+  "image#isotipo-benefit-2": {
+    "props": {
+      "src": "/arquivos/isotipo-entrega.png",
+      "width": "50px",
+      "height": "51px",
+      "blockClass": ["benefits-band-img", "isotipo-entrega"]
+    }
+  },
+  "rich-text#benefit-2": {
+    "props": {
+      "text": "**Envío a todo Chile**\n¡Envío gratis!\npor compras superiores a $50.000",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#benefit-3": {
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "benefits-band-col"
+    },
+    "children": ["image#isotipo-benefit-3", "rich-text#benefit-3"]
+  },
+  "image#isotipo-benefit-3": {
+    "props": {
+      "src": "/arquivos/isotipo-rosette.png",
+      "width": "70px",
+      "height": "70px",
+      "blockClass": ["benefits-band-img", "isotipo-rosette"]
+    }
+  },
+  "rich-text#benefit-3": {
+    "props": {
+      "text": "**Garantía de Satisfacción**\n¡Devuelve tu compra sin trabas!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  // Fin beneficios
+
+  // Inicio seccion calugas 1
+  "flex-layout.row#calugas-1": {
+    "props": {
+      "blockClass": "container-calugas1-cyber",
+      "colGap": 2,
+      "colSizing": "auto",
+      "marginTop": {
+        "tablet": 8,
+        "phone": 4
+      }
+    },
+    "children": [
+      "flex-layout.col#calugas-1-1",
+      "flex-layout.col#calugas-1-2"
+    ]
+  },
+  // 1
+  "flex-layout.col#calugas-1-1": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "col-calugas1-cyber"
+    },
+    "children": ["image#calugas-1-1"]
+  },
+  "image#calugas-1-1": {
+    "props": {
+      "src": "/arquivos/caluga1-1-cyberday2022-23-05-2022.jpg",
+      "link": {
+        "url": "/188?map=productClusterIds"
+      },
+      "blockClass": "img-calugas1-cyber"
+    }
+  },
+  // 2
+  "flex-layout.col#calugas-1-2": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "col-calugas1-cyber"
+    },
+    "children": ["image#calugas-1-2"]
+  },
+  "image#calugas-1-2": {
+    "props": {
+      "src": "/arquivos/caluga1-2-cyberday2022-23-05-2022.jpg",
+      "link": {
+        "url": "/195?map=productClusterIds"
+      },
+      "blockClass": "img-calugas1-cyber"
+    }
+  },
+  // Fin seccion calugas 1
+
+  // Inicio title productos destacados 1
+  "rich-text#productos-destacados-1-title": {
+    "props": {
+      "text": "**PRODUCTOS DESTACADOS**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "title-vitrina-destacados-1"
+    }
+  },
+  // Fin title productos destacados 1
+
+  // Inicio carrousel "productos destacados 1"
+  "flex-layout.row#productos-destacados-1": {
+    "children": [
+      "list-context.product-list#favorite" // Vitrina de retail rocket
+      // "list-context.product-list#productos-destacados-shelf-1"
+    ],
+    "props": {
+      "blockClass": "productos-destacados-shelf-1"
+    }
+  },
+  "list-context.product-list#productos-destacados-shelf-1": {
+    "props": {
+      "blockClass": "productos-destacados-shelf-1",
+      "collection": "194"
+    },
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "children": [
+      "slider-layout#productos-destacados-1-desktop"
+    ]
+  },
+  "slider-layout#productos-destacados-1-desktop": { 
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "productos-destacados-1-desktop",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never"
+    }
+  },
+  // Fin carrousel "productos destacados 1"
+
+  // Inicio title productos destacados 3
+  "rich-text#productos-destacados-3-title": {
+    "props": {
+      "text": "**OFERTAS RELÁMPAGO**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "title-vitrina-destacados-3"
+    }
+  },
+  // Fin title productos destacados 3
+
+  // Inicio carrousel "productos destacados 3"
+  "flex-layout.row#productos-destacados-3": {
+    "children": [
+      "list-context.product-list#productos-destacados-shelf-3"
+    ],
+    "props": {
+      "blockClass": "productos-destacados-shelf-3"
+    }
+  },
+  "list-context.product-list#productos-destacados-shelf-3": {
+    "props": {
+      "blockClass": "productos-destacados-shelf-3",
+      "collection": "196"
+    },
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "children": [
+      "slider-layout#productos-destacados-3-desktop"
+    ]
+  },
+  "slider-layout#productos-destacados-3-desktop": { 
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "productos-destacados-3-desktop",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never"
+    }
+  },
+  // Fin carrousel "productos destacados 3" 
+
+  // Inicio title oferta relampago
+  "rich-text#oferta-relampago-title": {
+    "props": {
+      "text": "**OFERTA RELAMPAGO**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "title-oferta-relampago"
+    }
+  },
+  // Fin title oferta relampago
+
+  // Inicio seccion calugas 2
+  "flex-layout.row#calugas-2": {
+    "props": {
+      "colGap": 2,
+      "colSizing": "auto",
+      "marginTop": {
+        "tablet": 8,
+        "phone": 4
+      },
+      "blockClass": "container-calugas2-cyber"
+    },
+    "children": [
+      "flex-layout.col#calugas-2-1",
+      "flex-layout.col#calugas-2-2",
+      "flex-layout.col#calugas-2-3"
+    ]
+  },
+  // 1
+  "flex-layout.col#calugas-2-1": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "col-calugas2-cyber"
+    },
+    "children": ["image#calugas-2-1"]
+  },
+  "image#calugas-2-1": {
+    "props": {
+      "src": "/arquivos/caluga2-1-cyberday2022-23-05-2022.jpg",
+      "link": {
+        "url": "/189?map=productClusterIds"
+      },
+      "blockClass": "img-calugas2-cyber"
+    }
+  },
+  // 2
+  "flex-layout.col#calugas-2-2": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "col-calugas2-cyber"
+    },
+    "children": ["image#calugas-2-2"]
+  },
+  "image#calugas-2-2": {
+    "props": {
+      "src": "/arquivos/caluga2-2-cyberday2022-23-05-2022.jpg",
+      "link": {
+        "url": "/190?map=productClusterIds"
+      },
+      "blockClass": "img-calugas2-cyber"
+    }
+  },
+  // 3
+  "flex-layout.col#calugas-2-3": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "col-calugas2-cyber"
+    },
+    "children": ["image#calugas-2-3"]
+  },
+  "image#calugas-2-3": {
+    "props": {
+      "src": "/arquivos/caluga2-3-cyberday2022-23-05-2022.jpg",
+      "link": {
+        "url": "/191?map=productClusterIds"
+      },
+      "blockClass": "img-calugas2-cyber"
+    }
+  },
+  // Fin seccion calugas 2
+
+  // Inicio title productos destacados 2
+  "rich-text#productos-destacados-2-title": {
+    "props": {
+      "text": "**PRODUCTOS DESTACADOS**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "title-vitrina-destacados-2"
+    }
+  },
+  // Fin title productos destacados 2
+
+  // Inicio carrousel "productos destacados 2"
+  "flex-layout.row#productos-destacados-2": {
+    "children": [
+      "list-context.product-list#productos-destacados-shelf-2"
+    ],
+    "props": {
+      "blockClass": "productos-destacados-shelf-2"
+    }
+  },
+  "list-context.product-list#productos-destacados-shelf-2": {
+    "props": {
+      "blockClass": "productos-destacados-shelf-2",
+      "collection": "194"
+    },
+    "blocks": [
+      "product-summary.shelf#main"
+    ],
+    "children": [
+      "slider-layout#productos-destacados-2-desktop"
+    ]
+  },
+  "slider-layout#productos-destacados-2-desktop": { 
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "productos-destacados-2-desktop",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never"
+    }
+  },
+  // Fin carrousel "productos destacados 2"
+  // FIN DESKTOP
+
+  // INICIO MOBILE
+  "responsive-layout.mobile#mobile-home-v2": {
+    "children": [
+      "slider-layout#home-mobile-v2", // Slider principal mobile
+      "slider-layout#benefits", // Beneficios (mismo codigo para ambas vistas)
+      "flex-layout.row#calugas-1", // Seccion calugas 1 (mismo codigo para ambas vistas)
+      // "rich-text#productos-destacados-1-title", // Title productos destacados 1 (mismo codigo para ambas vistas)
+      "flex-layout.row#productos-destacados-1", // Carrousel "productos destacados 1" - retal rocket (mismo codigo para ambas vistas)
+      "rich-text#productos-destacados-3-title", // Title productos destacados 3 (mismo codigo para ambas vistas)
+      "flex-layout.row#productos-destacados-3", // Carrousel "productos destacados 3" (mismo codigo para ambas vistas)
+      // "rich-text#oferta-relampago-title", // Title oferta relampago (mismo codigo para ambas vistas)
+      "flex-layout.row#calugas-2", // Seccion calugas 1 (mismo codigo para ambas vistas)
+      "rich-text#productos-destacados-2-title", // Title productos destacados 2 (mismo codigo para ambas vistas)
+      "flex-layout.row#productos-destacados-2"  // Carrousel "productos destacados 2" (mismo codigo para ambas vistas)
+    ]
+  },
+
+  // Inicio slider principal mobile
+  "slider-layout#home-mobile-v2": {
+    "children": [
+      "image#slide-mobile-1-v2"
+      // "image#slide-mobile-2",
+      // "image#slide-mobile-3", 
+      // "image#slide-mobile-4" 
+    ],
+    "props": {
+      /*
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": false
+      },
+      */
+      // "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "itemsPerPage": {
+        "phone": 1
+      },
+      "fullWidth": true,
+      "blockClass": "slider-home-mobile"
+    }
+  },
+  "image#slide-mobile-1-v2": {
+    "props": {
+      "src": "/arquivos/banner-mob-alargueCyber-01-06-2022.png",
+      "link": {
+        "url": "/194?map=productClusterIds"
+      },
+      "blockClass": "slider-home-mobile-img"
+    }
+  }
+  // Fin slider principal mobile
+  // FIN MOBILE
+
+
+  // Oferta relampago
+  // "oferta-relampago1":{
+  //   "props":{
+  //     "startDate":"may 26, 2022 08:20:01",
+  //     "endDate":"may 26, 2022 15:10:01",
+  //     "idCollect": "751"
+  //   }
+  // }
+}

@@ -1,0 +1,53 @@
+.trigger--question {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #545454;
+  margin-bottom: 2px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.trigger--question :global(.vtex-rich-text-0-x-paragraph) {
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.trigger--question:hover {
+  background-color: #f6ba15;
+  color: #fff;
+}
+
+.trigger--question:hover :global(.vtex-rich-text-0-x-paragraph) {
+  color: #fff;
+}
+
+/* .trigger--question:focus,
+.trigger--question:focus :global(.vtex-rich-text-0-x-paragraph) {
+  color: #f6ba15;
+} */
+
+.trigger :global(.vtex-store-icons-0-x-caretIcon) {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.content--answer {
+  transition: opacity 250ms ease-in-out, height 250ms ease-in-out, transform 250ms ease-in-out;
+  opacity: 0;
+  height: 0;
+  transform: translate3d(0, -10%, 0);
+  padding-left: 10px;
+}
+
+.content--answer[data-enter] {
+  opacity: 1;
+  height: fit-content;
+  transform: translate3d(0, 0, 0);
+}
+
+.content--answer[data-leave] {
+  height: 0;
+  overflow: hidden;
+}
